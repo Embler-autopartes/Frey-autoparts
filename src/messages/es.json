@@ -89,6 +89,78 @@
       "button": "Empezar cotización"
     }
   },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact desk · Atención B2B",
+      "title": "Hablemos de tu próxima orden.",
+      "subtitle": "Distribuidores, talleres y flotas: el equipo comercial FREY responde en menos de 24 horas hábiles. Elige el canal que prefieras."
+    },
+    "channels": {
+      "title": "Canales directos",
+      "whatsapp": {
+        "label": "WhatsApp",
+        "desc": "Respuesta inmediata en horario hábil. Comparte foto del SKU o VIN.",
+        "cta": "Abrir chat"
+      },
+      "email": {
+        "label": "Correo",
+        "desc": "Para cotizaciones formales y documentos. Adjunta lista o ficha técnica.",
+        "cta": "Escribir correo"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "desc": "Lunes a sábado 09:00–19:00 (hora local).",
+        "cta": "Llamar"
+      },
+      "quote": {
+        "label": "Cotizador online",
+        "desc": "Arma tu lista de piezas y la procesamos en menos de 24h.",
+        "cta": "Ir al cotizador"
+      }
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Cuéntanos qué necesitas. Si es una cotización, sugerimos usar el cotizador estructurado.",
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo corporativo",
+      "phone": "Teléfono",
+      "country": "País",
+      "subject": "Asunto",
+      "subjects": {
+        "quote": "Solicitar cotización B2B",
+        "distributor": "Quiero ser distribuidor",
+        "warranty": "Garantía o devolución",
+        "tech": "Soporte técnico / aplicación",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messagePh": "Comparte el contexto del proyecto, parque vehicular, volúmenes estimados, etc.",
+      "submit": "Enviar mensaje",
+      "errorRequired": "Completa nombre, correo y mensaje.",
+      "sent": "Abrimos tu cliente de correo con el mensaje pre-cargado."
+    },
+    "offices": {
+      "title": "Oficinas y operaciones",
+      "frey": {
+        "name": "FREY Auto Parts · HQ",
+        "tagline": "Manufactura y exportación global",
+        "address": "Tower B, Building 5, No. 1188 Lianhang Road\nMinhang District, Shanghai 201112\nP.R. China",
+        "phone": "+86 21 0000 0000",
+        "email": "info@frey-autoparts.com",
+        "hours": "Lun–Vie 09:00–18:00 CST"
+      },
+      "embler": {
+        "name": "EMBLER Autopartes · Master Distributor LATAM",
+        "tagline": "Stock local · Soporte bilingüe",
+        "address": "Av. Insurgentes Sur 1457, piso 8\nInsurgentes Mixcoac, Benito Juárez\nCiudad de México 03920, México",
+        "phone": "+52 55 0000 0000",
+        "email": "ventas@emblerautopartes.mx",
+        "hours": "Lun–Sáb 09:00–19:00 CDMX · Same-day metro"
+      }
+    },
+    "tagline": "Engineered in Germany. Manufactured for Europe."
+  },
   "vehicle": {
     "hero": {
       "eyebrow": "Aplicación por vehículo · Fitment",

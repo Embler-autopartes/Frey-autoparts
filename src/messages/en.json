@@ -89,6 +89,78 @@
       "button": "Start a quote"
     }
   },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact desk · B2B support",
+      "title": "Let's talk about your next order.",
+      "subtitle": "Distributors, workshops and fleets: the FREY sales team replies within 24 business hours. Pick the channel you prefer."
+    },
+    "channels": {
+      "title": "Direct channels",
+      "whatsapp": {
+        "label": "WhatsApp",
+        "desc": "Instant reply during business hours. Share SKU photo or VIN.",
+        "cta": "Open chat"
+      },
+      "email": {
+        "label": "Email",
+        "desc": "For formal quotes and documents. Attach list or datasheet.",
+        "cta": "Compose email"
+      },
+      "phone": {
+        "label": "Phone",
+        "desc": "Monday to Saturday 09:00–19:00 (local time).",
+        "cta": "Call"
+      },
+      "quote": {
+        "label": "Online quote",
+        "desc": "Build your parts list and we process it within 24h.",
+        "cta": "Go to quote tool"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Tell us what you need. For quotations we recommend the structured quote tool.",
+      "name": "Name",
+      "company": "Company",
+      "email": "Corporate email",
+      "phone": "Phone",
+      "country": "Country",
+      "subject": "Subject",
+      "subjects": {
+        "quote": "Request B2B quote",
+        "distributor": "I want to become a distributor",
+        "warranty": "Warranty / return",
+        "tech": "Technical support / fitment",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePh": "Share project context, vehicle fleet, estimated volumes, etc.",
+      "submit": "Send message",
+      "errorRequired": "Complete name, email and message.",
+      "sent": "We opened your email client with the message pre-loaded."
+    },
+    "offices": {
+      "title": "Offices & operations",
+      "frey": {
+        "name": "FREY Auto Parts · HQ",
+        "tagline": "Manufacturing and global export",
+        "address": "Tower B, Building 5, No. 1188 Lianhang Road\nMinhang District, Shanghai 201112\nP.R. China",
+        "phone": "+86 21 0000 0000",
+        "email": "info@frey-autoparts.com",
+        "hours": "Mon–Fri 09:00–18:00 CST"
+      },
+      "embler": {
+        "name": "EMBLER Autopartes · Master Distributor LATAM",
+        "tagline": "Local stock · Bilingual support",
+        "address": "Av. Insurgentes Sur 1457, floor 8\nInsurgentes Mixcoac, Benito Juárez\nMexico City 03920, Mexico",
+        "phone": "+52 55 0000 0000",
+        "email": "ventas@emblerautopartes.mx",
+        "hours": "Mon–Sat 09:00–19:00 CDMX · Same-day metro"
+      }
+    },
+    "tagline": "Engineered in Germany. Manufactured for Europe."
+  },
   "vehicle": {
     "hero": {
       "eyebrow": "Vehicle fit · Fitment",
