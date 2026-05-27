@@ -89,6 +89,60 @@
       "button": "Empezar cotización"
     }
   },
+  "quote": {
+    "hero": {
+      "eyebrow": "B2B Quotation desk",
+      "title": "Construye tu cotización.",
+      "subtitle": "Arma una lista con los números de parte que necesitas. Respondemos con disponibilidad, lead time y condiciones B2B en menos de 24 horas hábiles."
+    },
+    "addPart": {
+      "title": "Agregar pieza",
+      "partNumber": "Número de parte",
+      "partNumberPh": "Ej. 11.37.7548.387",
+      "description": "Descripción / nombre",
+      "descriptionPh": "Solenoide VVT BMW N52",
+      "brand": "Marca",
+      "brandPh": "Mercedes-Benz",
+      "qty": "Cantidad",
+      "notes": "Notas",
+      "notesPh": "Año, motor, observaciones…",
+      "add": "Agregar a la lista",
+      "errorRequired": "Número de parte o descripción es obligatorio."
+    },
+    "list": {
+      "title": "Tu lista de cotización",
+      "empty": "Aún no has agregado piezas. Empieza arriba con el número de parte o descripción.",
+      "count": "{n} {n, plural, one {pieza} other {piezas}} en lista",
+      "clear": "Vaciar lista",
+      "remove": "Quitar",
+      "colPart": "Parte",
+      "colBrand": "Marca",
+      "colQty": "Cantidad",
+      "colNotes": "Notas"
+    },
+    "customer": {
+      "title": "Tus datos",
+      "subtitle": "Necesitamos saber a quién enviarle la cotización formal.",
+      "company": "Empresa",
+      "name": "Nombre de contacto",
+      "email": "Correo corporativo",
+      "phone": "Teléfono / WhatsApp",
+      "country": "País",
+      "vin": "VIN (opcional)",
+      "vinPh": "Si tu lista es para un vehículo específico",
+      "comments": "Comentarios para el equipo comercial (opcional)",
+      "commentsPh": "Frecuencia de pedido, condiciones, urgencia, etc."
+    },
+    "submit": {
+      "title": "Listo para enviar",
+      "subtitle": "Al enviar abriremos tu correo con toda la información estructurada. Solo confirma el envío en tu cliente de correo.",
+      "button": "Enviar cotización por correo",
+      "emptyMessage": "Agrega al menos una pieza para poder enviar la cotización.",
+      "noCustomer": "Completa al menos empresa, nombre y correo.",
+      "sentTitle": "¡Listo!",
+      "sentBody": "Abrimos tu cliente de correo con la cotización pre-cargada. Si no se abrió, revisa los bloqueos del navegador."
+    }
+  },
   "about": {
     "hero": {
       "eyebrow": "Acerca de FREY · Ingeniería con propósito",

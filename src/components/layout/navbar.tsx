@@ -6,11 +6,14 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { useQuote } from '@/lib/quote-context';
 
 export function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
+  const { items, hydrated } = useQuote();
+  const quoteCount = hydrated ? items.length : 0;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -93,10 +96,15 @@ export function Navbar() {
           <LangSwitcher current={locale} />
           <Link
             href="/cotizacion"
-            className="hidden items-center gap-2 border border-acid-2/60 bg-acid-2/15 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-acid-3 transition-all hover:bg-acid-2 hover:text-ink-3 lg:inline-flex"
+            className="relative hidden items-center gap-2 border border-acid-2/60 bg-acid-2/15 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-acid-3 transition-all hover:bg-acid-2 hover:text-white lg:inline-flex"
           >
             {t('quote')}
             <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.4} />
+            {quoteCount > 0 && (
+              <span className="absolute -right-2 -top-2 grid h-5 min-w-5 place-items-center rounded-full bg-acid-2 px-1 font-mono text-[0.6rem] leading-none text-white ring-2 ring-ink-1">
+                {quoteCount}
+              </span>
+            )}
           </Link>
           <button
             type="button"

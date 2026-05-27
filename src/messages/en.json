@@ -89,6 +89,60 @@
       "button": "Start a quote"
     }
   },
+  "quote": {
+    "hero": {
+      "eyebrow": "B2B Quotation desk",
+      "title": "Build your quote.",
+      "subtitle": "Compose a list with the part numbers you need. We reply with availability, lead time and B2B terms within 24 business hours."
+    },
+    "addPart": {
+      "title": "Add a part",
+      "partNumber": "Part number",
+      "partNumberPh": "e.g. 11.37.7548.387",
+      "description": "Description / name",
+      "descriptionPh": "BMW N52 VVT solenoid",
+      "brand": "Brand",
+      "brandPh": "Mercedes-Benz",
+      "qty": "Qty",
+      "notes": "Notes",
+      "notesPh": "Year, engine, remarks…",
+      "add": "Add to list",
+      "errorRequired": "Part number or description is required."
+    },
+    "list": {
+      "title": "Your quote list",
+      "empty": "No parts added yet. Start above with the part number or description.",
+      "count": "{n} {n, plural, one {part} other {parts}} on list",
+      "clear": "Clear list",
+      "remove": "Remove",
+      "colPart": "Part",
+      "colBrand": "Brand",
+      "colQty": "Qty",
+      "colNotes": "Notes"
+    },
+    "customer": {
+      "title": "Your info",
+      "subtitle": "We need to know who to send the formal quote to.",
+      "company": "Company",
+      "name": "Contact name",
+      "email": "Corporate email",
+      "phone": "Phone / WhatsApp",
+      "country": "Country",
+      "vin": "VIN (optional)",
+      "vinPh": "If your list is for a specific vehicle",
+      "comments": "Comments for sales team (optional)",
+      "commentsPh": "Order frequency, terms, urgency, etc."
+    },
+    "submit": {
+      "title": "Ready to send",
+      "subtitle": "When you submit we'll open your email client with all the info pre-filled. Just confirm the send in your email app.",
+      "button": "Send quote via email",
+      "emptyMessage": "Add at least one part to send the quote.",
+      "noCustomer": "Complete at least company, name and email.",
+      "sentTitle": "Done!",
+      "sentBody": "We opened your email client with the quote pre-loaded. If it didn't open, check your browser pop-up blockers."
+    }
+  },
   "about": {
     "hero": {
       "eyebrow": "About FREY · Engineering with purpose",
