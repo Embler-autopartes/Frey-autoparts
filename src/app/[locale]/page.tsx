@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Hero } from '@/components/home/hero';
 import { Ticker } from '@/components/home/ticker';
+import { BrandCards } from '@/components/home/brand-cards';
 import { TrustStrip } from '@/components/home/trust-strip';
 import { Categories } from '@/components/home/categories';
 import { FeaturedPart } from '@/components/home/featured-part';
@@ -21,6 +22,7 @@ export default async function HomePage({
     <>
       <Hero />
       <Ticker />
+      <BrandCards />
       <TrustStrip />
       <Categories />
       <FeaturedPart />
