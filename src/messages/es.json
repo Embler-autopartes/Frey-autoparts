@@ -89,6 +89,47 @@
       "button": "Empezar cotización"
     }
   },
+  "catalog": {
+    "hero": {
+      "eyebrow": "Catálogo técnico · 2026",
+      "title": "Soluciones para vehículos europeos.",
+      "subtitle": "Más de 27,000 referencias para Mercedes-Benz, BMW y MB Sprinter. Filtra por sistema, marca o número de parte y arma tu lista de cotización."
+    },
+    "filters": {
+      "search": "Buscar por nº de parte, nombre o aplicación…",
+      "all": "Todas",
+      "brand": "Marca",
+      "system": "Sistema",
+      "reset": "Limpiar filtros",
+      "resultsCount": "{n, plural, =0 {Sin resultados} one {# pieza encontrada} other {# piezas encontradas}}"
+    },
+    "card": {
+      "fitment": "Aplicación",
+      "oem": "Ref. OEM",
+      "add": "Agregar a cotización",
+      "added": "✓ Agregada"
+    },
+    "systems": {
+      "brakes": "Frenos",
+      "engine": "Motor",
+      "suspension": "Suspensión",
+      "transmission": "Transmisión",
+      "electric": "Eléctrico",
+      "filtration": "Filtración",
+      "cooling": "Refrigeración",
+      "body": "Carrocería"
+    },
+    "empty": {
+      "title": "No encontramos piezas con esos filtros",
+      "subtitle": "Prueba ajustando la búsqueda o limpia los filtros."
+    },
+    "cta": {
+      "title": "¿No encuentras la pieza en el catálogo?",
+      "subtitle": "Nuestro equipo busca cualquier referencia OEM o aftermarket para vehículos europeos. Mándanos el número o el VIN y te respondemos en menos de 24 horas hábiles.",
+      "primary": "Cotizar pieza específica",
+      "secondary": "Hablar con un asesor"
+    }
+  },
   "quote": {
     "hero": {
       "eyebrow": "B2B Quotation desk",

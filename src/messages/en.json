@@ -89,6 +89,47 @@
       "button": "Start a quote"
     }
   },
+  "catalog": {
+    "hero": {
+      "eyebrow": "Technical catalog · 2026",
+      "title": "Solutions for European vehicles.",
+      "subtitle": "Over 27,000 references for Mercedes-Benz, BMW and MB Sprinter. Filter by system, brand or part number and build your quote list."
+    },
+    "filters": {
+      "search": "Search by part nº, name or fitment…",
+      "all": "All",
+      "brand": "Brand",
+      "system": "System",
+      "reset": "Reset filters",
+      "resultsCount": "{n, plural, =0 {No results} one {# part found} other {# parts found}}"
+    },
+    "card": {
+      "fitment": "Fitment",
+      "oem": "OEM ref",
+      "add": "Add to quote",
+      "added": "✓ Added"
+    },
+    "systems": {
+      "brakes": "Brakes",
+      "engine": "Engine",
+      "suspension": "Suspension",
+      "transmission": "Transmission",
+      "electric": "Electrical",
+      "filtration": "Filtration",
+      "cooling": "Cooling",
+      "body": "Body"
+    },
+    "empty": {
+      "title": "No parts match those filters",
+      "subtitle": "Try adjusting the search or reset the filters."
+    },
+    "cta": {
+      "title": "Don't see the part you need?",
+      "subtitle": "Our team finds any OEM or aftermarket reference for European vehicles. Send us the number or the VIN and we reply within 24 business hours.",
+      "primary": "Quote a specific part",
+      "secondary": "Talk to an advisor"
+    }
+  },
   "quote": {
     "hero": {
       "eyebrow": "B2B Quotation desk",
