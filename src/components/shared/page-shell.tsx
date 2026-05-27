@@ -13,7 +13,7 @@ export function PageShell({
 }) {
   return (
     <>
-      <section className="relative isolate overflow-hidden border-b border-ink-4 bg-ink-0 pb-20 pt-40 lg:pt-48">
+      <section className="relative isolate overflow-hidden border-b border-ink-4 bg-ink-2 pb-20 pt-40 lg:pt-48">
         <div className="absolute inset-0 -z-10 tech-grid opacity-50" />
         <div className="absolute inset-x-0 top-1/2 -z-10 h-px bg-gradient-to-r from-transparent via-acid-2/30 to-transparent" />
 

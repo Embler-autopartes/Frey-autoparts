@@ -7,7 +7,7 @@ export async function FeaturedPart() {
   const t = await getTranslations('home.feature');
 
   return (
-    <section className="relative overflow-hidden bg-ink-0 py-28 lg:py-36">
+    <section className="relative overflow-hidden bg-ink-2 py-28 lg:py-36">
       {/* Background tech grid */}
       <div className="absolute inset-0 tech-grid-fine opacity-40" />
 
@@ -26,16 +26,16 @@ export async function FeaturedPart() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-0/50 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-1/55 via-transparent to-transparent" />
             </div>
 
-            {/* Caption strip — dark callout on light bg */}
-            <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 bg-ink-0/90 px-4 py-3 backdrop-blur-sm">
+            {/* Caption strip — light surface on light bg */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 border border-ink-4 bg-ink-3/95 px-4 py-3 backdrop-blur-sm">
               <div>
-                <p className="font-mono text-[0.55rem] uppercase tracking-[0.25em] text-chrome-1">
+                <p className="font-mono text-[0.55rem] uppercase tracking-[0.25em] text-mist-1">
                   Reference photo
                 </p>
-                <p className="font-mono text-[0.7rem] uppercase tracking-[0.15em] text-chrome-2">
+                <p className="font-mono text-[0.7rem] uppercase tracking-[0.15em] text-mist-3">
                   {t('partNumber')}
                 </p>
               </div>

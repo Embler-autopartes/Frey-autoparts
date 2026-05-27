@@ -8,7 +8,7 @@ export async function Ticker() {
   return (
     <section
       aria-label="Compatible brands"
-      className="relative overflow-hidden border-y border-ink-4 bg-ink-0 py-6"
+      className="relative overflow-hidden border-y border-ink-4 bg-ink-2 py-6"
     >
       <div className="flex animate-scroll-x gap-12 whitespace-nowrap will-change-transform">
         {tape.map((label, i) => (
@@ -22,8 +22,8 @@ export async function Ticker() {
         ))}
       </div>
       {/* Fade edges */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-ink-0 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-ink-0 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-ink-2 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-ink-2 to-transparent" />
     </section>
   );
 }
