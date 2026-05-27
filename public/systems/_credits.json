@@ -1,0 +1,49 @@
+{
+  "_note": "Sistema photos used in home Categories section. Wikimedia images are CC BY-SA — attribution required if used commercially. Cooling & transmission swapped to internal FREY catalog photos.",
+  "brakes": {
+    "source": "Wikimedia Commons",
+    "title": "File:Magura Julie disk brake rotor 160 mm.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Magura_Julie_disk_brake_rotor_160_mm.jpg",
+    "license": "CC BY-SA"
+  },
+  "engine": {
+    "source": "Wikimedia Commons",
+    "title": "File:WAPCJW.jpg (V8 engine block)",
+    "page": "https://commons.wikimedia.org/wiki/File:WAPCJW.jpg",
+    "license": "CC BY-SA"
+  },
+  "suspension": {
+    "source": "Wikimedia Commons",
+    "title": "File:Deuce front suspension detail.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Deuce_front_suspension_detail.jpg",
+    "license": "CC BY-SA"
+  },
+  "transmission": {
+    "source": "FREY catalog (extracted from product PDF)",
+    "title": "MB Sprinter wheel hub bearing",
+    "license": "Internal use"
+  },
+  "electric": {
+    "source": "Wikimedia Commons",
+    "title": "File:Bosch Mass Air Flow Sensor location in the engine bay (Opel Antara 2.0 CDTI).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bosch_Mass_Air_Flow_Sensor_location_in_the_engine_bay_(Opel_Antara_2.0_CDTI).jpg",
+    "license": "CC BY-SA"
+  },
+  "filtration": {
+    "source": "Wikimedia Commons",
+    "title": "File:Engine oil filter cutaway.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Engine_oil_filter_cutaway.JPG",
+    "license": "CC BY-SA"
+  },
+  "cooling": {
+    "source": "FREY catalog (extracted from product PDF)",
+    "title": "MB Sprinter water pump pulley",
+    "license": "Internal use"
+  },
+  "body": {
+    "source": "Wikimedia Commons",
+    "title": "File:Car Outer Rear View Mirror.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Car_Outer_Rear_View_Mirror.jpg",
+    "license": "CC BY-SA"
+  }
+}
