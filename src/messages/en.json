@@ -89,6 +89,105 @@
       "button": "Start a quote"
     }
   },
+  "about": {
+    "hero": {
+      "eyebrow": "About FREY · Engineering with purpose",
+      "titleA": "European spare parts,",
+      "titleB": "German quality,",
+      "titleC": "global reach.",
+      "subtitle": "Over two decades supplying OEM and aftermarket auto parts for Mercedes-Benz, BMW and MB Sprinter. Manufacturing in Asia, distribution in LATAM, North America and Europe.",
+      "cta": "Talk to the team"
+    },
+    "intro": {
+      "eyebrow": "Manifesto",
+      "title": "Every component leaves the warehouse with one promise: that your European vehicle runs like day one.",
+      "body": "We started in 2003 in Shanghai with a clear focus: replicate OEM tolerance in every part we produce. Today we operate a 12,800 m² logistics hub with lot-by-lot traceability, serving over 40 markets through authorized distributors like EMBLER in Mexico."
+    },
+    "stats": [
+      { "value": "22", "unit": "Years", "label": "Of continuous operation in international markets." },
+      { "value": "27,400", "unit": "SKU", "label": "Active references for European vehicles and LCV." },
+      { "value": "40+", "unit": "Countries", "label": "Coverage through master distribution network." },
+      { "value": "12,800", "unit": "m²", "label": "Logistics hub running 24/6 in Shanghai." }
+    ],
+    "timeline": {
+      "eyebrow": "History",
+      "title": "Two decades perfecting the right part.",
+      "events": [
+        { "year": "2003", "title": "Founded in Shanghai", "desc": "Frey Auto Parts starts operations focused on spare parts for European vehicles." },
+        { "year": "2008", "title": "First OEM program", "desc": "Approved as Tier 1 European supplier for injection components." },
+        { "year": "2013", "title": "ISO 9001 certified", "desc": "Quality management system audited by TÜV." },
+        { "year": "2017", "title": "LATAM expansion", "desc": "Master distribution starts in Mexico through alliance with EMBLER." },
+        { "year": "2021", "title": "IATF 16949", "desc": "International automotive certification for production processes." },
+        { "year": "2024", "title": "27,400 active SKUs", "desc": "Catalog reaches coverage for 92% of running MB/BMW/Sprinter fleet." }
+      ]
+    },
+    "values": {
+      "eyebrow": "What defines us",
+      "title": "Four principles applied lot by lot.",
+      "items": [
+        {
+          "code": "01",
+          "title": "OEM tolerance",
+          "desc": "Every part is measured against the original drawing. There is no 'close enough' — it passes or it ships back."
+        },
+        {
+          "code": "02",
+          "title": "Real traceability",
+          "desc": "Serialized label per box. You can audit the lot from workshop back to production line."
+        },
+        {
+          "code": "03",
+          "title": "Long-term partnership",
+          "desc": "We work with distributors who know their markets. We don't sell to those who improvise."
+        },
+        {
+          "code": "04",
+          "title": "Reliable availability",
+          "desc": "OTIF 98.6% last 12 months. What we promise, ships on the date agreed."
+        }
+      ]
+    },
+    "plant": {
+      "eyebrow": "Logistics hub",
+      "title": "24/6 operation with WMS connected to ERP.",
+      "desc": "12,800 m² distributed across automated picking zones, climate control for sensitive components, and a dispatch port with RF scanner that validates every box before shipping. Three shifts with QC on each one.",
+      "captions": {
+        "image1": "Main aisles with 6-level selective racking.",
+        "image2": "RF-guided picking operation.",
+        "image3": "Dispatch areas with temperature and humidity control.",
+        "image4": "Corporate stand at Shanghai Auto Fair."
+      }
+    },
+    "certs": {
+      "eyebrow": "Certifications",
+      "title": "Audited standards, year after year.",
+      "items": [
+        { "code": "ISO 9001", "name": "Quality Management System", "body": "TÜV SÜD · 2013→2024", "desc": "Annual audit of production and admin processes." },
+        { "code": "IATF 16949", "name": "Automotive Quality Standard", "body": "BSI · 2021→2024", "desc": "Global standard for automotive supply chain providers." },
+        { "code": "SGS Verified", "name": "Field Verification", "body": "SGS Global Group", "desc": "On-site inspection and random sampling on line." },
+        { "code": "REACH", "name": "EU Chemical Compliance", "body": "European Chemicals Agency", "desc": "Compliance with EU chemical substance regulations." }
+      ]
+    },
+    "alliance": {
+      "eyebrow": "Strategic alliance",
+      "title": "FREY × EMBLER · Master Distributor LATAM",
+      "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock, bilingual technical support and same-day delivery in the CDMX metro area. We've worked together since 2017, covering over 6,200 SKUs in available stock for the regional market.",
+      "facts": [
+        { "k": "HQ", "v": "Mexico City" },
+        { "k": "Coverage", "v": "LATAM + south US" },
+        { "k": "Local stock", "v": "6,200 SKU available" },
+        { "k": "Support", "v": "Bilingual ES/EN" },
+        { "k": "Lead time", "v": "Same-day CDMX metro" },
+        { "k": "Started", "v": "Alliance since 2017" }
+      ]
+    },
+    "cta": {
+      "title": "Distributor, workshop or fleet? Let's talk.",
+      "subtitle": "Tell us what fleet you serve and we'll build the stock and support plan that fits you best.",
+      "primary": "Request a quote",
+      "secondary": "Go to contact"
+    }
+  },
   "footer": {
     "tagline": "Engineered in Germany. Manufactured for Europe.",
     "sections": {
