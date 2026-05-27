@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Search, X, Plus, Check } from 'lucide-react';
 import { useQuote } from '@/lib/quote-context';
@@ -12,7 +13,6 @@ import {
   type Brand,
   type System,
 } from '@/lib/catalog-data';
-import { SystemIcon } from './system-icon';
 
 type Filters = {
   search: string;
@@ -185,16 +185,22 @@ function PartCard({ part }: { part: Part }) {
 
   return (
     <article className="group flex flex-col bg-ink-3 transition-colors hover:bg-ink-1">
-      {/* Image area: large icon with brand tag */}
-      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden border-b border-ink-4 bg-ink-1">
-        <SystemIcon system={part.system} className="h-24 w-24 text-mist-2 transition-colors group-hover:text-acid-2" />
-        <span className="absolute left-3 top-3 font-mono text-[0.55rem] uppercase tracking-[0.25em] text-mist-1">
+      {/* Image area: real product photo with brand/system tags */}
+      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden border-b border-ink-4 bg-white">
+        <Image
+          src={part.photo}
+          alt={part.name}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-contain p-6 mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
+        />
+        <span className="absolute left-3 top-3 z-10 font-mono text-[0.55rem] uppercase tracking-[0.25em] text-mist-1">
           {brandLabels[part.brand]}
         </span>
-        <span className="absolute right-3 top-3 font-mono text-[0.55rem] uppercase tracking-[0.22em] text-mist-1">
+        <span className="absolute right-3 top-3 z-10 font-mono text-[0.55rem] uppercase tracking-[0.22em] text-mist-1">
           {t(`systems.${part.system}`)}
         </span>
-        <span className="absolute bottom-3 left-3 font-mono text-[0.6rem] tracking-[0.05em] text-mist-3">
+        <span className="absolute bottom-3 left-3 z-10 bg-ink-3/95 px-2 py-1 font-mono text-[0.6rem] tracking-[0.05em] text-mist-3 backdrop-blur-sm">
           {part.partNumber}
         </span>
       </div>
