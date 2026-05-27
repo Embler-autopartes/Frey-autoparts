@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "vehicle": "Vehicle fit",
+    "about": "Company",
+    "downloads": "Downloads",
+    "contact": "Contact",
+    "quote": "Get a quote"
+  },
+  "common": {
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "engine": "Engine",
+    "loading": "Loading",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Spare parts for European vehicles · LCV",
+      "titleA": "German",
+      "titleB": "engineering in",
+      "titleC": "every part.",
+      "subtitle": "OEM and aftermarket catalog for Mercedes-Benz, BMW and MB Sprinter. Global distribution under ISO 9001 standard.",
+      "ctaPrimary": "Request a quote",
+      "ctaSecondary": "Browse catalog",
+      "spec1": "Founded in China",
+      "spec2": "27,000+ active SKUs",
+      "spec3": "Network in 40+ countries"
+    },
+    "ticker": [
+      "MERCEDES-BENZ", "BMW", "MB SPRINTER 901-906", "VITO", "VIANO",
+      "BMW 3-SERIES", "BMW 5-SERIES", "BMW X-SERIES", "C-CLASS", "E-CLASS", "S-CLASS"
+    ],
+    "trust": {
+      "title": "Verified industrial standard",
+      "subtitle": "Every FREY component meets the strictest OEM quality protocols. Annual audits by independent international bodies."
+    },
+    "categories": {
+      "eyebrow": "Systems we cover",
+      "title": "Technical catalog by system",
+      "items": {
+        "brakes": { "name": "Brakes", "desc": "Discs, pads, sensors, calipers, hydraulic kits." },
+        "engine": { "name": "Engine", "desc": "Water pumps, thermostats, EGR valves, modules." },
+        "suspension": { "name": "Suspension", "desc": "Shocks, bushings, arms, springs, top mounts." },
+        "transmission": { "name": "Transmission", "desc": "Dual-mass flywheels, mechatronics, clutch kits." },
+        "electric": { "name": "Electrical", "desc": "ABS sensors, lambdas, MAF, MAP, throttle bodies." },
+        "filtration": { "name": "Filtration", "desc": "Oil, air, cabin, fuel, AdBlue." },
+        "cooling": { "name": "Cooling", "desc": "Radiators, intercoolers, fans, hoses." },
+        "body": { "name": "Body", "desc": "Mirrors, headlights, handles, seals, grilles." }
+      }
+    },
+    "feature": {
+      "eyebrow": "Featured part",
+      "partNumber": "P/N 11.37.7548.387",
+      "title": "VVT control solenoid",
+      "spec1": "Fits N52, N53, N54 (E60 / E90 / E70)",
+      "spec2": "Internal resistance 6.8 ± 0.5 Ω",
+      "spec3": "Operating temperature -40 °C to +150 °C",
+      "spec4": "FKM seals resistant to synthetic 5W-30",
+      "desc": "Machined aluminum body, class-H enamel coil, OEM tolerances."
+    },
+    "stats": {
+      "eyebrow": "Frey by the numbers",
+      "items": [
+        { "value": "27,400", "unit": "SKU", "label": "Active references in global catalog." },
+        { "value": "40+", "unit": "Countries", "label": "Authorized distribution network." },
+        { "value": "98.6%", "unit": "OTIF", "label": "On-time-in-full performance, last 12 months." },
+        { "value": "12,800 m²", "unit": "Warehouse", "label": "Logistics hub running 24/6." }
+      ]
+    },
+    "facility": {
+      "eyebrow": "Logistics hub",
+      "title": "24/6 operation with lot-level traceability",
+      "desc": "WMS connected to ERP, RF-guided picking, climate-controlled storage for sensitive packaging. Every box ships with serialized labels for field audit."
+    },
+    "alliance": {
+      "eyebrow": "Strategic alliance",
+      "title": "FREY × EMBLER",
+      "desc": "FREY is the global manufacturer. EMBLER is the master distributor in Mexico with local stock, bilingual tech support and same-day delivery in metro areas.",
+      "cta": "Discover regional distribution"
+    },
+    "cta": {
+      "title": "Build your quote list.",
+      "subtitle": "Share your VIN or parts list — your quote with availability and lead time arrives within 24 business hours.",
+      "button": "Start a quote"
+    }
+  },
+  "footer": {
+    "tagline": "Engineered in Germany. Manufactured for Europe.",
+    "sections": {
+      "products": "Catalog",
+      "company": "Company",
+      "support": "Support"
+    },
+    "products": ["Mercedes-Benz", "BMW", "MB Sprinter", "Vito / Viano", "Aftermarket OEM"],
+    "company": ["About us", "Plant & logistics", "ISO 9001 quality", "Embler alliance", "Careers"],
+    "support": ["B2B quote", "Technical downloads", "Warranty policy", "Returns", "FAQ"],
+    "address": "FREY Auto Parts Co., Ltd.\nShanghai · China",
+    "contact": "+86 21 0000 0000\ninfo@frey-autoparts.com",
+    "rights": "All rights reserved.",
+    "compliance": "ISO 9001 · IATF 16949 · SGS Verified"
+  }
+}

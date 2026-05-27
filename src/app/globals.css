@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+@theme {
+  /* ----- COLOR ----- */
+  --color-ink-0: #08090a;
+  --color-ink-1: #0e1112;
+  --color-ink-2: #15181a;
+  --color-ink-3: #1d2124;
+  --color-ink-4: #2a2f33;
+  --color-ink-5: #3a4045;
+
+  --color-mist-1: #6b7378;
+  --color-mist-2: #a8aeb3;
+  --color-mist-3: #d4d8da;
+  --color-mist-4: #eef0f1;
+
+  --color-chrome-1: #a8aeb3;
+  --color-chrome-2: #ced3d6;
+  --color-chrome-3: #e8ebec;
+
+  --color-acid-1: #4f7a3f;
+  --color-acid-2: #7bb661;
+  --color-acid-3: #9cd17d;
+  --color-acid-glow: #7bb66133;
+
+  --color-amber-1: #d4a85a;
+
+  /* Tailwind semantic mapping */
+  --color-background: var(--color-ink-1);
+  --color-foreground: var(--color-mist-4);
+  --color-muted: var(--color-mist-2);
+  --color-border: var(--color-ink-4);
+  --color-accent: var(--color-acid-2);
+
+  /* ----- TYPOGRAPHY ----- */
+  --font-display: "Antonio", "Arial Narrow", sans-serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  /* ----- RADIUS ----- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* ----- ANIMATION ----- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/antonio/v18/gNMbW2BrTpK8-inLtBJgMMfbm4Y_jbY6Cw.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/manrope/v19/xn7_YHE41ni1AdIRggOxSvfedN62Zw.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2') format('woff2');
+}
+
+/* ----- BASE RESET / GLOBALS ----- */
+* {
+  border-color: var(--color-border);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: var(--color-ink-1);
+  color: var(--color-mist-4);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01" on, "cv11" on;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at top, rgba(123, 182, 97, 0.04) 0%, transparent 55%),
+    linear-gradient(180deg, var(--color-ink-0) 0%, var(--color-ink-1) 30%, var(--color-ink-1) 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-acid-2);
+  color: var(--color-ink-0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-acid-1);
+}
+
+/* ----- UTILITY CLASSES ----- */
+.font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+.font-mono { font-family: var(--font-mono); }
+
+.text-balance { text-wrap: balance; }
+.text-pretty  { text-wrap: pretty; }
+
+.grain {
+  position: relative;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(to right, rgba(168, 174, 179, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 174, 179, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.tech-grid-fine {
+  background-image:
+    linear-gradient(to right, rgba(168, 174, 179, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 174, 179, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.corner-bracket {
+  position: relative;
+}
+.corner-bracket::before,
+.corner-bracket::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--color-acid-2);
+}
+.corner-bracket::before {
+  top: -1px; left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+.corner-bracket::after {
+  bottom: -1px; right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+.divider-tick {
+  position: relative;
+}
+.divider-tick::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  width: 24px;
+  height: 1px;
+  background: var(--color-acid-2);
+  transform: translateY(-50%);
+}
+
+.spec-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-mist-2);
+}
+.spec-line::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: var(--color-acid-2);
+  display: inline-block;
+}
+
+.text-shadow-deep {
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.55);
+}
+
+.dotted-divider {
+  background-image: radial-gradient(circle, var(--color-mist-1) 1px, transparent 1px);
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
+  width: 100%;
+}
+
+/* ----- ANIMATIONS ----- */
+@keyframes scroll-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ticker {
+  0% { transform: translateY(0); }
+  20%, 30% { transform: translateY(-100%); }
+  50%, 60% { transform: translateY(-200%); }
+  80%, 90% { transform: translateY(-300%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 40s linear infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.9s var(--ease-out-expo) both;
+}
+
+/* Stagger helpers */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }

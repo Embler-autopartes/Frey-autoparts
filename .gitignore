@@ -1,3 +1,61 @@
-# Archivos grandes excluidos (exceden el limite de 100MB de GitHub)
-20210508 FREY VI System Design.pdf
-imagenes de la planta/1.png
+# Imagenes originales sin optimizar (incluye archivos >100MB de GitHub)
+/originals/
+
+# Logo / asset suelto en raiz (esta en public/)
+/logo.jpg
+
+# Manual de marca (>100MB - excluido del repo)
+/20210508 FREY VI System Design.pdf
+
+# Screenshots sueltos en raiz
+/home-*.png
+/shot-*.png
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env files
+.env*.local
+.env
+
+# Screenshots de preview
+/shots/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
