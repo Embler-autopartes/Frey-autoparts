@@ -89,6 +89,31 @@
       "button": "Start a quote"
     }
   },
+  "vehicle": {
+    "hero": {
+      "eyebrow": "Vehicle fit · Fitment",
+      "title": "Find your part by vehicle.",
+      "subtitle": "Select the make, model and year of your European vehicle. We'll show you the compatible FREY parts."
+    },
+    "selector": {
+      "stepBrand": "Make",
+      "stepModel": "Model / Engine",
+      "stepYear": "Year",
+      "chooseBrand": "Choose a make to start",
+      "chooseModel": "Choose a model",
+      "yearAny": "Any year",
+      "modelLabel": "{model} · {gen}",
+      "years": "{from}-{to}",
+      "reset": "Change vehicle",
+      "selected": "Vehicle selected",
+      "noResults": "We don't have parts listed for this combination in the featured catalog. Send us the part number for a manual quote — we reply within 24h.",
+      "noResultsCta": "Quote manually"
+    },
+    "results": {
+      "count": "{n, plural, =0 {No compatible parts} one {# compatible part} other {# compatible parts}}",
+      "viewAll": "View full catalog"
+    }
+  },
   "catalog": {
     "hero": {
       "eyebrow": "Technical catalog · 2026",

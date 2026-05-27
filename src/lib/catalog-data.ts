@@ -71,3 +71,50 @@ export const systemSlugs: System[] = [
   'cooling',
   'body',
 ];
+
+/* ------- VEHICLE TAXONOMY for the fitment selector ------- */
+
+export type VehicleModel = {
+  model: string;          // visible name, e.g. "C-Class"
+  generation: string;     // e.g. "W205" — used to match against fitment string
+  yearFrom: number;
+  yearTo: number;
+  matchTokens: string[];  // strings used to match against parts[].fitment (case-insensitive contains)
+};
+
+export const vehicles: Record<Brand, VehicleModel[]> = {
+  mb: [
+    { model: 'C-Class', generation: 'W205', yearFrom: 2014, yearTo: 2021, matchTokens: ['W205', 'C-Class'] },
+    { model: 'E-Class', generation: 'W213', yearFrom: 2016, yearTo: 2023, matchTokens: ['W213', 'E-Class'] },
+    { model: 'E-Class', generation: 'W211', yearFrom: 2003, yearTo: 2009, matchTokens: ['W211', 'E-Class'] },
+    { model: 'A45 AMG', generation: 'M133', yearFrom: 2013, yearTo: 2018, matchTokens: ['M133', 'A45'] },
+    { model: 'GLE / ML', generation: 'OM642', yearFrom: 2005, yearTo: 2019, matchTokens: ['OM642'] },
+    { model: 'CLS 500', generation: 'W219', yearFrom: 2004, yearTo: 2010, matchTokens: ['W219'] },
+    { model: 'C 200 / 250', generation: 'M272/M273', yearFrom: 2005, yearTo: 2014, matchTokens: ['M271', 'M272', 'M273'] },
+  ],
+  bmw: [
+    { model: '3-Series', generation: 'F30', yearFrom: 2012, yearTo: 2019, matchTokens: ['F30', 'F31', '3 Series'] },
+    { model: '4-Series', generation: 'F32', yearFrom: 2013, yearTo: 2020, matchTokens: ['F32', '4 Series'] },
+    { model: '5-Series', generation: 'E60', yearFrom: 2003, yearTo: 2010, matchTokens: ['E60', 'E61', '5 Series'] },
+    { model: 'X5', generation: 'F15', yearFrom: 2013, yearTo: 2018, matchTokens: ['F15', 'X5'] },
+    { model: 'X6', generation: 'F16', yearFrom: 2014, yearTo: 2019, matchTokens: ['F16', 'X6'] },
+    { model: '328i / 428i', generation: 'N20/N26', yearFrom: 2011, yearTo: 2018, matchTokens: ['N20', 'N26'] },
+    { model: '335i / 535i', generation: 'N52/N54', yearFrom: 2006, yearTo: 2013, matchTokens: ['N52', 'N53', 'N54', 'E90', 'E60', 'E70'] },
+  ],
+  sprinter: [
+    { model: 'Sprinter 906', generation: 'OM642 V6 diesel', yearFrom: 2006, yearTo: 2013, matchTokens: ['906', 'OM642'] },
+    { model: 'Sprinter 906', generation: 'OM651 4-cyl diesel', yearFrom: 2009, yearTo: 2018, matchTokens: ['906', 'OM651'] },
+    { model: 'Sprinter 906 LCV', generation: 'all variants', yearFrom: 2006, yearTo: 2018, matchTokens: ['906', 'LCV', 'Sprinter'] },
+  ],
+};
+
+/** Returns the parts that match the given vehicle filter */
+export function partsForVehicle(brand: Brand, model?: VehicleModel): Part[] {
+  if (!model) return parts.filter((p) => p.brand === brand);
+  const tokens = model.matchTokens.map((t) => t.toLowerCase());
+  return parts.filter((p) => {
+    if (p.brand !== brand) return false;
+    const hay = p.fitment.toLowerCase();
+    return tokens.some((t) => hay.includes(t));
+  });
+}

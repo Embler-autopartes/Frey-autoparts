@@ -89,6 +89,31 @@
       "button": "Empezar cotización"
     }
   },
+  "vehicle": {
+    "hero": {
+      "eyebrow": "Aplicación por vehículo · Fitment",
+      "title": "Encuentra tu pieza por vehículo.",
+      "subtitle": "Selecciona la marca, modelo y año de tu vehículo europeo. Te mostramos las piezas FREY compatibles."
+    },
+    "selector": {
+      "stepBrand": "Marca",
+      "stepModel": "Modelo / Motor",
+      "stepYear": "Año",
+      "chooseBrand": "Elige una marca para empezar",
+      "chooseModel": "Elige un modelo",
+      "yearAny": "Cualquier año",
+      "modelLabel": "{model} · {gen}",
+      "years": "{from}-{to}",
+      "reset": "Cambiar vehículo",
+      "selected": "Vehículo seleccionado",
+      "noResults": "No tenemos piezas listadas para esta combinación en el catálogo destacado. Solicita una cotización con el número de parte y te respondemos en 24h.",
+      "noResultsCta": "Cotizar manualmente"
+    },
+    "results": {
+      "count": "{n, plural, =0 {Sin piezas compatibles} one {# pieza compatible} other {# piezas compatibles}}",
+      "viewAll": "Ver catálogo completo"
+    }
+  },
   "catalog": {
     "hero": {
       "eyebrow": "Catálogo técnico · 2026",
