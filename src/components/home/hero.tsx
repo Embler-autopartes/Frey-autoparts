@@ -67,7 +67,7 @@ export async function Hero() {
             <span className="block">{t('titleA')}</span>
             <span className="block text-chrome-2">{t('titleB')}</span>
             <span className="block">
-              <span className="text-acid-3">{t('titleC')}</span>
+              <span className="text-acid-2">{t('titleC')}</span>
             </span>
           </h1>
 

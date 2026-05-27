@@ -23,10 +23,10 @@
   --color-chrome-2: #6c7176; /* dark silver */
   --color-chrome-3: #3e4347; /* deep silver */
 
-  --color-acid-1: #4f7a3f;
-  --color-acid-2: #6aa550;   /* slightly deeper green for contrast on light */
-  --color-acid-3: #4f8a3a;
-  --color-acid-glow: #6aa55033;
+  --color-acid-1: #002a1c;   /* deepest brand green - press state */
+  --color-acid-2: #003f2a;   /* PRIMARY BRAND GREEN (user-specified) */
+  --color-acid-3: #1d6248;   /* lighter brand green - hover state */
+  --color-acid-glow: rgba(0, 63, 42, 0.18);
 
   --color-amber-1: #b08a3c;
 
