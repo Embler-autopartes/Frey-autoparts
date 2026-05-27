@@ -18,7 +18,7 @@ export async function FeaturedPart() {
             {/* Frame */}
             <div className="absolute -inset-2 border border-ink-4" />
             {/* Image */}
-            <div className="relative aspect-[4/5] w-full overflow-hidden bg-ink-2">
+            <div className="relative aspect-[4/5] w-full overflow-hidden bg-ink-3">
               <Image
                 src="/images/product-hand-pump.webp"
                 alt={t('title')}
@@ -26,16 +26,16 @@ export async function FeaturedPart() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-0/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-0/50 via-transparent to-transparent" />
             </div>
 
-            {/* Caption strip */}
-            <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 bg-ink-0/85 px-4 py-3 backdrop-blur-sm">
+            {/* Caption strip — dark callout on light bg */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 bg-ink-0/90 px-4 py-3 backdrop-blur-sm">
               <div>
-                <p className="font-mono text-[0.55rem] uppercase tracking-[0.25em] text-mist-1">
+                <p className="font-mono text-[0.55rem] uppercase tracking-[0.25em] text-chrome-1">
                   Reference photo
                 </p>
-                <p className="font-mono text-[0.7rem] uppercase tracking-[0.15em] text-mist-3">
+                <p className="font-mono text-[0.7rem] uppercase tracking-[0.15em] text-chrome-2">
                   {t('partNumber')}
                 </p>
               </div>
@@ -88,7 +88,7 @@ export async function FeaturedPart() {
             <div className="mt-12 flex flex-wrap gap-4">
               <Link
                 href="/cotizacion"
-                className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-6 py-3.5 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-ink-0 transition-all hover:bg-acid-3"
+                className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-6 py-3.5 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-ink-3 transition-all hover:bg-acid-3"
               >
                 Agregar a cotización
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" strokeWidth={2.4} />

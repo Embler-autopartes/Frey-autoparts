@@ -11,17 +11,17 @@ export async function Alliance() {
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <div className="relative overflow-hidden border border-ink-4 bg-ink-2">
           {/* Decorative background */}
-          <div className="absolute inset-0 opacity-25">
+          <div className="absolute inset-0 opacity-20">
             <Image
               src="/images/banner-frey-embler.webp"
               alt=""
               fill
               sizes="100vw"
-              className="object-cover object-center mix-blend-luminosity"
+              className="object-cover object-center mix-blend-multiply"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-br from-ink-2 via-ink-2/85 to-ink-1/70" />
-          <div className="absolute inset-0 tech-grid opacity-30" />
+          <div className="absolute inset-0 tech-grid opacity-40" />
 
           <div className="relative grid gap-12 p-10 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-16 lg:p-16">
             <div>
@@ -53,7 +53,7 @@ export async function Alliance() {
             </div>
 
             {/* Map / location card */}
-            <div className="border border-ink-4 bg-ink-1 p-6">
+            <div className="border border-ink-4 bg-ink-3 p-6">
               <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-mist-1">
                 Master Distributor / LATAM
               </p>

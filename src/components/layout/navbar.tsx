@@ -35,19 +35,19 @@ export function Navbar() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-500',
         scrolled
-          ? 'border-b border-ink-4/70 bg-ink-0/85 backdrop-blur-xl'
-          : 'border-b border-transparent bg-gradient-to-b from-ink-0/60 to-transparent',
+          ? 'border-b border-ink-4/70 bg-ink-1/85 backdrop-blur-xl'
+          : 'border-b border-transparent bg-gradient-to-b from-ink-1/70 to-transparent',
       )}
     >
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-10">
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-9 w-9 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-5 transition-all group-hover:ring-acid-2">
+          <div className="relative h-9 w-9 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4 transition-all group-hover:ring-acid-2">
             <Image
               src="/logo.webp"
               alt="FREY"
               fill
               sizes="36px"
-              className="object-contain p-1 mix-blend-screen"
+              className="object-contain p-1 mix-blend-multiply"
               priority
             />
           </div>
@@ -93,7 +93,7 @@ export function Navbar() {
           <LangSwitcher current={locale} />
           <Link
             href="/cotizacion"
-            className="hidden items-center gap-2 border border-acid-2/60 bg-acid-2/10 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-acid-3 transition-all hover:bg-acid-2 hover:text-ink-0 lg:inline-flex"
+            className="hidden items-center gap-2 border border-acid-2/60 bg-acid-2/15 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-acid-3 transition-all hover:bg-acid-2 hover:text-ink-3 lg:inline-flex"
           >
             {t('quote')}
             <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.4} />
@@ -111,7 +111,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-ink-4 bg-ink-0/95 px-6 pb-6 pt-2 lg:hidden">
+        <div className="border-t border-ink-4 bg-ink-1/97 px-6 pb-6 pt-2 backdrop-blur-xl lg:hidden">
           <nav className="flex flex-col">
             {links.map((link) => (
               <Link
@@ -126,7 +126,7 @@ export function Navbar() {
             <Link
               href="/cotizacion"
               onClick={() => setOpen(false)}
-              className="mt-6 inline-flex items-center gap-2 self-start border border-acid-2 bg-acid-2 px-5 py-3 font-mono text-xs uppercase tracking-widest text-ink-0"
+              className="mt-6 inline-flex items-center gap-2 self-start border border-acid-2 bg-acid-2 px-5 py-3 font-mono text-xs uppercase tracking-widest text-ink-3"
             >
               {t('quote')} <ArrowUpRight size={16} />
             </Link>

@@ -13,14 +13,14 @@ export async function Footer() {
   const support = t.raw('support') as string[];
 
   return (
-    <footer className="relative mt-32 border-t border-ink-4 bg-ink-0">
+    <footer className="relative mt-32 border-t border-ink-4 bg-ink-2">
       {/* Decorative top strip */}
       <div className="absolute inset-x-0 top-0 flex h-1">
         <span className="flex-1 bg-acid-2" />
         <span className="w-12 bg-chrome-1" />
-        <span className="flex-[3] bg-ink-4" />
+        <span className="flex-[3] bg-ink-5" />
         <span className="w-24 bg-acid-2" />
-        <span className="flex-[6] bg-ink-4" />
+        <span className="flex-[6] bg-ink-5" />
         <span className="w-2 bg-amber-1" />
       </div>
 
@@ -55,8 +55,8 @@ export async function Footer() {
         <div className="grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-5">
-                <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1 mix-blend-screen" />
+              <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4">
+                <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1 mix-blend-multiply" />
               </div>
               <div>
                 <p className="font-display text-2xl tracking-wide">FREY</p>

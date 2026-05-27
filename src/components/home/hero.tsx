@@ -7,7 +7,7 @@ export async function Hero() {
   const t = await getTranslations('home.hero');
 
   return (
-    <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink-0">
+    <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink-1">
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -16,12 +16,12 @@ export async function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-[0.55]"
+          className="object-cover object-center opacity-[0.42]"
         />
-        {/* Layered overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-0 via-ink-0/55 to-ink-0/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink-0 via-ink-0/40 to-transparent" />
-        <div className="absolute inset-0 tech-grid opacity-60" />
+        {/* Layered overlays — light platinum wash */}
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/75 to-ink-1/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-1 via-ink-1/60 to-transparent" />
+        <div className="absolute inset-0 tech-grid opacity-50" />
         <div className="grain absolute inset-0" />
       </div>
 
@@ -63,11 +63,11 @@ export async function Hero() {
             </p>
           </div>
 
-          <h1 className="mt-8 animate-fade-in-up font-display text-[clamp(3.5rem,9vw,9rem)] font-medium uppercase leading-[0.85] tracking-tight text-mist-4 text-shadow-deep delay-100">
+          <h1 className="mt-8 animate-fade-in-up font-display text-[clamp(3.5rem,9vw,9rem)] font-medium uppercase leading-[0.85] tracking-tight text-mist-4 delay-100">
             <span className="block">{t('titleA')}</span>
             <span className="block text-chrome-2">{t('titleB')}</span>
             <span className="block">
-              <span className="text-acid-2">{t('titleC')}</span>
+              <span className="text-acid-3">{t('titleC')}</span>
             </span>
           </h1>
 
@@ -78,14 +78,14 @@ export async function Hero() {
           <div className="mt-12 flex animate-fade-in-up flex-wrap gap-4 delay-500">
             <Link
               href="/cotizacion"
-              className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-ink-0 transition-all hover:bg-acid-3"
+              className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-ink-3 transition-all hover:bg-acid-3"
             >
               {t('ctaPrimary')}
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" strokeWidth={2.4} />
             </Link>
             <Link
               href="/catalogo"
-              className="group inline-flex items-center gap-3 border border-ink-5 bg-ink-2/60 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-mist-3 backdrop-blur transition-all hover:border-mist-3 hover:text-mist-4"
+              className="group inline-flex items-center gap-3 border border-ink-4 bg-ink-3/70 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-mist-3 backdrop-blur transition-all hover:border-mist-3 hover:text-mist-4"
             >
               {t('ctaSecondary')}
               <span className="h-1.5 w-1.5 rounded-full bg-acid-2 transition-transform group-hover:scale-150" />

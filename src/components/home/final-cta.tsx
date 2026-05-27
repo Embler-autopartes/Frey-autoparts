@@ -7,16 +7,16 @@ export async function FinalCta() {
   const t = await getTranslations('home.cta');
 
   return (
-    <section className="relative isolate overflow-hidden bg-ink-0 py-32 lg:py-40">
+    <section className="relative isolate overflow-hidden bg-ink-1 py-32 lg:py-40">
       <Image
         src="/images/warehouse-forklift.webp"
         alt=""
         fill
         sizes="100vw"
-        className="absolute inset-0 -z-10 object-cover opacity-30"
+        className="absolute inset-0 -z-10 object-cover opacity-25"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-0 via-ink-0/70 to-ink-0" />
-      <div className="absolute inset-0 -z-10 tech-grid opacity-50" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink-1 via-ink-1/85 to-ink-1" />
+      <div className="absolute inset-0 -z-10 tech-grid opacity-60" />
 
       <div className="relative mx-auto max-w-[1200px] px-6 text-center lg:px-10">
         <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
@@ -32,7 +32,7 @@ export async function FinalCta() {
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/cotizacion"
-            className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-9 py-5 font-mono text-xs uppercase tracking-[0.2em] text-ink-0 transition-all hover:bg-acid-3"
+            className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-9 py-5 font-mono text-xs uppercase tracking-[0.2em] text-ink-3 transition-all hover:bg-acid-3"
           >
             {t('button')}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" strokeWidth={2.4} />

@@ -1,29 +1,34 @@
 @import "tailwindcss";
 
 @theme {
-  /* ----- COLOR ----- */
-  --color-ink-0: #08090a;
-  --color-ink-1: #0e1112;
-  --color-ink-2: #15181a;
-  --color-ink-3: #1d2124;
-  --color-ink-4: #2a2f33;
-  --color-ink-5: #3a4045;
+  /* ----- COLOR (LIGHT PLATINUM THEME) -----
+     ink-*  = surface scale, from main bg upward to subtle elevation.
+              ink-0 reserved as DARK contrast surface (callouts on light bg).
+     mist-* = text scale, from subtle to highest contrast.
+              Higher number = darker / more readable.
+  */
+  --color-ink-0: #1a1d20;   /* dark callout surface */
+  --color-ink-1: #e9e7e7;   /* main page background (user-specified) */
+  --color-ink-2: #f1efef;   /* raised surface (cards, lifted) */
+  --color-ink-3: #f8f6f6;   /* near-white surface (panels) */
+  --color-ink-4: #cdc8c5;   /* border / strong divider */
+  --color-ink-5: #aea8a4;   /* divider on light */
 
-  --color-mist-1: #6b7378;
-  --color-mist-2: #a8aeb3;
-  --color-mist-3: #d4d8da;
-  --color-mist-4: #eef0f1;
+  --color-mist-1: #8a847f;   /* low-contrast text */
+  --color-mist-2: #5a5450;   /* mid text */
+  --color-mist-3: #2f2b28;   /* high text */
+  --color-mist-4: #14110f;   /* near-black, primary headings */
 
-  --color-chrome-1: #a8aeb3;
-  --color-chrome-2: #ced3d6;
-  --color-chrome-3: #e8ebec;
+  --color-chrome-1: #9aa0a4; /* mid silver */
+  --color-chrome-2: #6c7176; /* dark silver */
+  --color-chrome-3: #3e4347; /* deep silver */
 
   --color-acid-1: #4f7a3f;
-  --color-acid-2: #7bb661;
-  --color-acid-3: #9cd17d;
-  --color-acid-glow: #7bb66133;
+  --color-acid-2: #6aa550;   /* slightly deeper green for contrast on light */
+  --color-acid-3: #4f8a3a;
+  --color-acid-glow: #6aa55033;
 
-  --color-amber-1: #d4a85a;
+  --color-amber-1: #b08a3c;
 
   /* Tailwind semantic mapping */
   --color-background: var(--color-ink-1);
@@ -90,15 +95,15 @@ body {
 
 body {
   background-image:
-    radial-gradient(ellipse at top, rgba(123, 182, 97, 0.04) 0%, transparent 55%),
-    linear-gradient(180deg, var(--color-ink-0) 0%, var(--color-ink-1) 30%, var(--color-ink-1) 100%);
+    radial-gradient(ellipse at top, rgba(106, 165, 80, 0.07) 0%, transparent 55%),
+    linear-gradient(180deg, var(--color-ink-3) 0%, var(--color-ink-1) 22%, var(--color-ink-1) 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 ::selection {
   background: var(--color-acid-2);
-  color: var(--color-ink-0);
+  color: var(--color-ink-3);
 }
 
 ::-webkit-scrollbar {
@@ -106,14 +111,14 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-ink-1);
+  background: var(--color-ink-2);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-ink-4);
+  background: var(--color-ink-5);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-acid-1);
+  background: var(--color-acid-2);
 }
 
 /* ----- UTILITY CLASSES ----- */
@@ -131,22 +136,22 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.04;
-  mix-blend-mode: overlay;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 
 .tech-grid {
   background-image:
-    linear-gradient(to right, rgba(168, 174, 179, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(168, 174, 179, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(20, 17, 15, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 17, 15, 0.05) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
 .tech-grid-fine {
   background-image:
-    linear-gradient(to right, rgba(168, 174, 179, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(168, 174, 179, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(20, 17, 15, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 17, 15, 0.06) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -204,6 +209,11 @@ body {
 }
 
 .text-shadow-deep {
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.45),
+               0 0 24px rgba(233, 231, 231, 0.6);
+}
+
+.text-shadow-deep-dark {
   text-shadow: 0 2px 30px rgba(0, 0, 0, 0.55);
 }
 
@@ -229,14 +239,6 @@ body {
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes ticker {
-  0% { transform: translateY(0); }
-  20%, 30% { transform: translateY(-100%); }
-  50%, 60% { transform: translateY(-200%); }
-  80%, 90% { transform: translateY(-300%); }
-  100% { transform: translateY(0); }
 }
 
 .animate-scroll-x {
