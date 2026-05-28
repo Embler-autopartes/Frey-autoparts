@@ -32,9 +32,9 @@
       "spec3": "Network in 100+ countries"
     },
     "ticker": [
-      "MERCEDES-BENZ", "BMW", "LAND ROVER", "RANGE ROVER", "MB SPRINTER",
-      "VITO", "VIANO", "BMW 3-SERIES", "BMW 5-SERIES", "BMW X-SERIES",
-      "C-CLASS", "E-CLASS", "S-CLASS", "DISCOVERY", "DEFENDER"
+      "MERCEDES-BENZ", "BMW", "AUDI", "PORSCHE", "LAND ROVER",
+      "JAGUAR", "VOLKSWAGEN", "VOLVO", "MINI", "SMART",
+      "ALFA ROMEO", "BENTLEY"
     ],
     "trust": {
       "title": "Verified industrial standard",
