@@ -29,7 +29,6 @@ export function Navbar() {
     { href: '/catalogo', label: t('catalog') },
     { href: '/aplicacion', label: t('vehicle') },
     { href: '/acerca', label: t('about') },
-    { href: '/descargas', label: t('downloads') },
     { href: '/contacto', label: t('contact') },
   ];
 
