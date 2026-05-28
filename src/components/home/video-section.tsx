@@ -1,7 +1,7 @@
 import { getLocale } from 'next-intl/server';
 
 const VIDEO_URL = 'https://www.freychina.com/static/cms/images/video_en.mp4';
-const POSTER = '/images/warehouse-overview.webp';
+const POSTER = '/images/video-poster.webp';
 
 export async function VideoSection() {
   const locale = await getLocale();
