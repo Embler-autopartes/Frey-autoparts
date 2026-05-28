@@ -125,17 +125,13 @@ export async function BrandCards() {
                   </p>
                 </div>
 
-                {/* System buttons — invertidos en cards verdes */}
+                {/* System buttons — todos verdes solidos */}
                 <div className="flex flex-wrap gap-3 lg:justify-end">
                   {brand.systems.map((sys) => (
                     <Link
                       key={sys.name}
                       href={sys.href}
-                      className={`group/btn inline-flex items-center gap-2 border px-5 py-3 font-mono text-[0.65rem] uppercase tracking-[0.18em] transition-all duration-500 ${
-                        isGreen
-                          ? 'border-acid-2 bg-acid-2 text-white hover:bg-acid-3'
-                          : 'border-acid-2/60 bg-transparent text-acid-2 hover:bg-acid-2 hover:text-white'
-                      }`}
+                      className="group/btn inline-flex items-center gap-2 border border-acid-2 bg-acid-2 px-5 py-3 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-white transition-all duration-500 hover:bg-acid-3"
                     >
                       {sys.name}
                       <ArrowUpRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
