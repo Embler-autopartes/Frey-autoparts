@@ -49,12 +49,12 @@ export async function Footer() {
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <div className="grid gap-16 py-20 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
             <div>
-              <div className="flex items-center gap-3">
-                <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4">
-                  <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1.5 mix-blend-multiply" />
+              <div className="flex items-center gap-4">
+                <div className="relative h-20 w-20 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4">
+                  <Image src="/logo.webp" alt="FREY" fill sizes="80px" className="object-contain p-1 mix-blend-multiply" />
                 </div>
                 <div>
-                  <p className="font-display text-2xl tracking-wide text-mist-4">FREY</p>
+                  <p className="font-display text-3xl tracking-wide text-mist-4">FREY</p>
                   <p className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1">Auto Parts · DE</p>
                 </div>
               </div>

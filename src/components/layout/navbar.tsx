@@ -44,18 +44,18 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-10">
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-9 w-9 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4 transition-all group-hover:ring-acid-2">
+          <div className="relative h-14 w-14 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4 transition-all group-hover:ring-acid-2 sm:h-16 sm:w-16">
             <Image
               src="/logo.webp"
               alt="FREY"
               fill
-              sizes="36px"
-              className="object-contain p-1 mix-blend-multiply"
+              sizes="64px"
+              className="object-contain p-0.5 mix-blend-multiply"
               priority
             />
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-display text-[1.35rem] font-medium tracking-[0.04em] text-mist-4">
+          <div className="hidden flex-col leading-none sm:flex">
+            <span className="font-display text-2xl font-medium tracking-[0.04em] text-mist-4">
               FREY
             </span>
             <span className="font-mono text-[0.55rem] uppercase tracking-[0.22em] text-mist-1">
