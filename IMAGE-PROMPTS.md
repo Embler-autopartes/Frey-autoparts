@@ -56,6 +56,10 @@ The factory BMW roundel on hood and wheel hubs IS allowed (belongs
 to the car). 35mm lens, slightly low angle for dramatic perspective.
 Photorealistic, high detail on chrome trim and headlight housing.
 Aspect ratio 16:9. Resolution 2400x1350.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 1.2 `/hero/engine-macro.webp` — Hero alterno / macro técnico
@@ -74,6 +78,10 @@ Brembo product catalog photography. Cool tones, sharp focus on
 machined edges, soft gradient falloff into shadow. No background
 clutter. No text or watermarks. Studio still-life style.
 Aspect ratio 1:1. Resolution 1600x1600.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -100,6 +108,10 @@ kind. Professional automotive catalog photography, Mercedes-Benz
 official press kit style. Photorealistic, high detail on grille,
 headlights, side mirrors.
 Aspect ratio 3:2. Resolution 1500x1000.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 2.2 `/cars/bmw.webp` — BMW 4 Series Coupé
@@ -118,6 +130,10 @@ hood and wheel hubs IS allowed (it belongs to the car). NO license
 plate, NO dealer stickers, NO watermarks, NO third-party logos, NO
 text or signature visible. BMW official press kit photography style.
 Aspect ratio 3:2. Resolution 1500x1000.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 2.3 `/cars/landrover.webp` — Range Rover Sport
@@ -137,6 +153,10 @@ to the car). NO license plate, NO dealer stickers, NO watermarks,
 NO third-party logos, NO text or signature visible. Land Rover
 official press kit photography style.
 Aspect ratio 3:2. Resolution 1500x1000.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 2.4 `/cars/sprinter.webp` — MB Sprinter LCV
@@ -157,6 +177,10 @@ NO fleet decals, NO company logos on the side panels, NO
 watermarks, NO third-party branding, NO text or signature.
 Mercedes-Benz commercial vehicle catalog photography.
 Aspect ratio 3:2. Resolution 1500x1000.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -181,6 +205,10 @@ manufacturer branding on boxes or walls. Architectural
 photography style, Hasselblad medium-format aesthetic. Premium
 German logistics center feeling (DHL Innovation Center vibe).
 Aspect ratio 16:9. Resolution 2400x1350.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 3.2 `/images/warehouse-overview.webp` — Vista panorámica
@@ -200,6 +228,10 @@ manufacturer branding visible anywhere. Architectural
 documentary photography. Inspired by Mercedes-Benz Parts Center
 or BMW Logistics Center in Munich.
 Aspect ratio 16:9. Resolution 2400x1350.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 3.3 `/images/warehouse-aisle-wide.webp` — Pasillo con racks
@@ -215,6 +247,10 @@ geometric shadows. No people, no text, no logos, no brand
 labels on boxes or walls. Industrial editorial photography,
 Bilstein / Mahle catalog aesthetic.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 3.4 `/images/warehouse-forklift.webp` — Operación logística
@@ -232,6 +268,10 @@ platinum gray and steel-blue palette. No readable text, no
 logos, no signage anywhere — neither on boxes, walls nor
 forklift. Cinematic depth.
 Aspect ratio 16:9. Resolution 2400x1350.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 3.5 `/images/warehouse-racks-wide.webp` — Detalle racks
@@ -247,6 +287,10 @@ Cool platinum tones, soft ambient lighting. No people, no
 readable text, no logos, no brand markings of any kind.
 Editorial industrial style.
 Aspect ratio 3:2. Resolution 1800x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 3.6 `/images/warehouse-aerial.webp` — Aérea
@@ -264,6 +308,10 @@ neat landscaping. No identifiable branding, no logos, no text
 visible on buildings, trucks or signage. Editorial architecture
 photography, similar to Mercedes-Benz Wörth plant overview.
 Aspect ratio 16:9. Resolution 2400x1350.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -290,6 +338,10 @@ documentary engineering style. NO text, NO logos, NO brand
 markings, NO part numbers stamped, NO watermarks, NO people.
 Centered composition with breathing room.
 Aspect ratio 1:1. Resolution 1600x1600.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -316,6 +368,10 @@ breathing room. Brembo product catalog aesthetic. NO text,
 NO logos, NO Brembo wording, NO brand markings, NO part
 numbers, NO watermarks.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.2 `/systems/engine.webp` — Motor
@@ -332,6 +388,10 @@ mating surfaces. No engine cover, no hoses. Centered, breathing
 room. AMG / M Sport press kit photography aesthetic.
 No text or branding visible.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.3 `/systems/suspension.webp` — Suspensión
@@ -347,6 +407,10 @@ on muted platinum gray background. Three-quarter angle. Cool
 studio lighting from upper left. Bilstein product catalog
 photography style. No text, no logos, no installation context.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.4 `/systems/transmission.webp` — Transmisión
@@ -362,6 +426,10 @@ Three-quarter angle showing concentric machined rings and bolt
 holes. Studio lighting with soft rim highlight. LUK / Sachs
 product catalog aesthetic. No text or branding.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.5 `/systems/electric.webp` — Eléctrico
@@ -377,6 +445,10 @@ Three-quarter angle, integrated electrical connector visible.
 Soft top-down studio lighting. Bosch / Hella product catalog
 aesthetic. No text, no part numbers visible.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.6 `/systems/filtration.webp` — Filtración
@@ -392,6 +464,10 @@ background. Three-quarter angle revealing pleat detail. Soft
 top-down studio lighting. Mann-Filter / Mahle product catalog
 aesthetic. No text or branding.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.7 `/systems/cooling.webp` — Refrigeración
@@ -407,6 +483,10 @@ platinum gray background. Cool side-lighting emphasizes the
 aluminum texture. Behr / Mahle product catalog aesthetic.
 No text or branding.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ### 5.8 `/systems/body.webp` — Carrocería
@@ -422,6 +502,10 @@ glass, housing curve, and folded indicator strip. Soft
 overhead studio lighting with subtle reflection beneath. No
 text, no branding, no mounting bracket visible.
 Aspect ratio 4:3. Resolution 1600x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -542,6 +626,10 @@ connect through a thin vertical accent line in deep forest
 green #003F2A. Editorial documentary style, premium B2B
 business feel. No text, no logos.
 Aspect ratio 21:9. Resolution 2400x1029.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
@@ -564,6 +652,10 @@ Cool platinum tones with subtle warm skin highlights. Quality
 control aesthetic, BMW / Mercedes-Benz factory documentary
 photography style. No text, no logos.
 Aspect ratio 3:2. Resolution 1800x1200.
+NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+billboards, signage, captions, subtitles, written words, numbers.
+Strictly clean, completely logo-free composition.
 ```
 
 ---
