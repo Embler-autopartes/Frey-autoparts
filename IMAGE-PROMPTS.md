@@ -15,6 +15,25 @@
 
 ---
 
+## ⚠️ REGLA UNIVERSAL — NO LOGOS / NO TEXTO
+
+> **Pega este bloque al final de TODOS los prompts** (cada vez que generes una imagen):
+>
+> ```
+> NEGATIVE PROMPT: text, typography, lettering, watermark, signature,
+> brand logo, manufacturer badge, FREY logo, trademarks, license plate,
+> billboards, signage, captions, subtitles, written words, numbers.
+> Strictly clean, completely logo-free composition.
+> ```
+>
+> **Excepción autorizada** — solo para las 4 *brand cards* (sección 2.x):
+> el badge propio de la marca en la parrilla del auto (estrella Mercedes,
+> riñones BMW, óvalo Land Rover, estrella Mercedes en Sprinter) **sí está
+> permitido** porque forma parte de la identidad del vehículo. Cualquier
+> otro logo en fondo, placas, vidrios o accesorios debe excluirse.
+
+---
+
 ## 1. HERO PRINCIPAL
 
 ### 1.1 `/hero/hero-main.webp` — Hero del Home
@@ -31,9 +50,11 @@ panel. Polished concrete floor, blurred industrial background,
 shallow depth of field. Premium automotive editorial style,
 Stuttgart luxury dealership aesthetic. Cool platinum gray tones
 with deep forest-green car body that matches color #003F2A.
-No people, no text, no logos in the background. 35mm lens,
-slightly low angle for dramatic perspective. Photorealistic,
-high detail on chrome trim and headlight housing.
+NO people, NO text, NO third-party logos, NO watermarks, NO
+license plate, NO dealer stickers, NO billboards in the background.
+The factory BMW roundel on hood and wheel hubs IS allowed (belongs
+to the car). 35mm lens, slightly low angle for dramatic perspective.
+Photorealistic, high detail on chrome trim and headlight housing.
 Aspect ratio 16:9. Resolution 2400x1350.
 ```
 
@@ -71,10 +92,13 @@ Three-quarter front studio photograph of a silver Mercedes-Benz
 C-Class W205 sedan on pure white seamless background. Soft top-down
 studio lighting eliminates harsh shadows. Subtle ground reflection
 under the wheels. Wheels turned slightly toward camera (Geneva show
-angle). Color: brushed silver / iridium silver metallic. No
-license plate visible, no people, no text. Professional automotive
-catalog photography, Mercedes-Benz official press kit style.
-Photorealistic, high detail on grille, headlights, side mirrors.
+angle). Color: brushed silver / iridium silver metallic. The
+factory Mercedes-Benz three-pointed star on the grille IS allowed
+(it belongs to the car). NO license plate, NO dealer decals, NO
+watermarks, NO third-party logos, NO text or signature of any
+kind. Professional automotive catalog photography, Mercedes-Benz
+official press kit style. Photorealistic, high detail on grille,
+headlights, side mirrors.
 Aspect ratio 3:2. Resolution 1500x1000.
 ```
 
@@ -89,8 +113,10 @@ Coupé F32 on pure white seamless background. Same angle and lighting
 as the Mercedes-Benz reference: top-down soft studio light, no harsh
 shadows, subtle ground reflection. Wheels slightly turned toward
 camera. Color: alpine white or brushed silver, must complement the
-silver Mercedes in the same lineup. No license plate, no people,
-no text. BMW official press kit photography style.
+silver Mercedes in the same lineup. The factory BMW roundel on
+hood and wheel hubs IS allowed (it belongs to the car). NO license
+plate, NO dealer stickers, NO watermarks, NO third-party logos, NO
+text or signature visible. BMW official press kit photography style.
 Aspect ratio 3:2. Resolution 1500x1000.
 ```
 
@@ -105,9 +131,11 @@ L494 SUV on pure white seamless background. Same angle and lighting
 as the Mercedes-Benz and BMW reference shots in this lineup.
 Top-down soft studio light, no harsh shadows, subtle ground
 reflection under the wheels. Wheels slightly turned toward camera.
-Color: silver or fuji white, must visually match the lineup.
-No license plate, no people, no text. Land Rover official press
-kit photography style.
+Color: silver or fuji white, must visually match the lineup. The
+factory Land Rover oval emblem on the grille IS allowed (it belongs
+to the car). NO license plate, NO dealer stickers, NO watermarks,
+NO third-party logos, NO text or signature visible. Land Rover
+official press kit photography style.
 Aspect ratio 3:2. Resolution 1500x1000.
 ```
 
@@ -123,8 +151,11 @@ lighting setup as the C-Class, 4-Series and Range Rover in the
 lineup. Top-down soft studio light, no harsh shadows, subtle
 ground reflection under wheels. Wheels slightly turned toward
 camera. Long-wheelbase configuration, high-roof. Color: arctic
-white. No license plate, no decals, no text. Mercedes-Benz
-commercial vehicle catalog photography.
+white. The factory Mercedes-Benz three-pointed star on the
+grille IS allowed (it belongs to the vehicle). NO license plate,
+NO fleet decals, NO company logos on the side panels, NO
+watermarks, NO third-party branding, NO text or signature.
+Mercedes-Benz commercial vehicle catalog photography.
 Aspect ratio 3:2. Resolution 1500x1000.
 ```
 
@@ -145,7 +176,8 @@ selective racking with bright fluorescent linear lighting.
 Boxes neatly stacked, branded labels turned away from camera.
 Vanishing point perspective looking down the aisle. Cool
 platinum gray and steel-blue tones, no warm yellows. No people
-in frame, no visible signage with text. Architectural
+in frame, no visible signage, no text, no logos, no
+manufacturer branding on boxes or walls. Architectural
 photography style, Hasselblad medium-format aesthetic. Premium
 German logistics center feeling (DHL Innovation Center vibe).
 Aspect ratio 16:9. Resolution 2400x1350.
@@ -163,7 +195,8 @@ parts distribution center, showing multiple parallel aisles of
 high-rise selective racking under daylight skylights and
 fluorescent linear LED. Polished epoxy floor reflecting subtle
 overhead light. Cool monochromatic platinum tones. No human
-figures, no readable signage or branding. Architectural
+figures, no readable signage, no text, no logos, no
+manufacturer branding visible anywhere. Architectural
 documentary photography. Inspired by Mercedes-Benz Parts Center
 or BMW Logistics Center in Munich.
 Aspect ratio 16:9. Resolution 2400x1350.
@@ -178,8 +211,9 @@ Aspect ratio 16:9. Resolution 2400x1350.
 Three-quarter view of an automotive aftermarket warehouse aisle,
 six-level selective racking with neatly stacked unlabeled boxes,
 polished concrete floor, cool overhead LED illumination. Soft
-geometric shadows. No people, no text. Industrial editorial
-photography, Bilstein / Mahle catalog aesthetic.
+geometric shadows. No people, no text, no logos, no brand
+labels on boxes or walls. Industrial editorial photography,
+Bilstein / Mahle catalog aesthetic.
 Aspect ratio 4:3. Resolution 1600x1200.
 ```
 
@@ -194,8 +228,9 @@ a modern electric reach truck idle in the corridor. Polished
 concrete floor, tall steel racking with unbranded boxes,
 fluorescent linear lighting overhead. Operator NOT visible
 (empty cab or framed without the driver). Cool monochromatic
-platinum gray and steel-blue palette. No readable text or
-signage. Cinematic depth.
+platinum gray and steel-blue palette. No readable text, no
+logos, no signage anywhere — neither on boxes, walls nor
+forklift. Cinematic depth.
 Aspect ratio 16:9. Resolution 2400x1350.
 ```
 
@@ -209,7 +244,8 @@ Symmetrical low-angle photograph looking up between two high
 warehouse racks holding neatly stacked unbranded automotive
 parts boxes. Vanishing geometry, perfect grid composition.
 Cool platinum tones, soft ambient lighting. No people, no
-readable text. Editorial industrial style.
+readable text, no logos, no brand markings of any kind.
+Editorial industrial style.
 Aspect ratio 3:2. Resolution 1800x1200.
 ```
 
@@ -224,9 +260,9 @@ High aerial photograph of a modern industrial logistics campus
 at golden hour, taken from a drone perspective. Multiple white
 warehouse buildings with cool grey rooftops, organized truck
 loading bays, geometric pattern of parking. Surrounding by
-neat landscaping. No identifiable branding. Editorial
-architecture photography, similar to Mercedes-Benz Wörth plant
-overview.
+neat landscaping. No identifiable branding, no logos, no text
+visible on buildings, trucks or signage. Editorial architecture
+photography, similar to Mercedes-Benz Wörth plant overview.
 Aspect ratio 16:9. Resolution 2400x1350.
 ```
 
@@ -250,8 +286,9 @@ seals visible on copper-colored coil terminals. Brushed aluminum
 body with one-millimeter chamfer details. Subtle reflections of
 green ambient light (#003F2A tint) on metal. Brembo / Bilstein
 product catalog photography aesthetic. Razor sharp focus,
-documentary engineering style, no text, no people. Centered
-composition with breathing room.
+documentary engineering style. NO text, NO logos, NO brand
+markings, NO part numbers stamped, NO watermarks, NO people.
+Centered composition with breathing room.
 Aspect ratio 1:1. Resolution 1600x1600.
 ```
 
@@ -275,8 +312,9 @@ friction surface, isolated on muted platinum gray background
 #e9e7e7. Dramatic top-down soft studio lighting with subtle
 side rim-light. Visible cooling vanes and OEM-style stamped
 texture. No caliper, no wheel. Composition centered with
-breathing room. Brembo product catalog aesthetic.
-No text or watermarks.
+breathing room. Brembo product catalog aesthetic. NO text,
+NO logos, NO Brembo wording, NO brand markings, NO part
+numbers, NO watermarks.
 Aspect ratio 4:3. Resolution 1600x1200.
 ```
 
