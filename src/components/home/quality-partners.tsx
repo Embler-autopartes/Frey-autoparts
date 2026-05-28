@@ -37,45 +37,75 @@ export async function QualityPartners() {
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
         {/* Editorial header */}
         <div className="mb-16 max-w-3xl">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.35em] text-acid-2">
-            ◆ {locale === 'es' ? 'Auditado por organismos independientes' : 'Audited by independent bodies'}
-          </p>
+          <div className="inline-flex items-center gap-3 border-l-2 border-acid-2 bg-acid-2/8 px-4 py-2">
+            <span className="text-acid-2">◆</span>
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.35em] text-acid-2">
+              {locale === 'es' ? 'Auditado por organismos independientes' : 'Audited by independent bodies'}
+            </p>
+          </div>
           <h2 className="mt-8 font-serif text-4xl font-light italic leading-[1] tracking-tight text-mist-4 sm:text-6xl">
             {locale === 'es'
-              ? <>Los mismos estándares<br /><span className="text-chrome-2">que tu vehículo europeo.</span></>
-              : <>The same standards<br /><span className="text-chrome-2">as your European vehicle.</span></>}
+              ? <>Los mismos <span className="text-acid-2">estándares</span><br /><span className="text-chrome-2">que tu vehículo europeo.</span></>
+              : <>The same <span className="text-acid-2">standards</span><br /><span className="text-chrome-2">as your European vehicle.</span></>}
           </h2>
         </div>
 
-        {/* Compliance strip */}
+        {/* Compliance strip — alterna acentos */}
         <div className="grid grid-cols-1 gap-px bg-ink-4 sm:grid-cols-2 lg:grid-cols-5">
-          {partners.map((p, i) => (
-            <article
-              key={p.name}
-              className="group relative bg-ink-3 px-6 py-10 transition-all duration-500 hover:bg-ink-1"
-            >
-              <span className="absolute right-4 top-3 font-mono text-[0.5rem] uppercase tracking-[0.3em] text-mist-1">
-                /{String(i + 1).padStart(2, '0')}
-              </span>
+          {partners.map((p, i) => {
+            const isGreen = i % 2 === 0; // 1ra, 3ra, 5ta en verde
+            return (
+              <article
+                key={p.name}
+                className={`group relative px-6 py-10 transition-all duration-500 ${
+                  isGreen
+                    ? 'bg-acid-2 text-white hover:bg-acid-3'
+                    : 'bg-ink-3 hover:bg-ink-1'
+                }`}
+              >
+                <span
+                  className={`absolute right-4 top-3 font-mono text-[0.5rem] uppercase tracking-[0.3em] ${
+                    isGreen ? 'text-white/50' : 'text-mist-1'
+                  }`}
+                >
+                  /{String(i + 1).padStart(2, '0')}
+                </span>
 
-              {/* Display certification code */}
-              <p className="font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
-                {p.cert}
-              </p>
+                {/* Display certification code */}
+                <p
+                  className={`font-display text-2xl uppercase tracking-tight sm:text-3xl ${
+                    isGreen ? 'text-white' : 'text-mist-4'
+                  }`}
+                >
+                  {p.cert}
+                </p>
 
-              {/* Issuing body in serif */}
-              <p className="mt-3 font-serif text-base italic text-acid-2">
-                {p.name}
-              </p>
+                {/* Issuing body in serif */}
+                <p
+                  className={`mt-3 font-serif text-base italic ${
+                    isGreen ? 'text-white/85' : 'text-acid-2'
+                  }`}
+                >
+                  {p.name}
+                </p>
 
-              <p className="mt-8 text-xs leading-relaxed text-mist-2">
-                {locale === 'es' ? p.desc.es : p.desc.en}
-              </p>
+                <p
+                  className={`mt-8 text-xs leading-relaxed ${
+                    isGreen ? 'text-white/75' : 'text-mist-2'
+                  }`}
+                >
+                  {locale === 'es' ? p.desc.es : p.desc.en}
+                </p>
 
-              {/* Hover underline */}
-              <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-acid-2 transition-transform duration-700 ease-out group-hover:scale-x-100" />
-            </article>
-          ))}
+                {/* Hover underline */}
+                <span
+                  className={`absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 transition-transform duration-700 ease-out group-hover:scale-x-100 ${
+                    isGreen ? 'bg-white' : 'bg-acid-2'
+                  }`}
+                />
+              </article>
+            );
+          })}
         </div>
 
         {/* Bottom editorial line */}
