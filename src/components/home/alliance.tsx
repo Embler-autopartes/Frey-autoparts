@@ -68,32 +68,8 @@ export async function Alliance() {
           </div>
         </header>
 
-        {/* ────────── EDITORIAL TITLE — graphic-scale ────────── */}
-        <div className="relative mt-12 lg:mt-16">
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.4em] text-mist-1">
-            {locale === 'es' ? 'Capítulo VIII · Distribución global' : 'Chapter VIII · Global distribution'}
-          </p>
-
-          <h2 className="mt-6 font-display text-[clamp(3.5rem,11.5vw,11rem)] font-medium uppercase leading-[0.82] tracking-[-0.015em] text-mist-4">
-            <span className="block">FREY</span>
-            <span className="relative -mt-2 flex items-baseline gap-4 sm:gap-8 lg:-mt-4">
-              <span className="font-serif text-[0.65em] font-light italic text-acid-2">
-                ×
-              </span>
-              <span className="text-chrome-2">EMBLER</span>
-            </span>
-          </h2>
-
-          <p className="mt-6 max-w-2xl font-serif text-2xl font-light italic leading-snug text-mist-3 sm:text-3xl">
-            Master Distributor LATAM
-            <span className="ml-3 font-mono text-base not-italic text-mist-1">
-              / since {ALLIANCE_YEAR}
-            </span>
-          </p>
-        </div>
-
         {/* ────────── YEAR ANCHOR + EDITORIAL PROSE ────────── */}
-        <div className="mt-20 grid gap-x-12 gap-y-12 border-t border-ink-4 pt-16 lg:mt-28 lg:grid-cols-12 lg:gap-x-16">
+        <div className="mt-16 grid gap-x-12 gap-y-12 lg:mt-20 lg:grid-cols-12 lg:gap-x-16">
           {/* Years strong — massive serif italic number as anchor */}
           <aside className="lg:col-span-4">
             <div className="relative">
