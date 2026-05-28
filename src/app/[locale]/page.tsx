@@ -24,10 +24,10 @@ export default async function HomePage({
       <ManifestoStrip />
       <Ticker />
       <BrandCards />
+      <Facility />
       <FeaturedPart />
       <Stats />
       <QualityPartners />
-      <Facility />
       <Alliance />
       <FinalCta />
     </>
