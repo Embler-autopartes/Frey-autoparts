@@ -13,86 +13,92 @@ export async function Footer() {
   const support = t.raw('support') as string[];
 
   return (
-    <footer className="relative mt-32 bg-acid-2 text-mist-4">
-      {/* Decorative top strip */}
-      <div className="absolute inset-x-0 top-0 flex h-1">
-        <span className="flex-1 bg-acid-3" />
-        <span className="w-12 bg-chrome-3" />
-        <span className="flex-[3] bg-acid-1" />
-        <span className="w-24 bg-acid-3" />
-        <span className="flex-[6] bg-acid-1" />
-        <span className="w-2 bg-amber-1" />
+    <footer className="relative mt-40 bg-ink-0 text-mist-3">
+      {/* Editorial CTA strip — top */}
+      <div className="border-t border-ink-4">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
+          <div className="grid items-end gap-12 py-24 lg:grid-cols-[1.4fr_1fr]">
+            <div>
+              <p className="font-mono text-[0.65rem] uppercase tracking-[0.35em] text-acid-2">
+                {t('compliance')}
+              </p>
+              <h3 className="mt-8 font-serif text-5xl font-light italic leading-[1] tracking-tight text-mist-4 sm:text-7xl">
+                {t('tagline')}
+              </h3>
+            </div>
+            <Link
+              href="/cotizacion"
+              className="group inline-flex items-center justify-between border border-ink-4 bg-ink-1 px-7 py-6 transition-all hover:border-acid-2 hover:bg-acid-2/5"
+            >
+              <div>
+                <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1 group-hover:text-acid-2">
+                  B2B · Quotation desk
+                </p>
+                <p className="mt-2 font-serif text-2xl italic text-mist-4">
+                  {locale === 'es' ? 'Solicitar cotización' : 'Request a quote'}
+                </p>
+              </div>
+              <ArrowUpRight className="h-6 w-6 text-acid-2 transition-transform group-hover:rotate-45" />
+            </Link>
+          </div>
+        </div>
       </div>
 
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        {/* CTA strip */}
-        <div className="grid gap-10 border-b border-white/15 py-16 lg:grid-cols-[1.4fr_1fr] lg:items-end">
-          <div>
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-white/65">
-              {t('compliance')}
-            </p>
-            <h3 className="mt-6 font-display text-5xl uppercase leading-[0.95] tracking-tight text-white sm:text-7xl">
-              {t('tagline')}
-            </h3>
-          </div>
-          <Link
-            href="/cotizacion"
-            className="group inline-flex items-center justify-between border border-white/30 bg-white/5 px-6 py-5 text-white transition-all hover:border-white hover:bg-white hover:text-acid-2"
-          >
+      {/* Columns */}
+      <div className="border-t border-ink-4">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
+          <div className="grid gap-16 py-20 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
             <div>
-              <p className="font-mono text-[0.65rem] uppercase tracking-[0.25em] text-white/60 group-hover:text-acid-2/70">
-                B2B · Quotation desk
+              <div className="flex items-center gap-3">
+                <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-mist-4/95 ring-1 ring-ink-4">
+                  <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1.5" />
+                </div>
+                <div>
+                  <p className="font-display text-2xl tracking-wide text-mist-4">FREY</p>
+                  <p className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1">Auto Parts · DE</p>
+                </div>
+              </div>
+              <p className="mt-10 font-serif text-lg italic leading-snug text-mist-2">
+                «{locale === 'es'
+                  ? 'Refacciones europeas que respetan la tolerancia OEM.'
+                  : 'European spare parts that respect OEM tolerance.'}»
               </p>
-              <p className="mt-2 font-display text-2xl tracking-tight">
-                {locale === 'es' ? 'Solicitar cotización' : 'Request a quote'}
+              <p className="mt-10 whitespace-pre-line font-mono text-[0.7rem] uppercase tracking-[0.18em] leading-relaxed text-mist-2">
+                {t('address')}
+              </p>
+              <p className="mt-3 whitespace-pre-line font-mono text-[0.7rem] uppercase tracking-[0.18em] leading-relaxed text-mist-2">
+                {t('contact')}
               </p>
             </div>
-            <ArrowUpRight className="h-6 w-6 transition-transform group-hover:rotate-45" />
-          </Link>
-        </div>
 
-        {/* Columns */}
-        <div className="grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          <div>
-            <div className="flex items-center gap-3">
-              <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-white/95 ring-1 ring-white/20">
-                <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1" />
-              </div>
-              <div>
-                <p className="font-display text-2xl tracking-wide text-white">FREY</p>
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-white/60">Auto Parts</p>
-              </div>
-            </div>
-            <p className="mt-8 max-w-xs whitespace-pre-line font-mono text-xs leading-relaxed text-white/70">
-              {t('address')}
-            </p>
-            <p className="mt-4 whitespace-pre-line font-mono text-xs leading-relaxed text-white/70">
-              {t('contact')}
-            </p>
+            <FooterColumn title={t('sections.products')} items={products} />
+            <FooterColumn title={t('sections.company')} items={company} />
+            <FooterColumn title={t('sections.support')} items={support} />
           </div>
-
-          <FooterColumn title={t('sections.products')} items={products} />
-          <FooterColumn title={t('sections.company')} items={company} />
-          <FooterColumn title={t('sections.support')} items={support} />
         </div>
+      </div>
 
-        {/* Bottom bar */}
-        <div className="flex flex-col gap-4 border-t border-white/15 py-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-white/55">
+      {/* Bottom signature — thin & subtle */}
+      <div className="border-t border-ink-4 bg-ink-0">
+        <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-6 py-7 sm:flex-row sm:items-center sm:justify-between lg:px-10">
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.28em] text-mist-1">
             © {year} FREY Auto Parts Co., Ltd. · {t('rights')}
           </p>
-          <div className="flex items-center gap-4 font-mono text-[0.65rem] uppercase tracking-[0.22em] text-white/55">
+          <div className="flex items-center gap-5 font-mono text-[0.6rem] uppercase tracking-[0.28em] text-mist-1">
             <span className="inline-flex items-center gap-2">
-              <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-white" />
+              <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-acid-2" />
               System online
             </span>
-            <span className="text-white/30">/</span>
-            <Link href="/politicas" className="hover:text-white">Privacy</Link>
-            <span className="text-white/30">/</span>
-            <Link href="/politicas" className="hover:text-white">Terms</Link>
+            <span className="text-ink-4">/</span>
+            <Link href="/politicas" className="hover:text-mist-4">Privacy</Link>
+            <span className="text-ink-4">/</span>
+            <Link href="/politicas" className="hover:text-mist-4">Terms</Link>
           </div>
         </div>
       </div>
+
+      {/* Final accent line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-acid-2/50 to-transparent" />
     </footer>
   );
 }
@@ -100,15 +106,15 @@ export async function Footer() {
 function FooterColumn({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
-      <p className="font-mono text-[0.65rem] uppercase tracking-[0.25em] text-white/55">
+      <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-acid-2">
         {title}
       </p>
-      <ul className="mt-6 space-y-3">
+      <ul className="mt-8 space-y-4">
         {items.map((item) => (
           <li key={item}>
             <a
               href="#"
-              className="text-sm text-white/85 transition-colors hover:text-white"
+              className="font-serif text-base text-mist-3 transition-colors hover:text-mist-4"
             >
               {item}
             </a>

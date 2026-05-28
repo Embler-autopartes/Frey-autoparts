@@ -7,43 +7,45 @@ export async function Stats() {
   const items = t.raw('items') as Stat[];
 
   return (
-    <section className="relative border-y border-ink-4 bg-ink-2 py-28 lg:py-36">
-      <div className="absolute inset-0 tech-grid opacity-30" />
+    <section className="relative overflow-hidden border-y border-ink-4 bg-ink-2 py-32 lg:py-44">
+      <div className="absolute inset-0 tech-grid opacity-25" />
 
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-        <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-          ◆ {t('eyebrow')}
-        </p>
+        {/* Editorial header */}
+        <div className="mb-24 max-w-3xl">
+          <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-2">
+            ◆ {t('eyebrow')}
+          </p>
+          <h2 className="mt-8 font-serif text-5xl font-light italic leading-[1] tracking-tight text-mist-4 sm:text-7xl">
+            Two decades of precision,<br />
+            <span className="text-chrome-2">measured in numbers.</span>
+          </h2>
+        </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-px bg-ink-4 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Editorial 2x2 grid with breathing room */}
+        <div className="grid grid-cols-1 gap-x-16 gap-y-20 lg:grid-cols-2">
           {items.map((stat, i) => (
-            <div
-              key={i}
-              className="relative bg-ink-2 px-6 py-12 transition-colors hover:bg-ink-3"
-            >
-              <span className="absolute right-3 top-2 font-mono text-[0.55rem] uppercase tracking-[0.25em] text-mist-1">
-                / {String(i + 1).padStart(2, '0')}
-              </span>
-
-              <div className="flex items-baseline gap-3">
-                <span className="font-display text-6xl font-medium leading-none tracking-tight text-mist-4 sm:text-7xl">
-                  {stat.value}
+            <div key={i} className="relative grid grid-cols-[auto_1fr] items-start gap-8">
+              {/* Big number column */}
+              <div className="flex flex-col">
+                <span className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-acid-2">
+                  / {String(i + 1).padStart(2, '0')}
                 </span>
-                <span className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-acid-2">
+                <div className="mt-2 flex items-baseline gap-2">
+                  <span className="font-display text-[5.5rem] font-medium leading-[0.85] tracking-tight text-mist-4 sm:text-[7rem]">
+                    {stat.value}
+                  </span>
+                </div>
+                <span className="mt-2 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-acid-2">
                   {stat.unit}
                 </span>
               </div>
 
-              <p className="mt-6 max-w-xs text-pretty text-sm leading-relaxed text-mist-2">
-                {stat.label}
-              </p>
-
-              {/* Bottom progress bar */}
-              <div className="mt-8 h-px w-full bg-ink-4">
-                <span
-                  className="block h-full bg-acid-2"
-                  style={{ width: `${[88, 72, 98, 64][i]}%` }}
-                />
+              {/* Editorial description */}
+              <div className="border-l border-ink-4 pl-6 pt-2">
+                <p className="font-serif text-xl font-light leading-snug text-mist-3 sm:text-2xl">
+                  {stat.label}
+                </p>
               </div>
             </div>
           ))}
