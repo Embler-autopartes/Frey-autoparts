@@ -121,7 +121,7 @@ export default async function ContactoPage({
                   Coverage
                 </p>
                 <p className="mt-3 font-display text-4xl uppercase tracking-tight text-mist-4">
-                  40+ countries
+                  100+ countries
                 </p>
                 <p className="mt-2 text-sm text-mist-2">
                   {locale === 'es'
@@ -153,7 +153,7 @@ export default async function ContactoPage({
               phone={t('offices.frey.phone')}
               email={t('offices.frey.email')}
               hours={t('offices.frey.hours')}
-              mapSrc="https://maps.google.com/maps?q=Huadu+District+Guangzhou+China&hl=en&z=11&output=embed"
+              mapSrc="https://maps.google.com/maps?q=Stuttgart+Germany+Mercedes-Benz&hl=en&z=10&output=embed"
             />
             <OfficeCard
               variant="embler"
@@ -274,7 +274,7 @@ function OfficeCard({
       {/* Info */}
       <div className="p-8">
         <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-          {variant === 'frey' ? '◆ Frey HQ · Shanghai' : '◆ Embler MX · CDMX'}
+          {variant === 'frey' ? '◆ Frey · German engineering' : '◆ Embler MX · CDMX'}
         </p>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
           {name}

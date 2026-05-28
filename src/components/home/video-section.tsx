@@ -28,8 +28,8 @@ export async function VideoSection() {
           </div>
           <p className="max-w-md text-pretty leading-relaxed text-mist-2">
             {locale === 'es'
-              ? 'Una mirada al interior de la operación FREY: manufactura, control de calidad y distribución desde Guangzhou hacia 100+ países.'
-              : 'A look inside FREY operations: manufacturing, quality control and distribution from Guangzhou to 100+ countries.'}
+              ? 'Una mirada al interior de la operación FREY: manufactura, control de calidad y distribución bajo estándar alemán hacia 100+ países.'
+              : 'A look inside FREY operations: manufacturing, quality control and distribution under German standard to 100+ countries.'}
           </p>
         </div>
 

@@ -87,7 +87,7 @@ async function Manifesto() {
         <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_2fr]">
           <div className="border-l border-acid-2 pl-6">
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
-              EST. 2003 · Shanghai
+              EST. 2004 · German engineering
             </p>
             <p className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
               22+ años · 40 países

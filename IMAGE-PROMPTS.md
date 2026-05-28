@@ -189,7 +189,7 @@ Strictly clean, completely logo-free composition.
 
 ### 3.1 `/images/warehouse-corridor.webp` — Pasillo principal
 
-**Uso:** fondo a sangre de la sección "Logistics hub · Guangzhou"
+**Uso:** fondo a sangre de la sección "Logistics hub · German standard"
 **Aspect ratio:** 16:9 (2400×1350)
 
 **Prompt:**
