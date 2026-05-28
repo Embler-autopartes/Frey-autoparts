@@ -29,14 +29,31 @@ export async function Alliance() {
                 ◆ {t('eyebrow')}
               </p>
 
-              <div className="mt-8 flex flex-wrap items-baseline gap-6">
-                <span className="font-display text-6xl uppercase tracking-tight text-mist-4 sm:text-7xl">
-                  FREY
-                </span>
+              <div className="mt-8 flex flex-wrap items-center gap-8">
+                {/* FREY logo */}
+                <div className="relative h-20 w-20 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4 sm:h-24 sm:w-24">
+                  <Image
+                    src="/logo.webp"
+                    alt="FREY"
+                    fill
+                    sizes="96px"
+                    className="object-contain p-1 mix-blend-multiply"
+                  />
+                </div>
+
+                {/* × separator */}
                 <span className="font-display text-5xl text-acid-2 sm:text-6xl">×</span>
-                <span className="font-display text-6xl uppercase tracking-tight text-chrome-2 sm:text-7xl">
-                  EMBLER
-                </span>
+
+                {/* EMBLER logo */}
+                <div className="relative h-16 w-48 sm:h-20 sm:w-60">
+                  <Image
+                    src="/logos/embler-dark.webp"
+                    alt="EMBLER Autopartes"
+                    fill
+                    sizes="240px"
+                    className="object-contain object-left"
+                  />
+                </div>
               </div>
 
               <p className="mt-8 max-w-xl text-pretty leading-relaxed text-mist-2">
