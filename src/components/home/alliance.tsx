@@ -62,7 +62,7 @@ export async function Alliance() {
               </p>
 
               <dl className="mt-6 space-y-3">
-                <SpecRow label="HQ" value="Ciudad de México" />
+                <SpecRow label="HQ" value="Cd. Satélite · MEX" />
                 <SpecRow label="Coverage" value="LATAM · USA" />
                 <SpecRow label="Stock local" value="6,200 SKU" />
                 <SpecRow label="Lead time" value="Same-day metro" />

@@ -163,7 +163,7 @@ export default async function ContactoPage({
               phone={t('offices.embler.phone')}
               email={t('offices.embler.email')}
               hours={t('offices.embler.hours')}
-              mapSrc="https://maps.google.com/maps?q=Av.+Insurgentes+Sur+1457+Mexico+City&hl=en&z=14&output=embed"
+              mapSrc="https://maps.google.com/maps?q=Periferico+Blvd+Manuel+Avila+Camacho+1834+Ciudad+Satelite+Naucalpan&hl=es&z=16&output=embed"
             />
           </div>
         </div>
@@ -274,7 +274,7 @@ function OfficeCard({
       {/* Info */}
       <div className="p-8">
         <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-          {variant === 'frey' ? '◆ Frey · German engineering' : '◆ Embler MX · CDMX'}
+          {variant === 'frey' ? '◆ Frey · German engineering' : '◆ Embler · Cd. Satélite, MEX'}
         </p>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
           {name}
