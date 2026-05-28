@@ -6,14 +6,11 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { useQuote } from '@/lib/quote-context';
 
 export function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
-  const { items, hydrated } = useQuote();
-  const quoteCount = hydrated ? items.length : 0;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -94,16 +91,11 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <LangSwitcher current={locale} />
           <Link
-            href="/cotizacion"
-            className="relative hidden items-center gap-2 border border-acid-2/60 bg-acid-2/15 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-acid-3 transition-all hover:bg-acid-2 hover:text-white lg:inline-flex"
+            href="/contacto"
+            className="hidden items-center gap-2 border border-acid-2 bg-acid-2 px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-white transition-all hover:bg-acid-3 lg:inline-flex"
           >
-            {t('quote')}
+            {t('contact')}
             <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.4} />
-            {quoteCount > 0 && (
-              <span className="absolute -right-2 -top-2 grid h-5 min-w-5 place-items-center rounded-full bg-acid-2 px-1 font-mono text-[0.6rem] leading-none text-white ring-2 ring-ink-1">
-                {quoteCount}
-              </span>
-            )}
           </Link>
           <button
             type="button"
@@ -131,11 +123,11 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="/cotizacion"
+              href="/contacto"
               onClick={() => setOpen(false)}
-              className="mt-6 inline-flex items-center gap-2 self-start border border-acid-2 bg-acid-2 px-5 py-3 font-mono text-xs uppercase tracking-widest text-ink-3"
+              className="mt-6 inline-flex items-center gap-2 self-start border border-acid-2 bg-acid-2 px-5 py-3 font-mono text-xs uppercase tracking-widest text-white"
             >
-              {t('quote')} <ArrowUpRight size={16} />
+              {t('contact')} <ArrowUpRight size={16} />
             </Link>
           </nav>
         </div>

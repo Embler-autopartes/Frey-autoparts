@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { VehicleSelector } from '@/components/vehicle/vehicle-selector';
+import { buildPageMetadata } from '@/lib/metadata';
+
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'vehicle.hero' });
+  return buildPageMetadata({ locale, section: 'vehicle.hero', pageTitle: t('title') });
+}
 
 export default async function AplicacionPage({
   params,

@@ -77,7 +77,7 @@ export async function Hero() {
           {/* CTAs */}
           <div className="mt-14 flex animate-fade-in-up flex-wrap gap-4 delay-500">
             <Link
-              href="/cotizacion"
+              href="/contacto"
               className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-8 py-4 font-mono text-xs uppercase tracking-[0.2em] text-white transition-all hover:bg-acid-3"
             >
               {t('ctaPrimary')}

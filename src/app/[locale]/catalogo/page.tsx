@@ -1,7 +1,15 @@
+import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 import { CatalogGrid } from '@/components/catalog/catalog-grid';
+import { buildPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'catalog.hero' });
+  return buildPageMetadata({ locale, section: 'catalog.hero', pageTitle: t('title') });
+}
 
 export default async function CatalogoPage({
   params,
@@ -52,7 +60,7 @@ export default async function CatalogoPage({
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/cotizacion"
+              href="/contacto"
               className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-white transition-all hover:bg-acid-3"
             >
               {t('cta.primary')}

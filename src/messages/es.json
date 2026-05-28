@@ -6,7 +6,7 @@
     "about": "Empresa",
     "downloads": "Descargas",
     "contact": "Contacto",
-    "quote": "Cotizar"
+    "quote": "Contactar"
   },
   "common": {
     "year": "Año",
@@ -25,7 +25,7 @@
       "titleB": "para tu",
       "titleC": "europeo.",
       "subtitle": "Refacciones OEM y aftermarket para Mercedes-Benz, BMW y Land Rover. Manufactura con estándar alemán, distribución en 100+ países.",
-      "ctaPrimary": "Solicitar cotización",
+      "ctaPrimary": "Contactar a un asesor",
       "ctaSecondary": "Ver catálogo",
       "spec1": "Fundada en 2004",
       "spec2": "15,000+ SKUs activos",
@@ -85,9 +85,9 @@
       "cta": "Conocer distribución regional"
     },
     "cta": {
-      "title": "Construye tu lista de cotización.",
-      "subtitle": "Comparte el VIN o la lista de piezas: tu cotización con disponibilidad y tiempo de entrega llega en menos de 24 horas hábiles.",
-      "button": "Empezar cotización"
+      "title": "Conecta con el equipo comercial.",
+      "subtitle": "Comparte el VIN o la lista de piezas que necesitas: nuestro equipo te responde con disponibilidad y tiempo de entrega en menos de 24 horas hábiles.",
+      "button": "Hablar con un asesor"
     }
   },
   "contact": {
@@ -105,7 +105,7 @@
       },
       "email": {
         "label": "Correo",
-        "desc": "Para cotizaciones formales y documentos. Adjunta lista o ficha técnica.",
+        "desc": "Para solicitudes formales y documentos. Adjunta lista de piezas o ficha técnica.",
         "cta": "Escribir correo"
       },
       "phone": {
@@ -114,14 +114,14 @@
         "cta": "Llamar"
       },
       "quote": {
-        "label": "Cotizador online",
-        "desc": "Arma tu lista de piezas y la procesamos en menos de 24h.",
-        "cta": "Ir al cotizador"
+        "label": "Distribuidor LATAM",
+        "desc": "Contacta directamente a EMBLER en Cd. Satélite para stock local en México.",
+        "cta": "Ver oficinas"
       }
     },
     "form": {
       "title": "Envíanos un mensaje",
-      "subtitle": "Cuéntanos qué necesitas. Si es una cotización, sugerimos usar el cotizador estructurado.",
+      "subtitle": "Cuéntanos qué necesitas. Nuestro equipo te contacta con disponibilidad y siguiente paso.",
       "name": "Nombre",
       "company": "Empresa",
       "email": "Correo corporativo",
@@ -129,7 +129,7 @@
       "country": "País",
       "subject": "Asunto",
       "subjects": {
-        "quote": "Solicitar cotización B2B",
+        "quote": "Consulta de piezas / aplicación",
         "distributor": "Quiero ser distribuidor",
         "warranty": "Garantía o devolución",
         "tech": "Soporte técnico / aplicación",
@@ -179,8 +179,8 @@
       "years": "{from}-{to}",
       "reset": "Cambiar vehículo",
       "selected": "Vehículo seleccionado",
-      "noResults": "No tenemos piezas listadas para esta combinación en el catálogo destacado. Solicita una cotización con el número de parte y te respondemos en 24h.",
-      "noResultsCta": "Cotizar manualmente"
+      "noResults": "No tenemos piezas listadas para esta combinación en el catálogo destacado. Contacta al equipo con el número de parte y te respondemos en 24h.",
+      "noResultsCta": "Hablar con un asesor"
     },
     "results": {
       "count": "{n, plural, =0 {Sin piezas compatibles} one {# pieza compatible} other {# piezas compatibles}}",
@@ -191,7 +191,7 @@
     "hero": {
       "eyebrow": "Catálogo técnico · 2026",
       "title": "Soluciones para vehículos europeos.",
-      "subtitle": "Más de 27,000 referencias para Mercedes-Benz, BMW y MB Sprinter. Filtra por sistema, marca o número de parte y arma tu lista de cotización."
+      "subtitle": "Más de 15,000 referencias para Mercedes-Benz, BMW y Land Rover. Filtra por sistema, marca o número de parte y contáctanos para disponibilidad."
     },
     "filters": {
       "search": "Buscar por nº de parte, nombre o aplicación…",
@@ -204,8 +204,8 @@
     "card": {
       "fitment": "Aplicación",
       "oem": "Ref. OEM",
-      "add": "Agregar a cotización",
-      "added": "✓ Agregada"
+      "add": "Solicitar info",
+      "added": "✓ Solicitada"
     },
     "systems": {
       "brakes": "Frenos",
@@ -224,62 +224,93 @@
     "cta": {
       "title": "¿No encuentras la pieza en el catálogo?",
       "subtitle": "Nuestro equipo busca cualquier referencia OEM o aftermarket para vehículos europeos. Mándanos el número o el VIN y te respondemos en menos de 24 horas hábiles.",
-      "primary": "Cotizar pieza específica",
-      "secondary": "Hablar con un asesor"
+      "primary": "Contactar a un asesor",
+      "secondary": "Ver catálogo completo"
     }
   },
-  "quote": {
+  "policies": {
     "hero": {
-      "eyebrow": "B2B Quotation desk",
-      "title": "Construye tu cotización.",
-      "subtitle": "Arma una lista con los números de parte que necesitas. Respondemos con disponibilidad, lead time y condiciones B2B en menos de 24 horas hábiles."
+      "eyebrow": "Políticas comerciales · B2B",
+      "title": "Envío, devoluciones y garantía.",
+      "subtitle": "Lineamientos para distribuidores, talleres y clientes finales sobre envíos internacionales, devoluciones y cobertura de garantía bajo estándar OEM alemán."
     },
-    "addPart": {
-      "title": "Agregar pieza",
-      "partNumber": "Número de parte",
-      "partNumberPh": "Ej. 11.37.7548.387",
-      "description": "Descripción / nombre",
-      "descriptionPh": "Solenoide VVT BMW N52",
-      "brand": "Marca",
-      "brandPh": "Mercedes-Benz",
-      "qty": "Cantidad",
-      "notes": "Notas",
-      "notesPh": "Año, motor, observaciones…",
-      "add": "Agregar a la lista",
-      "errorRequired": "Número de parte o descripción es obligatorio."
+    "sections": {
+      "shipping": {
+        "eyebrow": "01 · Envíos",
+        "title": "Despacho desde planta y red de distribución.",
+        "items": [
+          { "k": "Origen", "v": "Despacho desde planta o desde el distribuidor master regional autorizado." },
+          { "k": "Empaque", "v": "Caja serializada con etiqueta de trazabilidad lote-por-lote, sello anti-tampering." },
+          { "k": "Incoterms", "v": "FOB / CIF / DAP según volumen. Sin mínimo de orden para distribuidores activos." },
+          { "k": "Lead time global", "v": "5–12 días hábiles desde despacho hasta cualquier puerto principal." },
+          { "k": "Lead time México (Embler)", "v": "Same-day en zona metropolitana del Valle de México · 24–72 h interior." },
+          { "k": "Seguro", "v": "Cobertura de tránsito incluida hasta arribo a puerto destino." }
+        ]
+      },
+      "returns": {
+        "eyebrow": "02 · Devoluciones",
+        "title": "Aceptamos devoluciones por defecto OEM verificado.",
+        "items": [
+          { "k": "Ventana", "v": "30 días naturales desde la fecha de factura para reportar inconformidades de calidad." },
+          { "k": "Proceso", "v": "Envía foto del SKU + número de lote + factura. Recibes RMA en menos de 24 h hábiles." },
+          { "k": "Aceptación", "v": "Devoluciones aceptadas solo en empaque original sin instalar y con etiqueta intacta." },
+          { "k": "Reembolso", "v": "Crédito a nota o reemplazo. Reembolso a tarjeta solo en casos excepcionales aprobados." },
+          { "k": "Costo de retorno", "v": "Cubierto por FREY/distribuidor cuando el defecto sea atribuible a manufactura." },
+          { "k": "Exclusiones", "v": "Piezas instaladas, con daño cosmético post-entrega o sin trazabilidad de lote." }
+        ]
+      },
+      "warranty": {
+        "eyebrow": "03 · Garantía",
+        "title": "Garantía OEM alemana auditada caso por caso.",
+        "items": [
+          { "k": "Cobertura general", "v": "12 meses o 20,000 km desde fecha de instalación profesional, lo que ocurra primero." },
+          { "k": "Componentes electrónicos", "v": "24 meses desde fecha de venta al distribuidor (sensores, mecatrónica, módulos)." },
+          { "k": "Suspensión / dirección", "v": "18 meses sin límite de kilometraje en condiciones de uso normales." },
+          { "k": "Garantía extendida", "v": "Disponible bajo programa Premium para fleets con contrato anual." },
+          { "k": "Reclamación", "v": "Soporte técnico bilingüe responde dictamen en menos de 5 días hábiles." },
+          { "k": "Reposición", "v": "Reposición física + crédito de mano de obra hasta 2 horas-taller estándar." }
+        ]
+      }
     },
-    "list": {
-      "title": "Tu lista de cotización",
-      "empty": "Aún no has agregado piezas. Empieza arriba con el número de parte o descripción.",
-      "count": "{n} {n, plural, one {pieza} other {piezas}} en lista",
-      "clear": "Vaciar lista",
-      "remove": "Quitar",
-      "colPart": "Parte",
-      "colBrand": "Marca",
-      "colQty": "Cantidad",
-      "colNotes": "Notas"
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Lo que más nos preguntan.",
+      "items": [
+        {
+          "q": "¿Puedo comprar como cliente final o solo distribuidores?",
+          "a": "FREY opera B2B. Para compras al menudeo, te conectamos con el distribuidor master autorizado más cercano (EMBLER en LATAM). Te respondemos en menos de 24 h con tu canal correcto."
+        },
+        {
+          "q": "¿Cuál es el mínimo de orden para distribuidores nuevos?",
+          "a": "No tenemos mínimo de orden para distribuidores activos certificados. Para onboarding inicial pedimos compra muestra de 5,000 USD para evaluar logística y demanda regional."
+        },
+        {
+          "q": "¿Cómo verifico que una pieza es FREY original?",
+          "a": "Cada caja sale con etiqueta serializada que puedes auditar contra la base de trazabilidad lote-por-lote. Si tienes dudas, mándanos foto del SKU + número de lote y validamos en menos de 4 horas hábiles."
+        },
+        {
+          "q": "¿Trabajan con flotas de vehículos comerciales?",
+          "a": "Sí. Tenemos programa específico para flotas (Sprinter, Vito, comerciales europeos) con precios escalonados por volumen anual y entrega programada lote por lote."
+        },
+        {
+          "q": "¿Dan soporte técnico para instalación o diagnóstico?",
+          "a": "Sí, el equipo Embler en CDMX brinda soporte técnico bilingüe ES/EN para distribuidores autorizados. Para fitment específico, comparte VIN + síntoma y recibes recomendación documentada."
+        },
+        {
+          "q": "¿Cubren todas las generaciones de cada modelo?",
+          "a": "Cubrimos las generaciones de mayor volumen en operación (últimos 15 años). Para vehículos previos o aplicaciones raras, contáctanos: tenemos red de búsqueda OEM y aftermarket para piezas fuera de catálogo."
+        },
+        {
+          "q": "¿Cómo solicito apertura de cuenta de distribuidor?",
+          "a": "Llena el formulario de Contacto con asunto «Quiero ser distribuidor» o escribe directo a freymarketing@cnfrey.com. El proceso de validación toma 5–10 días hábiles."
+        }
+      ]
     },
-    "customer": {
-      "title": "Tus datos",
-      "subtitle": "Necesitamos saber a quién enviarle la cotización formal.",
-      "company": "Empresa",
-      "name": "Nombre de contacto",
-      "email": "Correo corporativo",
-      "phone": "Teléfono / WhatsApp",
-      "country": "País",
-      "vin": "VIN (opcional)",
-      "vinPh": "Si tu lista es para un vehículo específico",
-      "comments": "Comentarios para el equipo comercial (opcional)",
-      "commentsPh": "Frecuencia de pedido, condiciones, urgencia, etc."
-    },
-    "submit": {
-      "title": "Listo para enviar",
-      "subtitle": "Al enviar abriremos tu correo con toda la información estructurada. Solo confirma el envío en tu cliente de correo.",
-      "button": "Enviar cotización por correo",
-      "emptyMessage": "Agrega al menos una pieza para poder enviar la cotización.",
-      "noCustomer": "Completa al menos empresa, nombre y correo.",
-      "sentTitle": "¡Listo!",
-      "sentBody": "Abrimos tu cliente de correo con la cotización pre-cargada. Si no se abrió, revisa los bloqueos del navegador."
+    "cta": {
+      "title": "¿Otra pregunta?",
+      "subtitle": "Si tu caso no aparece arriba, escríbenos directamente al equipo comercial y recibes respuesta documentada en menos de 24 horas hábiles.",
+      "primary": "Hablar con un asesor",
+      "secondary": "Ver canales directos"
     }
   },
   "about": {
@@ -390,7 +421,7 @@
     },
     "products": ["Mercedes-Benz", "BMW", "MB Sprinter", "Vito / Viano", "Aftermarket OEM"],
     "company": ["Quiénes somos", "Planta y logística", "Calidad ISO 9001", "Alianza Embler", "Carreras"],
-    "support": ["Cotización B2B", "Política de garantía", "Devoluciones", "FAQ"],
+    "support": ["Contacto B2B", "Política de garantía", "Devoluciones", "FAQ"],
     "address": "FREY Auto Parts Co., Ltd.\nEuropean OEM standards · Global ops",
     "contact": "+86 400 1080 878\nfreymarketing@cnfrey.com",
     "rights": "Todos los derechos reservados.",

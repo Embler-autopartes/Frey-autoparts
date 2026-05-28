@@ -1,7 +1,16 @@
+import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { MessageCircle, Mail, Phone, FileText, MapPin, Clock, ArrowUpRight } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { ContactForm } from '@/components/contact/contact-form';
+import { buildPageMetadata } from '@/lib/metadata';
+
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'contact.hero' });
+  return buildPageMetadata({ locale, section: 'contact.hero', pageTitle: t('title') });
+}
 
 export default async function ContactoPage({
   params,
@@ -64,7 +73,7 @@ export default async function ContactoPage({
               label={t('channels.quote.label')}
               desc={t('channels.quote.desc')}
               cta={t('channels.quote.cta')}
-              href="/cotizacion"
+              href="/contacto"
               internal
             />
           </div>
@@ -169,21 +178,6 @@ export default async function ContactoPage({
         </div>
       </section>
 
-      {/* Bottom tagline strip */}
-      <section className="border-t border-ink-4 bg-ink-2 py-16">
-        <div className="mx-auto max-w-[1100px] px-6 text-center lg:px-10">
-          <p className="font-display text-3xl uppercase tracking-tight text-mist-4 sm:text-5xl">
-            {t('tagline')}
-          </p>
-          <Link
-            href="/cotizacion"
-            className="mt-8 inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-white transition-all hover:bg-acid-3"
-          >
-            {locale === 'es' ? 'Empezar cotización' : 'Start a quote'}
-            <ArrowUpRight className="h-4 w-4" strokeWidth={2.4} />
-          </Link>
-        </div>
-      </section>
     </>
   );
 }
@@ -223,7 +217,7 @@ function ChannelCard({
 
   if (internal) {
     return (
-      <Link href={href as '/cotizacion'} className="block">
+      <Link href={href as '/contacto'} className="block">
         {Inner}
       </Link>
     );

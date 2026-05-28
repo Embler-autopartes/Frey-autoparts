@@ -184,7 +184,7 @@ export function VehicleSelector() {
                   {t('noResults')}
                 </p>
                 <Link
-                  href="/cotizacion"
+                  href="/contacto"
                   className="mt-6 inline-flex items-center gap-2 border border-acid-2 bg-acid-2 px-6 py-3 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-white transition-all hover:bg-acid-3"
                 >
                   {t('noResultsCta')}

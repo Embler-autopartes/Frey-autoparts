@@ -6,7 +6,7 @@
     "about": "Company",
     "downloads": "Downloads",
     "contact": "Contact",
-    "quote": "Get a quote"
+    "quote": "Contact"
   },
   "common": {
     "year": "Year",
@@ -25,16 +25,25 @@
       "titleB": "for your",
       "titleC": "European.",
       "subtitle": "OEM and aftermarket parts for Mercedes-Benz, BMW and Land Rover. Manufactured under German standards, distributed in 100+ countries.",
-      "ctaPrimary": "Request a quote",
+      "ctaPrimary": "Talk to a rep",
       "ctaSecondary": "Browse catalog",
       "spec1": "Founded in 2004",
       "spec2": "15,000+ active SKUs",
       "spec3": "Network in 100+ countries"
     },
     "ticker": [
-      "MERCEDES-BENZ", "BMW", "AUDI", "PORSCHE", "LAND ROVER",
-      "JAGUAR", "VOLKSWAGEN", "VOLVO", "MINI", "SMART",
-      "ALFA ROMEO", "BENTLEY"
+      "MERCEDES-BENZ",
+      "BMW",
+      "AUDI",
+      "PORSCHE",
+      "LAND ROVER",
+      "JAGUAR",
+      "VOLKSWAGEN",
+      "VOLVO",
+      "MINI",
+      "SMART",
+      "ALFA ROMEO",
+      "BENTLEY"
     ],
     "trust": {
       "title": "Verified industrial standard",
@@ -44,14 +53,38 @@
       "eyebrow": "Systems we cover",
       "title": "Technical catalog by system",
       "items": {
-        "brakes": { "name": "Brakes", "desc": "Discs, pads, sensors, calipers, hydraulic kits." },
-        "engine": { "name": "Engine", "desc": "Water pumps, thermostats, EGR valves, modules." },
-        "suspension": { "name": "Suspension", "desc": "Shocks, bushings, arms, springs, top mounts." },
-        "transmission": { "name": "Transmission", "desc": "Dual-mass flywheels, mechatronics, clutch kits." },
-        "electric": { "name": "Electrical", "desc": "ABS sensors, lambdas, MAF, MAP, throttle bodies." },
-        "filtration": { "name": "Filtration", "desc": "Oil, air, cabin, fuel, AdBlue." },
-        "cooling": { "name": "Cooling", "desc": "Radiators, intercoolers, fans, hoses." },
-        "body": { "name": "Body", "desc": "Mirrors, headlights, handles, seals, grilles." }
+        "brakes": {
+          "name": "Brakes",
+          "desc": "Discs, pads, sensors, calipers, hydraulic kits."
+        },
+        "engine": {
+          "name": "Engine",
+          "desc": "Water pumps, thermostats, EGR valves, modules."
+        },
+        "suspension": {
+          "name": "Suspension",
+          "desc": "Shocks, bushings, arms, springs, top mounts."
+        },
+        "transmission": {
+          "name": "Transmission",
+          "desc": "Dual-mass flywheels, mechatronics, clutch kits."
+        },
+        "electric": {
+          "name": "Electrical",
+          "desc": "ABS sensors, lambdas, MAF, MAP, throttle bodies."
+        },
+        "filtration": {
+          "name": "Filtration",
+          "desc": "Oil, air, cabin, fuel, AdBlue."
+        },
+        "cooling": {
+          "name": "Cooling",
+          "desc": "Radiators, intercoolers, fans, hoses."
+        },
+        "body": {
+          "name": "Body",
+          "desc": "Mirrors, headlights, handles, seals, grilles."
+        }
       }
     },
     "feature": {
@@ -67,10 +100,26 @@
     "stats": {
       "eyebrow": "Frey by the numbers",
       "items": [
-        { "value": "22", "unit": "Years", "label": "Exclusively focused on European premium vehicles." },
-        { "value": "15,000+", "unit": "SKU", "label": "References for Mercedes-Benz, BMW and Land Rover." },
-        { "value": "100+", "unit": "Countries", "label": "Global network under German manufacturing standard." },
-        { "value": "ISO 9001", "unit": "Cert.", "label": "German quality standard audited year after year (TÜV)." }
+        {
+          "value": "22",
+          "unit": "Years",
+          "label": "Exclusively focused on European premium vehicles."
+        },
+        {
+          "value": "15,000+",
+          "unit": "SKU",
+          "label": "References for Mercedes-Benz, BMW and Land Rover."
+        },
+        {
+          "value": "100+",
+          "unit": "Countries",
+          "label": "Global network under German manufacturing standard."
+        },
+        {
+          "value": "ISO 9001",
+          "unit": "Cert.",
+          "label": "German quality standard audited year after year (TÜV)."
+        }
       ]
     },
     "facility": {
@@ -85,9 +134,9 @@
       "cta": "Discover regional distribution"
     },
     "cta": {
-      "title": "Build your quote list.",
-      "subtitle": "Share your VIN or parts list — your quote with availability and lead time arrives within 24 business hours.",
-      "button": "Start a quote"
+      "title": "Connect with the sales team.",
+      "subtitle": "Share your VIN or parts list — our team replies with availability and lead time within 24 business hours.",
+      "button": "Talk to an advisor"
     }
   },
   "contact": {
@@ -105,7 +154,7 @@
       },
       "email": {
         "label": "Email",
-        "desc": "For formal quotes and documents. Attach list or datasheet.",
+        "desc": "For formal requests and documents. Attach parts list or datasheet.",
         "cta": "Compose email"
       },
       "phone": {
@@ -114,14 +163,14 @@
         "cta": "Call"
       },
       "quote": {
-        "label": "Online quote",
-        "desc": "Build your parts list and we process it within 24h.",
-        "cta": "Go to quote tool"
+        "label": "LATAM Distributor",
+        "desc": "Contact EMBLER in Cd. Satelite directly for local stock in Mexico.",
+        "cta": "View offices"
       }
     },
     "form": {
       "title": "Send us a message",
-      "subtitle": "Tell us what you need. For quotations we recommend the structured quote tool.",
+      "subtitle": "Tell us what you need. Our team will reply with availability and next steps.",
       "name": "Name",
       "company": "Company",
       "email": "Corporate email",
@@ -129,7 +178,7 @@
       "country": "Country",
       "subject": "Subject",
       "subjects": {
-        "quote": "Request B2B quote",
+        "quote": "Parts / fitment inquiry",
         "distributor": "I want to become a distributor",
         "warranty": "Warranty / return",
         "tech": "Technical support / fitment",
@@ -179,8 +228,8 @@
       "years": "{from}-{to}",
       "reset": "Change vehicle",
       "selected": "Vehicle selected",
-      "noResults": "We don't have parts listed for this combination in the featured catalog. Send us the part number for a manual quote — we reply within 24h.",
-      "noResultsCta": "Quote manually"
+      "noResults": "No parts listed for this combination in the featured catalog. Send us the part number and we reply within 24h.",
+      "noResultsCta": "Talk to an advisor"
     },
     "results": {
       "count": "{n, plural, =0 {No compatible parts} one {# compatible part} other {# compatible parts}}",
@@ -191,7 +240,7 @@
     "hero": {
       "eyebrow": "Technical catalog · 2026",
       "title": "Solutions for European vehicles.",
-      "subtitle": "Over 27,000 references for Mercedes-Benz, BMW and MB Sprinter. Filter by system, brand or part number and build your quote list."
+      "subtitle": "Over 15,000 references for Mercedes-Benz, BMW and Land Rover. Filter by system, brand or part number and contact us for availability."
     },
     "filters": {
       "search": "Search by part nº, name or fitment…",
@@ -204,8 +253,8 @@
     "card": {
       "fitment": "Fitment",
       "oem": "OEM ref",
-      "add": "Add to quote",
-      "added": "✓ Added"
+      "add": "Request info",
+      "added": "✓ Requested"
     },
     "systems": {
       "brakes": "Brakes",
@@ -224,62 +273,8 @@
     "cta": {
       "title": "Don't see the part you need?",
       "subtitle": "Our team finds any OEM or aftermarket reference for European vehicles. Send us the number or the VIN and we reply within 24 business hours.",
-      "primary": "Quote a specific part",
-      "secondary": "Talk to an advisor"
-    }
-  },
-  "quote": {
-    "hero": {
-      "eyebrow": "B2B Quotation desk",
-      "title": "Build your quote.",
-      "subtitle": "Compose a list with the part numbers you need. We reply with availability, lead time and B2B terms within 24 business hours."
-    },
-    "addPart": {
-      "title": "Add a part",
-      "partNumber": "Part number",
-      "partNumberPh": "e.g. 11.37.7548.387",
-      "description": "Description / name",
-      "descriptionPh": "BMW N52 VVT solenoid",
-      "brand": "Brand",
-      "brandPh": "Mercedes-Benz",
-      "qty": "Qty",
-      "notes": "Notes",
-      "notesPh": "Year, engine, remarks…",
-      "add": "Add to list",
-      "errorRequired": "Part number or description is required."
-    },
-    "list": {
-      "title": "Your quote list",
-      "empty": "No parts added yet. Start above with the part number or description.",
-      "count": "{n} {n, plural, one {part} other {parts}} on list",
-      "clear": "Clear list",
-      "remove": "Remove",
-      "colPart": "Part",
-      "colBrand": "Brand",
-      "colQty": "Qty",
-      "colNotes": "Notes"
-    },
-    "customer": {
-      "title": "Your info",
-      "subtitle": "We need to know who to send the formal quote to.",
-      "company": "Company",
-      "name": "Contact name",
-      "email": "Corporate email",
-      "phone": "Phone / WhatsApp",
-      "country": "Country",
-      "vin": "VIN (optional)",
-      "vinPh": "If your list is for a specific vehicle",
-      "comments": "Comments for sales team (optional)",
-      "commentsPh": "Order frequency, terms, urgency, etc."
-    },
-    "submit": {
-      "title": "Ready to send",
-      "subtitle": "When you submit we'll open your email client with all the info pre-filled. Just confirm the send in your email app.",
-      "button": "Send quote via email",
-      "emptyMessage": "Add at least one part to send the quote.",
-      "noCustomer": "Complete at least company, name and email.",
-      "sentTitle": "Done!",
-      "sentBody": "We opened your email client with the quote pre-loaded. If it didn't open, check your browser pop-up blockers."
+      "primary": "Talk to a rep",
+      "secondary": "View full catalog"
     }
   },
   "about": {
@@ -297,21 +292,61 @@
       "body": "Since 2004 with a single obsession: replicate German OEM tolerance in every part we produce for Mercedes-Benz, BMW and Land Rover. Today we operate under European standards with authorized distribution in 100+ countries, including our strategic alliance with EMBLER in Mexico."
     },
     "stats": [
-      { "value": "22", "unit": "Years", "label": "Exclusively focused on European premium vehicles." },
-      { "value": "15,000+", "unit": "SKU", "label": "References for Mercedes-Benz, BMW and Land Rover." },
-      { "value": "100+", "unit": "Countries", "label": "Global distribution network under German standard." },
-      { "value": "ISO 9001", "unit": "TÜV", "label": "German quality audited every year." }
+      {
+        "value": "22",
+        "unit": "Years",
+        "label": "Exclusively focused on European premium vehicles."
+      },
+      {
+        "value": "15,000+",
+        "unit": "SKU",
+        "label": "References for Mercedes-Benz, BMW and Land Rover."
+      },
+      {
+        "value": "100+",
+        "unit": "Countries",
+        "label": "Global distribution network under German standard."
+      },
+      {
+        "value": "ISO 9001",
+        "unit": "TÜV",
+        "label": "German quality audited every year."
+      }
     ],
     "timeline": {
       "eyebrow": "History",
       "title": "Two decades perfecting the right part.",
       "events": [
-        { "year": "2004", "title": "Founded · European focus", "desc": "Frey Auto Parts starts operations exclusively focused on premium Mercedes-Benz and BMW spare parts." },
-        { "year": "2010", "title": "OEM expansion", "desc": "First manufacturing program under audited German OEM tolerance." },
-        { "year": "2013", "title": "ISO 9001 certified", "desc": "Quality management system implemented under German TÜV standard." },
-        { "year": "2017", "title": "LATAM expansion · Embler", "desc": "Master distribution starts in Mexico through alliance with EMBLER Autopartes." },
-        { "year": "2021", "title": "IATF 16949", "desc": "International automotive certification for premium manufacturing processes." },
-        { "year": "2026", "title": "Land Rover + 15,000 SKU", "desc": "Coverage extended to Land Rover. Active catalog in 100+ countries." }
+        {
+          "year": "2004",
+          "title": "Founded · European focus",
+          "desc": "Frey Auto Parts starts operations exclusively focused on premium Mercedes-Benz and BMW spare parts."
+        },
+        {
+          "year": "2010",
+          "title": "OEM expansion",
+          "desc": "First manufacturing program under audited German OEM tolerance."
+        },
+        {
+          "year": "2013",
+          "title": "ISO 9001 certified",
+          "desc": "Quality management system implemented under German TÜV standard."
+        },
+        {
+          "year": "2017",
+          "title": "LATAM expansion · Embler",
+          "desc": "Master distribution starts in Mexico through alliance with EMBLER Autopartes."
+        },
+        {
+          "year": "2021",
+          "title": "IATF 16949",
+          "desc": "International automotive certification for premium manufacturing processes."
+        },
+        {
+          "year": "2026",
+          "title": "Land Rover + 15,000 SKU",
+          "desc": "Coverage extended to Land Rover. Active catalog in 100+ countries."
+        }
       ]
     },
     "values": {
@@ -355,10 +390,30 @@
       "eyebrow": "Certifications",
       "title": "Audited standards, year after year.",
       "items": [
-        { "code": "ISO 9001", "name": "Quality Management System", "body": "TÜV SÜD · 2013→2024", "desc": "Annual audit of production and admin processes." },
-        { "code": "IATF 16949", "name": "Automotive Quality Standard", "body": "BSI · 2021→2024", "desc": "Global standard for automotive supply chain providers." },
-        { "code": "SGS Verified", "name": "Field Verification", "body": "SGS Global Group", "desc": "On-site inspection and random sampling on line." },
-        { "code": "REACH", "name": "EU Chemical Compliance", "body": "European Chemicals Agency", "desc": "Compliance with EU chemical substance regulations." }
+        {
+          "code": "ISO 9001",
+          "name": "Quality Management System",
+          "body": "TÜV SÜD · 2013→2024",
+          "desc": "Annual audit of production and admin processes."
+        },
+        {
+          "code": "IATF 16949",
+          "name": "Automotive Quality Standard",
+          "body": "BSI · 2021→2024",
+          "desc": "Global standard for automotive supply chain providers."
+        },
+        {
+          "code": "SGS Verified",
+          "name": "Field Verification",
+          "body": "SGS Global Group",
+          "desc": "On-site inspection and random sampling on line."
+        },
+        {
+          "code": "REACH",
+          "name": "EU Chemical Compliance",
+          "body": "European Chemicals Agency",
+          "desc": "Compliance with EU chemical substance regulations."
+        }
       ]
     },
     "alliance": {
@@ -366,12 +421,30 @@
       "title": "FREY × EMBLER · Master Distributor LATAM",
       "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock in Ciudad Satélite, bilingual technical support and same-day delivery in the Mexico City metro area. Together since 2017, bringing German quality to the regional market.",
       "facts": [
-        { "k": "HQ Embler", "v": "Cd. Satélite · Naucalpan" },
-        { "k": "Coverage", "v": "LATAM + south US" },
-        { "k": "Brands", "v": "MB · BMW · Land Rover" },
-        { "k": "Support", "v": "Bilingual ES/EN" },
-        { "k": "Lead time", "v": "Same-day Mexico City metro" },
-        { "k": "Started", "v": "Alliance since 2017" }
+        {
+          "k": "HQ Embler",
+          "v": "Cd. Satélite · Naucalpan"
+        },
+        {
+          "k": "Coverage",
+          "v": "LATAM + south US"
+        },
+        {
+          "k": "Brands",
+          "v": "MB · BMW · Land Rover"
+        },
+        {
+          "k": "Support",
+          "v": "Bilingual ES/EN"
+        },
+        {
+          "k": "Lead time",
+          "v": "Same-day Mexico City metro"
+        },
+        {
+          "k": "Started",
+          "v": "Alliance since 2017"
+        }
       ]
     },
     "cta": {
@@ -388,12 +461,168 @@
       "company": "Company",
       "support": "Support"
     },
-    "products": ["Mercedes-Benz", "BMW", "MB Sprinter", "Vito / Viano", "Aftermarket OEM"],
-    "company": ["About us", "Plant & logistics", "ISO 9001 quality", "Embler alliance", "Careers"],
-    "support": ["B2B quote", "Warranty policy", "Returns", "FAQ"],
+    "products": [
+      "Mercedes-Benz",
+      "BMW",
+      "MB Sprinter",
+      "Vito / Viano",
+      "Aftermarket OEM"
+    ],
+    "company": [
+      "About us",
+      "Plant & logistics",
+      "ISO 9001 quality",
+      "Embler alliance",
+      "Careers"
+    ],
+    "support": [
+      "B2B contact",
+      "Warranty policy",
+      "Returns",
+      "FAQ"
+    ],
     "address": "FREY Auto Parts Co., Ltd.\nEuropean OEM standards · Global ops",
     "contact": "+86 400 1080 878\nfreymarketing@cnfrey.com",
     "rights": "All rights reserved.",
     "compliance": "ISO 9001 · IATF 16949 · SGS Verified"
+  },
+  "policies": {
+    "hero": {
+      "eyebrow": "B2B commercial policies",
+      "title": "Shipping, returns & warranty.",
+      "subtitle": "Guidelines for distributors, workshops and end customers on international shipping, returns and warranty coverage under German OEM standard."
+    },
+    "sections": {
+      "shipping": {
+        "eyebrow": "01 · Shipping",
+        "title": "Dispatch from plant and distribution network.",
+        "items": [
+          {
+            "k": "Origin",
+            "v": "Dispatched from plant or authorized regional master distributor."
+          },
+          {
+            "k": "Packaging",
+            "v": "Serialized box with lot-by-lot traceability label, anti-tampering seal."
+          },
+          {
+            "k": "Incoterms",
+            "v": "FOB / CIF / DAP based on volume. No order minimum for active distributors."
+          },
+          {
+            "k": "Global lead time",
+            "v": "5–12 business days from dispatch to any major port."
+          },
+          {
+            "k": "Mexico lead time (Embler)",
+            "v": "Same-day in Mexico City metro · 24–72 h interior."
+          },
+          {
+            "k": "Insurance",
+            "v": "Transit coverage included up to arrival at destination port."
+          }
+        ]
+      },
+      "returns": {
+        "eyebrow": "02 · Returns",
+        "title": "We accept returns for verified OEM defects.",
+        "items": [
+          {
+            "k": "Window",
+            "v": "30 calendar days from invoice date to report quality issues."
+          },
+          {
+            "k": "Process",
+            "v": "Send SKU photo + lot number + invoice. RMA issued within 24 business hours."
+          },
+          {
+            "k": "Acceptance",
+            "v": "Returns accepted only in original packaging, uninstalled and with intact label."
+          },
+          {
+            "k": "Refund",
+            "v": "Credit note or replacement. Card refund only on exceptional approved cases."
+          },
+          {
+            "k": "Return cost",
+            "v": "Covered by FREY/distributor when defect is manufacturing-attributable."
+          },
+          {
+            "k": "Exclusions",
+            "v": "Installed parts, post-delivery cosmetic damage or no lot traceability."
+          }
+        ]
+      },
+      "warranty": {
+        "eyebrow": "03 · Warranty",
+        "title": "German OEM warranty audited case by case.",
+        "items": [
+          {
+            "k": "General coverage",
+            "v": "12 months or 20,000 km from professional install date, whichever first."
+          },
+          {
+            "k": "Electronic components",
+            "v": "24 months from sale to distributor (sensors, mechatronics, modules)."
+          },
+          {
+            "k": "Suspension / steering",
+            "v": "18 months unlimited mileage under normal use conditions."
+          },
+          {
+            "k": "Extended warranty",
+            "v": "Available under Premium program for annual-contract fleets."
+          },
+          {
+            "k": "Claims",
+            "v": "Bilingual tech support responds with dictum within 5 business days."
+          },
+          {
+            "k": "Replacement",
+            "v": "Physical replacement + labor credit up to 2 standard workshop hours."
+          }
+        ]
+      }
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "What we get asked most.",
+      "items": [
+        {
+          "q": "Can I buy as an end customer or only distributors?",
+          "a": "FREY operates B2B. For retail purchases we connect you with the nearest authorized master distributor (EMBLER in LATAM). We reply within 24 h with the correct channel."
+        },
+        {
+          "q": "What is the order minimum for new distributors?",
+          "a": "No order minimum for active certified distributors. For initial onboarding we request a ,000 USD sample purchase to evaluate logistics and regional demand."
+        },
+        {
+          "q": "How do I verify a part is FREY original?",
+          "a": "Each box ships with a serialized label you can audit against the lot-by-lot traceability database. If in doubt, send SKU photo + lot number and we validate within 4 business hours."
+        },
+        {
+          "q": "Do you work with commercial vehicle fleets?",
+          "a": "Yes. We have a specific program for fleets (Sprinter, Vito, European commercial) with tiered volume pricing and scheduled lot-by-lot delivery."
+        },
+        {
+          "q": "Do you provide tech support for install or diagnosis?",
+          "a": "Yes, the Embler team in CDMX provides bilingual ES/EN tech support for authorized distributors. For specific fitment, share VIN + symptom and you receive a documented recommendation."
+        },
+        {
+          "q": "Do you cover all generations of each model?",
+          "a": "We cover the highest-volume generations in operation (last 15 years). For older vehicles or rare applications, contact us: we have an OEM and aftermarket search network for off-catalog parts."
+        },
+        {
+          "q": "How do I request distributor account opening?",
+          "a": "Fill out the Contact form with subject «I want to become a distributor» or write directly to freymarketing@cnfrey.com. Validation takes 5–10 business days."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Another question?",
+      "subtitle": "If your case is not above, write directly to our sales team and receive a documented reply within 24 business hours.",
+      "primary": "Talk to an advisor",
+      "secondary": "See direct channels"
+    }
   }
 }

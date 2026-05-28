@@ -31,7 +31,7 @@ export async function FinalCta() {
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="/cotizacion"
+            href="/contacto"
             className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-9 py-5 font-mono text-xs uppercase tracking-[0.2em] text-ink-3 transition-all hover:bg-acid-3"
           >
             {t('button')}

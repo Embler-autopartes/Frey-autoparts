@@ -27,15 +27,15 @@ export async function Footer() {
               </h3>
             </div>
             <Link
-              href="/cotizacion"
+              href="/contacto"
               className="group inline-flex items-center justify-between border border-ink-4 bg-ink-3 px-7 py-6 transition-all hover:border-acid-2 hover:bg-acid-2 hover:text-white"
             >
               <div>
                 <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1 group-hover:text-white/75">
-                  B2B · Quotation desk
+                  B2B · Contact desk
                 </p>
                 <p className="mt-2 font-serif text-2xl italic text-mist-4 group-hover:text-white">
-                  {locale === 'es' ? 'Solicitar cotización' : 'Request a quote'}
+                  {locale === 'es' ? 'Hablar con un asesor' : 'Talk to an advisor'}
                 </p>
               </div>
               <ArrowUpRight className="h-6 w-6 text-acid-2 transition-transform group-hover:rotate-45 group-hover:text-white" />

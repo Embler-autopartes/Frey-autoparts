@@ -1,7 +1,16 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
+import { buildPageMetadata } from '@/lib/metadata';
+
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about.hero' });
+  return buildPageMetadata({ locale, section: 'about.hero', pageTitle: t('titleA') });
+}
 
 export default async function AcercaPage({
   params,
@@ -391,7 +400,7 @@ async function AboutCta() {
         </p>
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="/cotizacion"
+            href="/contacto"
             className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-8 py-4 font-mono text-xs uppercase tracking-[0.2em] text-white transition-all hover:bg-acid-3"
           >
             {t('primary')}

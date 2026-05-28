@@ -1,28 +1,11 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Plus, Check } from 'lucide-react';
-import { useQuote } from '@/lib/quote-context';
+import { ArrowUpRight } from 'lucide-react';
+import { Link } from '@/i18n/routing';
 import { brandLabels, type Part } from '@/lib/catalog-data';
 
 export function PartCard({ part }: { part: Part }) {
   const t = useTranslations('catalog');
-  const { add } = useQuote();
-  const [added, setAdded] = useState(false);
-
-  function handleAdd() {
-    add({
-      partNumber: part.partNumber,
-      description: part.name,
-      brand: brandLabels[part.brand],
-      qty: 1,
-      notes: part.fitment,
-    });
-    setAdded(true);
-    setTimeout(() => setAdded(false), 1600);
-  }
 
   return (
     <article className="group flex flex-col bg-ink-3 transition-colors hover:bg-ink-1">
@@ -68,28 +51,13 @@ export function PartCard({ part }: { part: Part }) {
           )}
         </dl>
 
-        <button
-          type="button"
-          onClick={handleAdd}
-          disabled={added}
-          className={`mt-auto inline-flex items-center justify-center gap-2 border px-4 py-3 font-mono text-[0.65rem] uppercase tracking-[0.2em] transition-all ${
-            added
-              ? 'cursor-default border-acid-2 bg-acid-2 text-white'
-              : 'border-acid-2 bg-transparent text-acid-2 hover:bg-acid-2 hover:text-white'
-          }`}
+        <Link
+          href="/contacto"
+          className="group/btn mt-auto inline-flex items-center justify-center gap-2 border border-acid-2 bg-transparent px-4 py-3 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-acid-2 transition-all hover:bg-acid-2 hover:text-white"
         >
-          {added ? (
-            <>
-              <Check className="h-3.5 w-3.5" strokeWidth={2.6} />
-              {t('card.added')}
-            </>
-          ) : (
-            <>
-              <Plus className="h-3.5 w-3.5" strokeWidth={2.6} />
-              {t('card.add')}
-            </>
-          )}
-        </button>
+          {t('card.add')}
+          <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" strokeWidth={2.4} />
+        </Link>
       </div>
     </article>
   );

@@ -88,10 +88,10 @@ export async function FeaturedPart() {
 
             <div className="mt-14 flex flex-wrap gap-4">
               <Link
-                href="/cotizacion"
+                href="/contacto"
                 className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-white transition-all hover:bg-acid-3"
               >
-                Agregar a cotización
+                Consultar disponibilidad
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" strokeWidth={2.4} />
               </Link>
               <Link
