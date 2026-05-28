@@ -17,6 +17,7 @@ import { PartCard } from '@/components/catalog/part-card';
 const brandPhotos: Record<Brand, string> = {
   mb: '/cars/mercedes.webp',
   bmw: '/cars/bmw.webp',
+  landrover: '/cars/landrover.webp',
   sprinter: '/cars/sprinter.webp',
 };
 
@@ -60,7 +61,7 @@ export function VehicleSelector() {
           <p className="mb-6 font-mono text-[0.65rem] uppercase tracking-[0.22em] text-mist-1">
             {t('chooseBrand')}
           </p>
-          <div className="grid gap-px bg-ink-4 sm:grid-cols-3">
+          <div className="grid gap-px bg-ink-4 sm:grid-cols-2 lg:grid-cols-4">
             {(Object.keys(brandLabels) as Brand[]).map((b) => (
               <button
                 key={b}

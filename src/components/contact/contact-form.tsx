@@ -4,7 +4,7 @@ import { useState, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import { Send, CheckCircle2 } from 'lucide-react';
 
-const RECIPIENT = 'info@frey-autoparts.com';
+const RECIPIENT = 'freymarketing@cnfrey.com';
 
 const subjects = ['quote', 'distributor', 'warranty', 'tech', 'other'] as const;
 type SubjectKey = (typeof subjects)[number];

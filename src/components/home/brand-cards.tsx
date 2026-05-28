@@ -35,6 +35,17 @@ const brands: Brand[] = [
     photo: '/cars/bmw.webp',
   },
   {
+    id: 'landrover',
+    name: 'Land Rover',
+    models: 'Range Rover · Sport · Evoque · Discovery · Defender',
+    systems: [
+      { name: 'Engine system', href: '/catalogo?b=landrover&s=engine' },
+      { name: 'Electrical system', href: '/catalogo?b=landrover&s=electric' },
+      { name: 'Chassis system', href: '/catalogo?b=landrover&s=chassis' },
+    ],
+    photo: '/cars/landrover.webp',
+  },
+  {
     id: 'sprinter',
     name: 'MB Sprinter',
     models: '901 · 902 · 903 · 904 · 905 · 906 · LCV fleet',

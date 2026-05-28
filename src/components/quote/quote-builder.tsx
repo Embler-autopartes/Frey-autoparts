@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { useQuote, type QuoteItem } from '@/lib/quote-context';
 import { Plus, Trash2, Send, Eraser, CheckCircle2, ArrowUpRight } from 'lucide-react';
 
-const RECIPIENT = 'info@frey-autoparts.com';
+const RECIPIENT = 'freymarketing@cnfrey.com';
 
 type Customer = {
   company: string;

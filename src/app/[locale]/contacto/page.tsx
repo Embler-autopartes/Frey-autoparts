@@ -50,14 +50,14 @@ export default async function ContactoPage({
               label={t('channels.email.label')}
               desc={t('channels.email.desc')}
               cta={t('channels.email.cta')}
-              href="mailto:info@frey-autoparts.com"
+              href="mailto:freymarketing@cnfrey.com"
             />
             <ChannelCard
               icon={<Phone className="h-6 w-6" />}
               label={t('channels.phone.label')}
               desc={t('channels.phone.desc')}
               cta={t('channels.phone.cta')}
-              href="tel:+86210000000"
+              href="tel:+864001080878"
             />
             <ChannelCard
               icon={<FileText className="h-6 w-6" />}
@@ -153,7 +153,7 @@ export default async function ContactoPage({
               phone={t('offices.frey.phone')}
               email={t('offices.frey.email')}
               hours={t('offices.frey.hours')}
-              mapSrc="https://maps.google.com/maps?q=Lianhang+Road+Minhang+Shanghai&hl=en&z=14&output=embed"
+              mapSrc="https://maps.google.com/maps?q=Huadu+District+Guangzhou+China&hl=en&z=11&output=embed"
             />
             <OfficeCard
               variant="embler"

@@ -4,11 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://frey-autoparts.com'),
   title: {
-    default: 'FREY · Auto Parts for European Vehicles',
+    default: 'FREY · Premium Auto Parts for European Vehicles',
     template: '%s — FREY',
   },
   description:
-    'Catálogo OEM y aftermarket para Mercedes-Benz, BMW y MB Sprinter. Distribución global B2B con estándar ISO 9001.',
+    '22 años fabricando refacciones OEM y aftermarket para Mercedes-Benz, BMW y Land Rover. Distribución global B2B en 100+ países bajo estándar ISO 9001.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

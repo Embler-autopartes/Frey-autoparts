@@ -20,20 +20,21 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Soluciones para vehículos europeos · LCV",
-      "titleA": "Ingeniería",
-      "titleB": "alemana en",
-      "titleC": "cada pieza.",
-      "subtitle": "Catálogo OEM y aftermarket para Mercedes-Benz, BMW y MB Sprinter. Distribución global con estándar ISO 9001.",
+      "eyebrow": "22 años de enfoque · Vehículos europeos premium",
+      "titleA": "Präzision",
+      "titleB": "para tu",
+      "titleC": "europeo.",
+      "subtitle": "Refacciones OEM y aftermarket para Mercedes-Benz, BMW y Land Rover. Manufactura con estándar alemán, distribución en 100+ países.",
       "ctaPrimary": "Solicitar cotización",
       "ctaSecondary": "Ver catálogo",
-      "spec1": "Fundada en China",
-      "spec2": "27 mil SKUs activos",
-      "spec3": "Cobertura en 40+ países"
+      "spec1": "Fundada en 2004",
+      "spec2": "15,000+ SKUs activos",
+      "spec3": "Cobertura en 100+ países"
     },
     "ticker": [
-      "MERCEDES-BENZ", "BMW", "MB SPRINTER 901-906", "VITO", "VIANO",
-      "BMW 3-SERIES", "BMW 5-SERIES", "BMW X-SERIES", "CLASE C", "CLASE E", "CLASE S"
+      "MERCEDES-BENZ", "BMW", "LAND ROVER", "RANGE ROVER", "MB SPRINTER",
+      "VITO", "VIANO", "BMW 3-SERIES", "BMW 5-SERIES", "BMW X-SERIES",
+      "CLASE C", "CLASE E", "CLASE S", "DISCOVERY", "DEFENDER"
     ],
     "trust": {
       "title": "Estándar industrial verificado",
@@ -66,16 +67,16 @@
     "stats": {
       "eyebrow": "Frey en números",
       "items": [
-        { "value": "27,400", "unit": "SKU", "label": "Referencias activas en catálogo global." },
-        { "value": "40+", "unit": "Países", "label": "Red de distribución autorizada." },
-        { "value": "98.6%", "unit": "OTIF", "label": "Cumplimiento on-time-in-full últimos 12 meses." },
-        { "value": "12,800 m²", "unit": "Almacén", "label": "Centro logístico operando 24/6." }
+        { "value": "22", "unit": "Años", "label": "Enfocados exclusivamente en vehículos europeos premium." },
+        { "value": "15,000+", "unit": "SKU", "label": "Referencias activas para Mercedes-Benz, BMW y Land Rover." },
+        { "value": "100+", "unit": "Países", "label": "Red de distribución global con presencia en 150+ ciudades." },
+        { "value": "ISO 9001", "unit": "Cert.", "label": "Estándar de calidad europeo auditado año tras año." }
       ]
     },
     "facility": {
-      "eyebrow": "Centro logístico",
-      "title": "Operación 24/6 con trazabilidad lote por lote",
-      "desc": "Sistema WMS conectado a ERP, picking dirigido por radiofrecuencia, control de temperatura y humedad para empaques sensibles. Cada caja sale con etiqueta serializada para auditoría de campo."
+      "eyebrow": "Centro logístico · Guangzhou",
+      "title": "Manufactura y distribución bajo estándar europeo",
+      "desc": "Operación en Huadu District, Guangzhou. Sistema de control de calidad alineado con OEM europeo, trazabilidad lote por lote, picking dirigido por radiofrecuencia. Cada caja sale con etiqueta serializada para auditoría de campo."
     },
     "alliance": {
       "eyebrow": "Alianza estratégica",
@@ -145,9 +146,9 @@
       "frey": {
         "name": "FREY Auto Parts · HQ",
         "tagline": "Manufactura y exportación global",
-        "address": "Tower B, Building 5, No. 1188 Lianhang Road\nMinhang District, Shanghai 201112\nP.R. China",
-        "phone": "+86 21 0000 0000",
-        "email": "info@frey-autoparts.com",
+        "address": "Room 101, 9-1, South 1st Street\nQishan Village, Xiuquan Street\nHuadu District, Guangzhou\nP.R. China",
+        "phone": "+86 400 1080 878",
+        "email": "freymarketing@cnfrey.com",
         "hours": "Lun–Vie 09:00–18:00 CST"
       },
       "embler": {
@@ -293,24 +294,24 @@
     "intro": {
       "eyebrow": "Manifiesto",
       "title": "Cada componente sale del almacén con un compromiso: que tu vehículo europeo opere como el primer día.",
-      "body": "Nacimos en 2003 en Shanghai con un enfoque claro: replicar la tolerancia OEM en cada pieza que producimos. Hoy operamos un centro logístico de 12,800 m² con trazabilidad lote a lote, atendiendo más de 40 mercados a través de distribuidores autorizados como EMBLER en México."
+      "body": "Nacimos en 2004 en Guangzhou con una sola obsesión: replicar la tolerancia OEM en cada pieza que producimos para Mercedes-Benz, BMW y Land Rover. Hoy operamos con presencia en 150+ ciudades chinas y distribución autorizada en más de 100 países, incluyendo nuestra alianza estratégica con EMBLER en México."
     },
     "stats": [
-      { "value": "22", "unit": "Años", "label": "De operación continua en mercados internacionales." },
-      { "value": "27,400", "unit": "SKU", "label": "Referencias activas para vehículos europeos y LCV." },
-      { "value": "40+", "unit": "Países", "label": "Cobertura a través de la red de distribución master." },
-      { "value": "12,800", "unit": "m²", "label": "Centro logístico operando 24/6 en Shanghai." }
+      { "value": "22", "unit": "Años", "label": "Enfocados exclusivamente en vehículos europeos premium." },
+      { "value": "15,000+", "unit": "SKU", "label": "Referencias para Mercedes-Benz, BMW y Land Rover." },
+      { "value": "100+", "unit": "Países", "label": "Red de distribución global autorizada." },
+      { "value": "150+", "unit": "Ciudades", "label": "Cobertura nacional dentro de China." }
     ],
     "timeline": {
       "eyebrow": "Historia",
       "title": "Dos décadas perfeccionando la pieza correcta.",
       "events": [
-        { "year": "2003", "title": "Fundación en Shanghai", "desc": "Frey Auto Parts inicia operaciones con foco en repuestos para vehículos europeos." },
-        { "year": "2008", "title": "Primer programa OEM", "desc": "Aprobación como proveedor de Tier 1 europeo para componentes de inyección." },
-        { "year": "2013", "title": "Certificación ISO 9001", "desc": "Implementación de sistema de gestión de calidad auditado por TÜV." },
-        { "year": "2017", "title": "Expansión LATAM", "desc": "Inicia distribución master en México a través de la alianza con EMBLER." },
-        { "year": "2021", "title": "IATF 16949", "desc": "Certificación automotriz internacional para procesos productivos." },
-        { "year": "2024", "title": "27,400 SKU activos", "desc": "El catálogo alcanza cobertura para más del 92% del parque MB/BMW/Sprinter en operación." }
+        { "year": "2004", "title": "Fundación en Guangzhou", "desc": "Frey Auto Parts inicia operaciones con foco exclusivo en refacciones para Mercedes-Benz y BMW." },
+        { "year": "2010", "title": "Apertura red nacional", "desc": "Presencia comercial directa en las principales ciudades de China." },
+        { "year": "2013", "title": "Certificación ISO 9001", "desc": "Implementación de sistema de gestión de calidad bajo estándar europeo." },
+        { "year": "2017", "title": "Expansión LATAM · Embler", "desc": "Inicia distribución master en México a través de la alianza con EMBLER Autopartes." },
+        { "year": "2021", "title": "Alianza Kaisi Auto Parts", "desc": "Cooperación estratégica para fortalecer la cadena de suministro nacional china." },
+        { "year": "2026", "title": "Land Rover + 15,000 SKU", "desc": "Ampliación de cobertura a Land Rover. Catálogo activo en 100+ países." }
       ]
     },
     "values": {
@@ -340,9 +341,9 @@
       ]
     },
     "plant": {
-      "eyebrow": "Centro logístico",
-      "title": "Operación 24/6 con tecnología WMS conectada a ERP.",
-      "desc": "12,800 m² distribuidos en zonas de picking automatizado, control climático para componentes sensibles, y un puerto de salida con escáner RF que valida cada caja antes de despacho. El equipo opera tres turnos con QC en cada uno.",
+      "eyebrow": "Operaciones · Guangzhou",
+      "title": "Manufactura y QC bajo estándar europeo.",
+      "desc": "Sede operativa en Huadu District, Guangzhou. Producción con control de calidad alineado a tolerancias OEM europeas, picking dirigido por radiofrecuencia, validación RF caja por caja antes de despacho. Tres turnos con QC en cada uno.",
       "captions": {
         "image1": "Pasillos principales con racks selectivos de 6 niveles.",
         "image2": "Operación de picking dirigido por radiofrecuencia.",
@@ -363,11 +364,11 @@
     "alliance": {
       "eyebrow": "Alianza estratégica",
       "title": "FREY × EMBLER · Master Distributor LATAM",
-      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local, soporte técnico bilingüe y entrega same-day en zona metropolitana CDMX. Trabajamos juntos desde 2017 cubriendo más de 6,200 SKU en stock disponible para el mercado regional.",
+      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local, soporte técnico bilingüe y entrega same-day en zona metropolitana CDMX. Trabajamos juntos desde 2017 acercando la calidad alemana al mercado regional.",
       "facts": [
-        { "k": "HQ", "v": "Ciudad de México" },
+        { "k": "HQ Embler", "v": "Ciudad de México" },
         { "k": "Cobertura", "v": "LATAM + sur de EE.UU." },
-        { "k": "Stock local", "v": "6,200 SKU disponibles" },
+        { "k": "Marcas", "v": "MB · BMW · Land Rover" },
         { "k": "Soporte", "v": "Bilingüe ES/EN" },
         { "k": "Lead time", "v": "Same-day metro CDMX" },
         { "k": "Inicio", "v": "Alianza desde 2017" }
@@ -390,8 +391,8 @@
     "products": ["Mercedes-Benz", "BMW", "MB Sprinter", "Vito / Viano", "Aftermarket OEM"],
     "company": ["Quiénes somos", "Planta y logística", "Calidad ISO 9001", "Alianza Embler", "Carreras"],
     "support": ["Cotización B2B", "Descargas técnicas", "Política de garantía", "Devoluciones", "FAQ"],
-    "address": "FREY Auto Parts Co., Ltd.\nShanghai · China",
-    "contact": "+86 21 0000 0000\ninfo@frey-autoparts.com",
+    "address": "FREY Auto Parts Co., Ltd.\nHuadu District, Guangzhou · China",
+    "contact": "+86 400 1080 878\nfreymarketing@cnfrey.com",
     "rights": "Todos los derechos reservados.",
     "compliance": "ISO 9001 · IATF 16949 · SGS Verified"
   }

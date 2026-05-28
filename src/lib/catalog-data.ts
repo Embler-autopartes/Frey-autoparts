@@ -8,7 +8,7 @@ export type System =
   | 'cooling'
   | 'body';
 
-export type Brand = 'mb' | 'bmw' | 'sprinter';
+export type Brand = 'mb' | 'bmw' | 'landrover' | 'sprinter';
 
 export type Part = {
   id: string;
@@ -44,6 +44,14 @@ export const parts: Part[] = [
   { id: 'bmw-007', partNumber: '17 11 8 600 092', name: 'Radiador principal', brand: 'bmw', system: 'cooling', fitment: 'X5 F15 · X6 F16 N55', photo: '/products/bmw-07.webp' },
   { id: 'bmw-008', partNumber: '24 00 7 588 752', name: 'Mecatrónica caja ZF 8HP', brand: 'bmw', system: 'transmission', fitment: 'F-chassis 8HP45/8HP70', photo: '/products/bmw-08.webp' },
 
+  // Land Rover
+  { id: 'lr-001', partNumber: 'LR007132', name: 'Disco de freno delantero ventilado', brand: 'landrover', system: 'brakes', fitment: 'Range Rover Sport L320 · Discovery L319', photo: '/products/bmw-03.webp' },
+  { id: 'lr-002', partNumber: 'LR051622', name: 'Compresor de suspensión neumática', brand: 'landrover', system: 'suspension', fitment: 'Range Rover L322 · L405 · Sport L320', oemRef: 'LR078650', photo: '/products/bmw-08.webp' },
+  { id: 'lr-003', partNumber: 'LR011279', name: 'Bomba de agua eléctrica', brand: 'landrover', system: 'cooling', fitment: 'Range Rover Evoque L538 · Discovery Sport', photo: '/products/mb-04.webp' },
+  { id: 'lr-004', partNumber: 'LR069385', name: 'Sensor MAF', brand: 'landrover', system: 'electric', fitment: 'L320 Sport TDV6 3.0L', photo: '/products/mb-02.webp' },
+  { id: 'lr-005', partNumber: 'LR017319', name: 'Brazo de control superior', brand: 'landrover', system: 'suspension', fitment: 'Range Rover L322 (2002-2012)', photo: '/products/mb-09.webp' },
+  { id: 'lr-006', partNumber: 'LR026371', name: 'Filtro de aceite premium', brand: 'landrover', system: 'filtration', fitment: 'AJ-V8 / TDV6 / SDV6 diesel', photo: '/products/sprinter-02.webp' },
+
   // Sprinter
   { id: 'sp-001', partNumber: 'A 906 460 04 80', name: 'Caja de dirección', brand: 'sprinter', system: 'suspension', fitment: 'Sprinter 906 (2006-2018)', photo: '/products/sprinter-01.webp' },
   { id: 'sp-002', partNumber: 'A 642 094 04 04', name: 'Filtro de combustible diesel', brand: 'sprinter', system: 'filtration', fitment: 'OM642 V6 · OM651 4cil', photo: '/products/sprinter-02.webp' },
@@ -58,6 +66,7 @@ export const parts: Part[] = [
 export const brandLabels: Record<Brand, string> = {
   mb: 'Mercedes-Benz',
   bmw: 'BMW',
+  landrover: 'Land Rover',
   sprinter: 'MB Sprinter',
 };
 
@@ -105,6 +114,13 @@ export const vehicles: Record<Brand, VehicleModel[]> = {
     { model: 'Sprinter 906', generation: 'OM642 V6 diesel', yearFrom: 2006, yearTo: 2013, matchTokens: ['906', 'OM642'] },
     { model: 'Sprinter 906', generation: 'OM651 4-cyl diesel', yearFrom: 2009, yearTo: 2018, matchTokens: ['906', 'OM651'] },
     { model: 'Sprinter 906 LCV', generation: 'all variants', yearFrom: 2006, yearTo: 2018, matchTokens: ['906', 'LCV', 'Sprinter'] },
+  ],
+  landrover: [
+    { model: 'Range Rover Sport', generation: 'L320', yearFrom: 2005, yearTo: 2013, matchTokens: ['L320', 'Range Rover Sport'] },
+    { model: 'Range Rover', generation: 'L322', yearFrom: 2002, yearTo: 2012, matchTokens: ['L322', 'Range Rover'] },
+    { model: 'Range Rover Evoque', generation: 'L538', yearFrom: 2011, yearTo: 2019, matchTokens: ['L538', 'Evoque'] },
+    { model: 'Discovery 4', generation: 'L319', yearFrom: 2009, yearTo: 2017, matchTokens: ['L319', 'Discovery'] },
+    { model: 'Defender', generation: 'classic', yearFrom: 1990, yearTo: 2016, matchTokens: ['Defender'] },
   ],
 };
 
