@@ -97,22 +97,14 @@ export async function BrandCards() {
                   } transition-all duration-500`}
                 />
 
-                {/* Car photo — radial mask para difuminar el fondo studio */}
-                <div
-                  className="relative h-40 w-full sm:h-48 lg:h-56"
-                  style={{
-                    maskImage:
-                      'radial-gradient(ellipse 85% 78% at center, black 55%, transparent 95%)',
-                    WebkitMaskImage:
-                      'radial-gradient(ellipse 85% 78% at center, black 55%, transparent 95%)',
-                  }}
-                >
+                {/* Car photo — fondo ya removido con chroma key */}
+                <div className="relative h-40 w-full sm:h-48 lg:h-56">
                   <Image
                     src={brand.photo}
                     alt={brand.name}
                     fill
                     sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-contain mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
+                    className="object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 
