@@ -69,7 +69,15 @@ export function VehicleSelector() {
                 onClick={() => setBrand(b)}
                 className="group flex flex-col items-center gap-6 bg-ink-3 px-6 py-10 transition-colors hover:bg-ink-1"
               >
-                <div className="relative h-32 w-full sm:h-40">
+                <div
+                  className="relative h-32 w-full sm:h-40"
+                  style={{
+                    maskImage:
+                      'radial-gradient(ellipse 85% 78% at center, black 55%, transparent 95%)',
+                    WebkitMaskImage:
+                      'radial-gradient(ellipse 85% 78% at center, black 55%, transparent 95%)',
+                  }}
+                >
                   <Image
                     src={brandPhotos[b]}
                     alt={brandLabels[b]}
