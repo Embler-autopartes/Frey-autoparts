@@ -32,7 +32,7 @@ export function CatalogGrid() {
       if (filters.brand !== 'all' && p.brand !== filters.brand) return false;
       if (filters.system !== 'all' && p.system !== filters.system) return false;
       if (q) {
-        const hay = `${p.partNumber} ${p.name} ${p.fitment} ${p.oemRef ?? ''}`.toLowerCase();
+        const hay = `${p.partNumber} ${p.name.es} ${p.name.en} ${p.fitment} ${p.oemRef ?? ''}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;

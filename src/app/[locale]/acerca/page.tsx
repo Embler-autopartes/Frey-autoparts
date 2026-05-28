@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { setRequestLocale, getTranslations, getLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
@@ -84,6 +84,7 @@ async function AboutHero() {
 /* ---------------- MANIFESTO ---------------- */
 async function Manifesto() {
   const t = await getTranslations('about.intro');
+  const locale = await getLocale();
   return (
     <section className="bg-ink-1 py-28 lg:py-40">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
@@ -99,7 +100,7 @@ async function Manifesto() {
               EST. 2004 · German engineering
             </p>
             <p className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
-              22+ años · 40 países
+              {locale === 'es' ? '22+ años · 40 países' : '22+ years · 40 countries'}
             </p>
           </div>
           <p className="text-pretty text-lg leading-relaxed text-mist-2">

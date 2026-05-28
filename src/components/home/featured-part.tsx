@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 
 export async function FeaturedPart() {
   const t = await getTranslations('home.feature');
+  const locale = await getLocale();
 
   return (
     <section className="relative overflow-hidden bg-ink-2 py-32 lg:py-44">
@@ -47,7 +48,7 @@ export async function FeaturedPart() {
             {/* Floating part number badge */}
             <div className="absolute -bottom-5 left-8 bg-acid-2 px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.4)]">
               <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-white/85">
-                Part No.
+                {locale === 'es' ? 'No. de parte' : 'Part No.'}
               </p>
               <p className="font-mono text-base font-medium tracking-[0.05em] text-white">
                 {t('partNumber')}
@@ -58,7 +59,7 @@ export async function FeaturedPart() {
           {/* Spec sheet — readable on light bg */}
           <div>
             <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1">
-              Technical specification
+              {locale === 'es' ? 'Ficha técnica' : 'Technical specification'}
             </p>
 
             <p className="mt-10 max-w-md font-serif text-2xl font-light italic leading-snug text-mist-3 sm:text-3xl">
@@ -67,12 +68,20 @@ export async function FeaturedPart() {
 
             {/* Spec table */}
             <dl className="mt-12 border-t-2 border-acid-2">
-              {[
-                ['Application', t('spec1')],
-                ['Resistance', t('spec2')],
-                ['Temperature', t('spec3')],
-                ['Sealing', t('spec4')],
-              ].map(([k, v], i) => (
+              {(locale === 'es'
+                ? [
+                    ['Aplicación', t('spec1')],
+                    ['Resistencia', t('spec2')],
+                    ['Temperatura', t('spec3')],
+                    ['Sellado', t('spec4')],
+                  ]
+                : [
+                    ['Application', t('spec1')],
+                    ['Resistance', t('spec2')],
+                    ['Temperature', t('spec3')],
+                    ['Sealing', t('spec4')],
+                  ]
+              ).map(([k, v], i) => (
                 <div
                   key={k}
                   className="group grid grid-cols-[140px_1fr] items-baseline gap-6 border-b border-ink-4 py-5 transition-colors hover:border-acid-2/60"
@@ -91,14 +100,14 @@ export async function FeaturedPart() {
                 href="/contacto"
                 className="group inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-white transition-all hover:bg-acid-3"
               >
-                Consultar disponibilidad
+                {locale === 'es' ? 'Consultar disponibilidad' : 'Check availability'}
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" strokeWidth={2.4} />
               </Link>
               <Link
                 href="/catalogo"
                 className="inline-flex items-center gap-2 px-2 py-4 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-mist-1 transition-colors hover:text-mist-4"
               >
-                Ver hoja técnica completa →
+                {locale === 'es' ? 'Ver hoja técnica completa →' : 'View full datasheet →'}
               </Link>
             </div>
           </div>

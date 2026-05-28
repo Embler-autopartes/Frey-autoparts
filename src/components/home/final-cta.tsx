@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 
 export async function FinalCta() {
   const t = await getTranslations('home.cta');
+  const locale = await getLocale();
 
   return (
     <section className="relative isolate overflow-hidden bg-ink-1 py-32 lg:py-40">
@@ -41,14 +42,18 @@ export async function FinalCta() {
             href="/contacto"
             className="inline-flex items-center gap-3 px-4 py-5 font-mono text-xs uppercase tracking-[0.2em] text-mist-2 transition-colors hover:text-mist-4"
           >
-            Hablar con un asesor →
+            {locale === 'es' ? 'Hablar con un asesor →' : 'Talk to an advisor →'}
           </Link>
         </div>
 
         {/* Bottom signature line */}
         <div className="mt-20 flex items-center justify-center gap-4 font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
           <span className="h-px w-12 bg-acid-2/50" />
-          <span>Respuesta en menos de 24h hábiles</span>
+          <span>
+            {locale === 'es'
+              ? 'Respuesta en menos de 24h hábiles'
+              : 'Response within 24 business hours'}
+          </span>
           <span className="h-px w-12 bg-acid-2/50" />
         </div>
       </div>

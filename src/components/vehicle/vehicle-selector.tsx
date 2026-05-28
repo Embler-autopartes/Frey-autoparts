@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Check, RotateCcw, ArrowUpRight, ChevronRight } from 'lucide-react';
 import {
@@ -24,6 +24,7 @@ const brandPhotos: Record<Brand, string> = {
 export function VehicleSelector() {
   const t = useTranslations('vehicle.selector');
   const tr = useTranslations('vehicle.results');
+  const locale = useLocale();
   const [brand, setBrand] = useState<Brand | null>(null);
   const [model, setModel] = useState<VehicleModel | null>(null);
   const [year, setYear] = useState<number | null>(null);
@@ -83,7 +84,7 @@ export function VehicleSelector() {
                     {brandLabels[b]}
                   </p>
                   <p className="mt-2 font-mono text-[0.6rem] uppercase tracking-[0.22em] text-acid-2">
-                    Seleccionar →
+                    {locale === 'es' ? 'Seleccionar →' : 'Select →'}
                   </p>
                 </div>
               </button>

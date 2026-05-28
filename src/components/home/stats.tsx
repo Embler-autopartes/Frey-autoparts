@@ -1,9 +1,10 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 
 type Stat = { value: string; unit: string; label: string };
 
 export async function Stats() {
   const t = await getTranslations('home.stats');
+  const locale = await getLocale();
   const items = t.raw('items') as Stat[];
 
   return (
@@ -20,8 +21,17 @@ export async function Stats() {
             </p>
           </div>
           <h2 className="mt-8 font-serif text-5xl font-light italic leading-[1] tracking-tight text-mist-4 sm:text-7xl">
-            Two decades of <span className="text-acid-2">precision</span>,<br />
-            <span className="text-chrome-2">measured in numbers.</span>
+            {locale === 'es' ? (
+              <>
+                Dos décadas de <span className="text-acid-2">precisión</span>,<br />
+                <span className="text-chrome-2">medidas en números.</span>
+              </>
+            ) : (
+              <>
+                Two decades of <span className="text-acid-2">precision</span>,<br />
+                <span className="text-chrome-2">measured in numbers.</span>
+              </>
+            )}
           </h2>
         </div>
 

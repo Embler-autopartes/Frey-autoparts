@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { brandLabels, type Part } from '@/lib/catalog-data';
 
 export function PartCard({ part }: { part: Part }) {
   const t = useTranslations('catalog');
+  const locale = useLocale();
+  const displayName = locale === 'es' ? part.name.es : part.name.en;
 
   return (
     <article className="group flex flex-col bg-ink-3 transition-colors hover:bg-ink-1">
@@ -13,7 +15,7 @@ export function PartCard({ part }: { part: Part }) {
       <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden border-b border-ink-4 bg-white">
         <Image
           src={part.photo}
-          alt={part.name}
+          alt={displayName}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-contain p-6 mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
@@ -32,7 +34,7 @@ export function PartCard({ part }: { part: Part }) {
       {/* Body */}
       <div className="flex flex-1 flex-col gap-4 p-6">
         <h3 className="font-display text-xl uppercase tracking-tight text-mist-4">
-          {part.name}
+          {displayName}
         </h3>
         <dl className="space-y-2 text-sm">
           <div className="grid grid-cols-[80px_1fr] gap-2">

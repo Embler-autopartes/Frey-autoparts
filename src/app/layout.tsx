@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: '%s — FREY',
   },
   description:
-    '22 años fabricando refacciones OEM y aftermarket para Mercedes-Benz, BMW y Land Rover. Distribución global B2B en 100+ países bajo estándar ISO 9001.',
+    '22 years manufacturing OEM and aftermarket spare parts for Mercedes-Benz, BMW and Land Rover. Global B2B distribution in 100+ countries under ISO 9001 standard.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

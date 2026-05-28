@@ -2,11 +2,44 @@ import { setRequestLocale } from 'next-intl/server';
 import { PageShell } from '@/components/shared/page-shell';
 import { Download } from 'lucide-react';
 
-const docs = [
-  { file: 'BENZ CATALOGUE.pdf', title: 'Mercedes-Benz · Catálogo general', size: '11 MB', year: '2024' },
-  { file: 'BMW CATALOGUE 2017-10-12.pdf', title: 'BMW · Catálogo de aplicaciones', size: '22 MB', year: '2024' },
-  { file: 'Catalogue for MB Sprinter 901-906 spare parts update on 12th,JAN,2018.pdf', title: 'MB Sprinter 901-906 · Refacciones (Rev. enero)', size: '9.4 MB', year: '2024' },
-  { file: 'Catalogue for MB Sprinter 901-906 spare parts update on 12th.pdf', title: 'MB Sprinter 901-906 · Refacciones (Rev. base)', size: '8.5 MB', year: '2024' },
+type DocEntry = {
+  file: string;
+  title: { es: string; en: string };
+  size: string;
+  year: string;
+};
+
+const docs: DocEntry[] = [
+  {
+    file: 'BENZ CATALOGUE.pdf',
+    title: { es: 'Mercedes-Benz · Catálogo general', en: 'Mercedes-Benz · General catalog' },
+    size: '11 MB',
+    year: '2024',
+  },
+  {
+    file: 'BMW CATALOGUE 2017-10-12.pdf',
+    title: { es: 'BMW · Catálogo de aplicaciones', en: 'BMW · Application catalog' },
+    size: '22 MB',
+    year: '2024',
+  },
+  {
+    file: 'Catalogue for MB Sprinter 901-906 spare parts update on 12th,JAN,2018.pdf',
+    title: {
+      es: 'MB Sprinter 901-906 · Refacciones (Rev. enero)',
+      en: 'MB Sprinter 901-906 · Spare parts (Jan revision)',
+    },
+    size: '9.4 MB',
+    year: '2024',
+  },
+  {
+    file: 'Catalogue for MB Sprinter 901-906 spare parts update on 12th.pdf',
+    title: {
+      es: 'MB Sprinter 901-906 · Refacciones (Rev. base)',
+      en: 'MB Sprinter 901-906 · Spare parts (base revision)',
+    },
+    size: '8.5 MB',
+    year: '2024',
+  },
 ];
 
 export default async function DescargasPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -15,7 +48,7 @@ export default async function DescargasPage({ params }: { params: Promise<{ loca
 
   return (
     <PageShell
-      eyebrow="Downloads / Recursos técnicos"
+      eyebrow={locale === 'es' ? 'Descargas / Recursos técnicos' : 'Downloads / Technical resources'}
       title={locale === 'es' ? 'Catálogos en PDF' : 'PDF catalogs'}
       intro={
         locale === 'es'
@@ -37,7 +70,7 @@ export default async function DescargasPage({ params }: { params: Promise<{ loca
                 PDF / {String(i + 1).padStart(2, '0')} · {doc.year} · {doc.size}
               </span>
               <p className="mt-4 font-display text-2xl uppercase tracking-tight text-mist-4">
-                {doc.title}
+                {locale === 'es' ? doc.title.es : doc.title.en}
               </p>
             </div>
             <Download className="h-5 w-5 shrink-0 text-mist-2 transition-colors group-hover:text-acid-2" />

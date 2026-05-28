@@ -51,7 +51,11 @@ export default async function ContactoPage({
               label={t('channels.whatsapp.label')}
               desc={t('channels.whatsapp.desc')}
               cta={t('channels.whatsapp.cta')}
-              href="https://wa.me/525500000000?text=Hola%20FREY%2C%20me%20interesa%20cotizar..."
+              href={
+                locale === 'es'
+                  ? 'https://wa.me/525500000000?text=Hola%20FREY%2C%20me%20interesa%20cotizar...'
+                  : 'https://wa.me/525500000000?text=Hi%20FREY%2C%20I%27d%20like%20a%20quote...'
+              }
               external
             />
             <ChannelCard
@@ -156,6 +160,7 @@ export default async function ContactoPage({
           <div className="mt-16 grid gap-px bg-ink-4 lg:grid-cols-2">
             <OfficeCard
               variant="frey"
+              locale={locale}
               name={t('offices.frey.name')}
               tagline={t('offices.frey.tagline')}
               address={t('offices.frey.address')}
@@ -166,6 +171,7 @@ export default async function ContactoPage({
             />
             <OfficeCard
               variant="embler"
+              locale={locale}
               name={t('offices.embler.name')}
               tagline={t('offices.embler.tagline')}
               address={t('offices.embler.address')}
@@ -231,6 +237,7 @@ function ChannelCard({
 
 function OfficeCard({
   variant,
+  locale,
   name,
   tagline,
   address,
@@ -240,6 +247,7 @@ function OfficeCard({
   mapSrc,
 }: {
   variant: 'frey' | 'embler';
+  locale: string;
   name: string;
   tagline: string;
   address: string;
@@ -268,7 +276,9 @@ function OfficeCard({
       {/* Info */}
       <div className="p-8">
         <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-          {variant === 'frey' ? '◆ Frey · German engineering' : '◆ Embler · Cd. Satélite, MEX'}
+          {variant === 'frey'
+            ? (locale === 'es' ? '◆ Frey · Ingeniería alemana' : '◆ Frey · German engineering')
+            : '◆ Embler · Cd. Satélite, MEX'}
         </p>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
           {name}
@@ -291,7 +301,7 @@ function OfficeCard({
             rel="noopener noreferrer"
             className="group mt-8 inline-flex w-full items-center justify-between gap-2 border border-acid-2 bg-acid-2 px-5 py-3.5 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-white transition-all hover:bg-acid-3"
           >
-            <span>Tienda online Embler</span>
+            <span>{locale === 'es' ? 'Tienda online Embler' : 'Embler online shop'}</span>
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" strokeWidth={2.4} />
           </a>
         )}
