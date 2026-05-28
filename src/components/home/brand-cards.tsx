@@ -78,77 +78,62 @@ export async function BrandCards() {
           </div>
         </header>
 
-        {/* Grid 2x2 — más compacto y editorial */}
-        <div className="grid gap-6 sm:grid-cols-2 sm:gap-px sm:bg-ink-4">
-          {brands.map((brand, idx) => {
-            const isGreen = idx % 2 === 1;
-            return (
-              <article
-                key={brand.id}
-                className={`group relative flex flex-col p-8 transition-all duration-500 lg:p-10 ${
-                  isGreen
-                    ? 'bg-acid-2/8 hover:bg-acid-2/15'
-                    : 'bg-ink-1 hover:bg-ink-3'
-                }`}
-              >
-                {/* Left index ribbon */}
-                <span
-                  className={`absolute left-0 top-0 h-full w-1 transition-all duration-500 ${
-                    isGreen ? 'bg-acid-2' : 'bg-acid-2/0 group-hover:bg-acid-2/50'
-                  }`}
+        {/* Grid 2x2 — todas las cards uniformes con auto destacado */}
+        <div className="grid gap-px bg-ink-4 sm:grid-cols-2">
+          {brands.map((brand, idx) => (
+            <article
+              key={brand.id}
+              className="group relative flex flex-col bg-ink-1 p-8 transition-all duration-500 hover:bg-ink-3 lg:p-10"
+            >
+              {/* Left hover ribbon */}
+              <span className="absolute left-0 top-0 h-full w-1 bg-acid-2/0 transition-all duration-500 group-hover:bg-acid-2" />
+
+              {/* Header: index */}
+              <div className="flex items-baseline justify-between">
+                <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
+                  Spare parts for
+                </p>
+                <span className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1">
+                  /{String(idx + 1).padStart(2, '0')}
+                </span>
+              </div>
+
+              {/* Car photo — mucho más grande */}
+              <div className="relative my-8 h-56 w-full sm:h-64 lg:h-72">
+                <Image
+                  src={brand.photo}
+                  alt={brand.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                 />
+              </div>
 
-                {/* Header: index */}
-                <div className="flex items-baseline justify-between">
-                  <p
-                    className={`font-mono text-[0.6rem] uppercase tracking-[0.25em] ${
-                      isGreen ? 'text-acid-2' : 'text-mist-1'
-                    }`}
-                  >
-                    Spare parts for
-                  </p>
-                  <span className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1">
-                    /{String(idx + 1).padStart(2, '0')}
-                  </span>
+              {/* Brand info */}
+              <div className="flex flex-1 flex-col">
+                <h3 className="font-display text-3xl uppercase tracking-tight text-mist-4 sm:text-4xl">
+                  {brand.name}
+                </h3>
+                <p className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.15em] text-mist-2">
+                  {brand.models}
+                </p>
+
+                {/* System buttons */}
+                <div className="mt-auto flex flex-wrap gap-2 pt-8">
+                  {brand.systems.map((sys) => (
+                    <Link
+                      key={sys.name}
+                      href={sys.href}
+                      className="group/btn inline-flex items-center gap-1.5 border border-acid-2 bg-acid-2 px-3.5 py-2 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white transition-all duration-500 hover:bg-acid-3"
+                    >
+                      {sys.name}
+                      <ArrowUpRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                    </Link>
+                  ))}
                 </div>
-
-                {/* Car photo */}
-                <div className="relative my-6 h-32 w-full sm:h-36 lg:h-40">
-                  <Image
-                    src={brand.photo}
-                    alt={brand.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-
-                {/* Brand info */}
-                <div className="flex flex-1 flex-col">
-                  <h3 className="font-display text-3xl uppercase tracking-tight text-mist-4 sm:text-4xl">
-                    {brand.name}
-                  </h3>
-                  <p className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.15em] text-mist-2">
-                    {brand.models}
-                  </p>
-
-                  {/* System buttons compactos */}
-                  <div className="mt-auto flex flex-wrap gap-2 pt-8">
-                    {brand.systems.map((sys) => (
-                      <Link
-                        key={sys.name}
-                        href={sys.href}
-                        className="group/btn inline-flex items-center gap-1.5 border border-acid-2 bg-acid-2 px-3.5 py-2 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white transition-all duration-500 hover:bg-acid-3"
-                      >
-                        {sys.name}
-                        <ArrowUpRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

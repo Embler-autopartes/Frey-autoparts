@@ -73,8 +73,8 @@ export default async function ContactoPage({
               label={t('channels.quote.label')}
               desc={t('channels.quote.desc')}
               cta={t('channels.quote.cta')}
-              href="/contacto"
-              internal
+              href="https://tienda.emblerautopartes.mx/"
+              external
             />
           </div>
         </div>
@@ -283,6 +283,18 @@ function OfficeCard({
           <Row icon={<Mail className="h-4 w-4" />} value={email} link={`mailto:${email}`} />
           <Row icon={<Clock className="h-4 w-4" />} value={hours} />
         </dl>
+
+        {variant === 'embler' && (
+          <a
+            href="https://tienda.emblerautopartes.mx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-8 inline-flex w-full items-center justify-between gap-2 border border-acid-2 bg-acid-2 px-5 py-3.5 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-white transition-all hover:bg-acid-3"
+          >
+            <span>Tienda online Embler</span>
+            <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" strokeWidth={2.4} />
+          </a>
+        )}
       </div>
     </article>
   );

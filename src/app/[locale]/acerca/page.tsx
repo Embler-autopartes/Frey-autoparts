@@ -263,10 +263,10 @@ async function Plant() {
                   sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-0/65 via-transparent to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
               </div>
-              <figcaption className="absolute inset-x-0 bottom-0 p-3 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white">
-                <span className="text-acid-3">/{String(i + 1).padStart(2, '0')}</span> · {g.caption}
+              <figcaption className="absolute inset-x-0 bottom-0 p-3 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white text-shadow-deep-dark">
+                <span className="text-acid-3 font-medium">/{String(i + 1).padStart(2, '0')}</span> · {g.caption}
               </figcaption>
             </figure>
           ))}

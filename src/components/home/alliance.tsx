@@ -247,16 +247,20 @@ export async function Alliance() {
               </p>
             </div>
 
-            <Link
-              href="/acerca"
-              className="group mt-12 inline-flex items-center justify-between gap-3 border-t border-white/30 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.25em] text-white transition-all"
+            <a
+              href="https://tienda.emblerautopartes.mx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-12 inline-flex items-center justify-between gap-3 border-t border-white/30 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.25em] text-white transition-all hover:text-white/90"
             >
-              <span>{t('cta')}</span>
+              <span>
+                {locale === 'es' ? 'Ir a tienda online Embler' : 'Go to Embler online shop'}
+              </span>
               <ArrowUpRight
                 className="h-4 w-4 transition-transform duration-500 group-hover:rotate-45"
                 strokeWidth={2.4}
               />
-            </Link>
+            </a>
           </aside>
         </div>
       </div>
