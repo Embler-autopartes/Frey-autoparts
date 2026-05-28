@@ -7,16 +7,13 @@ export async function FeaturedPart() {
   const t = await getTranslations('home.feature');
 
   return (
-    <section className="relative overflow-hidden bg-ink-0 py-32 lg:py-44">
-      {/* subtle grid */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="tech-grid-fine absolute inset-0" />
-      </div>
+    <section className="relative overflow-hidden bg-ink-2 py-32 lg:py-44">
+      <div className="absolute inset-0 tech-grid-fine opacity-40" />
 
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
         {/* Editorial header */}
         <div className="mb-20 max-w-3xl">
-          <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-3">
+          <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-2">
             ◆ {t('eyebrow')}
           </p>
           <h2 className="mt-8 font-serif text-5xl font-light italic leading-[0.95] tracking-tight text-mist-4 sm:text-7xl">
@@ -25,9 +22,9 @@ export async function FeaturedPart() {
         </div>
 
         <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-24">
-          {/* Photo on black */}
+          {/* Photo on dark stage — Brembo style island within light section */}
           <div className="relative">
-            <div className="relative aspect-square w-full overflow-hidden bg-black">
+            <div className="relative aspect-square w-full overflow-hidden bg-ink-0">
               <Image
                 src="/images/product-hand-pump.webp"
                 alt={t('title')}
@@ -35,19 +32,18 @@ export async function FeaturedPart() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
               />
-              {/* Vignette */}
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(0,0,0,0.55)_100%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(0,0,0,0.55)_100%)]" />
             </div>
 
-            {/* Corner ticks Brembo-style */}
+            {/* Corner ticks */}
             <span className="absolute -left-2 -top-2 h-6 w-6 border-l border-t border-acid-2" />
             <span className="absolute -right-2 -top-2 h-6 w-6 border-r border-t border-acid-2" />
             <span className="absolute -left-2 -bottom-2 h-6 w-6 border-b border-l border-acid-2" />
             <span className="absolute -right-2 -bottom-2 h-6 w-6 border-b border-r border-acid-2" />
 
             {/* Floating part number badge */}
-            <div className="absolute -bottom-5 left-8 bg-acid-2 px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.6)]">
-              <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-white/80">
+            <div className="absolute -bottom-5 left-8 bg-acid-2 px-5 py-2.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.4)]">
+              <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-white/85">
                 Part No.
               </p>
               <p className="font-mono text-base font-medium tracking-[0.05em] text-white">
@@ -56,17 +52,17 @@ export async function FeaturedPart() {
             </div>
           </div>
 
-          {/* Spec sheet — blueprint style */}
+          {/* Spec sheet — readable on light bg */}
           <div>
-            <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-2">
+            <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1">
               Technical specification
             </p>
 
-            <p className="mt-10 max-w-md font-serif text-2xl font-light italic leading-snug text-chrome-2 sm:text-3xl">
+            <p className="mt-10 max-w-md font-serif text-2xl font-light italic leading-snug text-mist-3 sm:text-3xl">
               «{t('desc')}»
             </p>
 
-            {/* Spec table — blueprint style */}
+            {/* Spec table */}
             <dl className="mt-12 border-t-2 border-acid-2">
               {[
                 ['Application', t('spec1')],
@@ -78,8 +74,8 @@ export async function FeaturedPart() {
                   key={k}
                   className="group grid grid-cols-[140px_1fr] items-baseline gap-6 border-b border-ink-4 py-5 transition-colors hover:border-acid-2/60"
                 >
-                  <dt className="flex items-baseline gap-3 font-mono text-[0.6rem] uppercase tracking-[0.25em] text-mist-2">
-                    <span className="text-acid-3">/{String(i + 1).padStart(2, '0')}</span>
+                  <dt className="flex items-baseline gap-3 font-mono text-[0.6rem] uppercase tracking-[0.25em] text-mist-1">
+                    <span className="text-acid-2">/{String(i + 1).padStart(2, '0')}</span>
                     {k}
                   </dt>
                   <dd className="font-serif text-lg leading-snug text-mist-4">{v}</dd>
@@ -97,7 +93,7 @@ export async function FeaturedPart() {
               </Link>
               <Link
                 href="/catalogo"
-                className="inline-flex items-center gap-2 px-2 py-4 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-mist-2 transition-colors hover:text-mist-4"
+                className="inline-flex items-center gap-2 px-2 py-4 font-mono text-[0.7rem] uppercase tracking-[0.22em] text-mist-1 transition-colors hover:text-mist-4"
               >
                 Ver hoja técnica completa →
               </Link>

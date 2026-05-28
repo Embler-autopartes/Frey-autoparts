@@ -13,7 +13,7 @@ export async function Footer() {
   const support = t.raw('support') as string[];
 
   return (
-    <footer className="relative mt-40 bg-ink-0 text-mist-3">
+    <footer className="relative mt-40 bg-ink-2 text-mist-3">
       {/* Editorial CTA strip — top */}
       <div className="border-t border-ink-4">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
@@ -28,17 +28,17 @@ export async function Footer() {
             </div>
             <Link
               href="/cotizacion"
-              className="group inline-flex items-center justify-between border border-ink-4 bg-ink-1 px-7 py-6 transition-all hover:border-acid-2 hover:bg-acid-2/5"
+              className="group inline-flex items-center justify-between border border-ink-4 bg-ink-3 px-7 py-6 transition-all hover:border-acid-2 hover:bg-acid-2 hover:text-white"
             >
               <div>
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1 group-hover:text-acid-2">
+                <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-mist-1 group-hover:text-white/75">
                   B2B · Quotation desk
                 </p>
-                <p className="mt-2 font-serif text-2xl italic text-mist-4">
+                <p className="mt-2 font-serif text-2xl italic text-mist-4 group-hover:text-white">
                   {locale === 'es' ? 'Solicitar cotización' : 'Request a quote'}
                 </p>
               </div>
-              <ArrowUpRight className="h-6 w-6 text-acid-2 transition-transform group-hover:rotate-45" />
+              <ArrowUpRight className="h-6 w-6 text-acid-2 transition-transform group-hover:rotate-45 group-hover:text-white" />
             </Link>
           </div>
         </div>
@@ -50,15 +50,15 @@ export async function Footer() {
           <div className="grid gap-16 py-20 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">
-                <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-mist-4/95 ring-1 ring-ink-4">
-                  <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1.5" />
+                <div className="relative h-12 w-12 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4">
+                  <Image src="/logo.webp" alt="FREY" fill sizes="48px" className="object-contain p-1.5 mix-blend-multiply" />
                 </div>
                 <div>
                   <p className="font-display text-2xl tracking-wide text-mist-4">FREY</p>
                   <p className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1">Auto Parts · DE</p>
                 </div>
               </div>
-              <p className="mt-10 font-serif text-lg italic leading-snug text-mist-2">
+              <p className="mt-10 max-w-xs font-serif text-lg italic leading-snug text-mist-2">
                 «{locale === 'es'
                   ? 'Refacciones europeas que respetan la tolerancia OEM.'
                   : 'European spare parts that respect OEM tolerance.'}»
@@ -79,7 +79,7 @@ export async function Footer() {
       </div>
 
       {/* Bottom signature — thin & subtle */}
-      <div className="border-t border-ink-4 bg-ink-0">
+      <div className="border-t border-ink-4 bg-ink-3">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-6 py-7 sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p className="font-mono text-[0.6rem] uppercase tracking-[0.28em] text-mist-1">
             © {year} FREY Auto Parts Co., Ltd. · {t('rights')}
@@ -98,7 +98,7 @@ export async function Footer() {
       </div>
 
       {/* Final accent line */}
-      <div className="h-px bg-gradient-to-r from-transparent via-acid-2/50 to-transparent" />
+      <div className="h-px bg-gradient-to-r from-transparent via-acid-2/60 to-transparent" />
     </footer>
   );
 }
