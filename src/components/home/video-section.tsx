@@ -1,7 +1,8 @@
 import { getLocale } from 'next-intl/server';
+import { VideoPlayer } from './video-player';
 
 const VIDEO_URL = 'https://www.freychina.com/static/cms/images/video_en.mp4';
-const POSTER = '/images/video-poster.webp';
+const POSTER_TIME = 54;
 
 export async function VideoSection() {
   const locale = await getLocale();
@@ -43,18 +44,15 @@ export async function VideoSection() {
 
           {/* Video */}
           <div className="relative aspect-video w-full overflow-hidden bg-ink-0">
-            <video
+            <VideoPlayer
               src={VIDEO_URL}
-              poster={POSTER}
-              controls
-              preload="metadata"
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              {locale === 'es'
-                ? 'Tu navegador no soporta el elemento de video.'
-                : 'Your browser does not support the video tag.'}
-            </video>
+              posterTime={POSTER_TIME}
+              fallbackMessage={
+                locale === 'es'
+                  ? 'Tu navegador no soporta el elemento de video.'
+                  : 'Your browser does not support the video tag.'
+              }
+            />
           </div>
 
           {/* Bottom signature strip */}
