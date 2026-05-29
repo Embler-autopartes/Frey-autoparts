@@ -9,6 +9,7 @@ import { Facility } from '@/components/home/facility';
 import { VideoSection } from '@/components/home/video-section';
 import { QualityPartners } from '@/components/home/quality-partners';
 import { Alliance } from '@/components/home/alliance';
+import { WarrantyPromise } from '@/components/home/warranty-promise';
 import { FinalCta } from '@/components/home/final-cta';
 
 export default async function HomePage({
@@ -31,6 +32,7 @@ export default async function HomePage({
       <Stats />
       <QualityPartners />
       <Alliance />
+      <WarrantyPromise />
       <FinalCta />
     </>
   );

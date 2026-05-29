@@ -167,7 +167,6 @@ export default async function ContactoPage({
               phone={t('offices.frey.phone')}
               email={t('offices.frey.email')}
               hours={t('offices.frey.hours')}
-              mapSrc="https://maps.google.com/maps?q=Stuttgart+Germany+Mercedes-Benz&hl=en&z=10&output=embed"
             />
             <OfficeCard
               variant="embler"
@@ -178,7 +177,6 @@ export default async function ContactoPage({
               phone={t('offices.embler.phone')}
               email={t('offices.embler.email')}
               hours={t('offices.embler.hours')}
-              mapSrc="https://maps.google.com/maps?q=Periferico+Blvd+Manuel+Avila+Camacho+1834+Ciudad+Satelite+Naucalpan&hl=es&z=16&output=embed"
             />
           </div>
         </div>
@@ -244,7 +242,6 @@ function OfficeCard({
   phone,
   email,
   hours,
-  mapSrc,
 }: {
   variant: 'frey' | 'embler';
   locale: string;
@@ -254,31 +251,14 @@ function OfficeCard({
   phone: string;
   email: string;
   hours: string;
-  mapSrc: string;
 }) {
   return (
     <article className="bg-ink-3">
-      {/* Map */}
-      <div className="relative aspect-[16/9] overflow-hidden bg-ink-1">
-        <iframe
-          src={mapSrc}
-          width="100%"
-          height="100%"
-          style={{ border: 0, filter: 'grayscale(0.4) contrast(1.05)' }}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          allowFullScreen
-          title={name}
-        />
-        <div className="pointer-events-none absolute inset-0 bg-acid-2/5 mix-blend-multiply" />
-      </div>
-
-      {/* Info */}
       <div className="p-8">
         <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
           {variant === 'frey'
             ? (locale === 'es' ? '◆ Frey · Ingeniería alemana' : '◆ Frey · German engineering')
-            : '◆ Embler · Cd. Satélite, MEX'}
+            : '◆ Embler · CDMX'}
         </p>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
           {name}
@@ -290,7 +270,9 @@ function OfficeCard({
         <dl className="mt-8 space-y-4 text-sm">
           <Row icon={<MapPin className="h-4 w-4" />} value={address} multiline />
           <Row icon={<Phone className="h-4 w-4" />} value={phone} link={`tel:${phone.replace(/\s+/g, '')}`} />
-          <Row icon={<Mail className="h-4 w-4" />} value={email} link={`mailto:${email}`} />
+          {email && (
+            <Row icon={<Mail className="h-4 w-4" />} value={email} link={`mailto:${email}`} />
+          )}
           <Row icon={<Clock className="h-4 w-4" />} value={hours} />
         </dl>
 

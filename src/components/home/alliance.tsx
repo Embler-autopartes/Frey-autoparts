@@ -13,7 +13,7 @@ export async function Alliance() {
   const facts: { k: string; v: string }[] =
     locale === 'es'
       ? [
-          { k: 'HQ Embler', v: 'Cd. Satélite · MEX' },
+          { k: 'HQ Embler', v: 'CDMX' },
           { k: 'Cobertura', v: 'LATAM + sur de EE.UU.' },
           { k: 'Marcas', v: 'MB · BMW · Land Rover' },
           { k: 'Soporte', v: 'Bilingüe ES/EN' },
@@ -21,7 +21,7 @@ export async function Alliance() {
           { k: 'Inicio', v: 'Alianza desde 2017' },
         ]
       : [
-          { k: 'HQ Embler', v: 'Cd. Satélite · MEX' },
+          { k: 'HQ Embler', v: 'CDMX' },
           { k: 'Coverage', v: 'LATAM + south US' },
           { k: 'Brands', v: 'MB · BMW · Land Rover' },
           { k: 'Support', v: 'Bilingual ES/EN' },
@@ -141,7 +141,7 @@ export async function Alliance() {
           <div className="border-y border-ink-4 py-16 lg:py-20">
             <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 sm:grid-cols-[1fr_auto_1.4fr] sm:gap-16">
               {/* FREY side */}
-              <figure className="flex flex-col items-center gap-4 sm:items-end">
+              <figure className="flex flex-col items-center gap-4">
                 <div className="relative h-32 w-32 overflow-hidden rounded-sm bg-ink-3 ring-1 ring-ink-4 transition-all duration-700 hover:ring-acid-2 sm:h-36 sm:w-36">
                   <Image
                     src="/logo.webp"
@@ -151,7 +151,7 @@ export async function Alliance() {
                     className="object-contain p-2 mix-blend-multiply"
                   />
                 </div>
-                <figcaption className="text-center sm:text-right">
+                <figcaption className="text-center">
                   <p className="font-display text-2xl uppercase tracking-tight text-mist-4">
                     FREY
                   </p>
@@ -172,17 +172,23 @@ export async function Alliance() {
               </div>
 
               {/* EMBLER side */}
-              <figure className="flex flex-col items-center gap-4 sm:items-start">
-                <div className="relative h-24 w-64 transition-all duration-700 hover:opacity-90 sm:h-28 sm:w-80">
+              <figure className="flex flex-col items-center gap-4">
+                <a
+                  href="https://tienda.emblerautopartes.mx/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="EMBLER Autopartes — ir a tienda online"
+                  className="relative block h-32 w-32 overflow-hidden rounded-sm bg-black ring-1 ring-ink-4 transition-all duration-700 hover:ring-acid-2 sm:h-36 sm:w-36"
+                >
                   <Image
-                    src="/logos/embler-dark.webp"
+                    src="/logos/embler-official.png"
                     alt="EMBLER Autopartes"
                     fill
-                    sizes="320px"
-                    className="object-contain object-left"
+                    sizes="144px"
+                    className="object-contain p-2"
                   />
-                </div>
-                <figcaption className="text-center sm:text-left">
+                </a>
+                <figcaption className="text-center">
                   <p className="font-display text-2xl uppercase tracking-tight text-mist-4">
                     EMBLER Autopartes
                   </p>

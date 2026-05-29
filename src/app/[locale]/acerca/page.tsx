@@ -97,7 +97,7 @@ async function Manifesto() {
         <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_2fr]">
           <div className="border-l border-acid-2 pl-6">
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
-              EST. 2004 · German engineering
+              EST. 2004 · Stuttgart, DE
             </p>
             <p className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.25em] text-mist-1">
               {locale === 'es' ? '22+ años · 40 países' : '22+ years · 40 countries'}
@@ -232,27 +232,90 @@ async function Values() {
 /* ---------------- PLANT ---------------- */
 async function Plant() {
   const t = await getTranslations('about.plant');
+  const locale = await getLocale();
   const gallery = [
     { src: '/images/warehouse-aisle-wide.webp', caption: t('captions.image1'), tall: true },
     { src: '/images/warehouse-forklift.webp', caption: t('captions.image2'), tall: false },
     { src: '/images/warehouse-racks-wide.webp', caption: t('captions.image3'), tall: false },
     { src: '/images/shanghai-fair-booth.webp', caption: t('captions.image4'), tall: true },
   ];
+  const ops =
+    locale === 'es'
+      ? [
+          { k: 'Área', v: '45,000 m² · 3 zonas climatizadas' },
+          { k: 'Turnos', v: '3 turnos · 24 h · 6 días' },
+          { k: 'Picking', v: 'RF-guided · OTIF 98.6%' },
+          { k: 'QC por lote', v: 'Muestreo AQL 1.0 antes de despacho' },
+        ]
+      : [
+          { k: 'Area', v: '45,000 m² · 3 climate zones' },
+          { k: 'Shifts', v: '3 shifts · 24 h · 6 days' },
+          { k: 'Picking', v: 'RF-guided · OTIF 98.6%' },
+          { k: 'Lot QC', v: 'AQL 1.0 sampling before dispatch' },
+        ];
   return (
-    <section className="bg-ink-1 py-28 lg:py-36">
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <header className="mb-16 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-end">
+    <section className="relative isolate overflow-hidden bg-ink-1 py-28 lg:py-36">
+      <div className="absolute inset-0 tech-grid-fine opacity-25" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-acid-2/40 to-transparent" />
+
+      <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
+        {/* Editorial masthead */}
+        <header className="mb-12 grid gap-10 border-b border-ink-4 pb-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-              ◆ {t('eyebrow')}
-            </p>
-            <h2 className="mt-6 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-5xl">
+            <div className="inline-flex items-center gap-3 border-l-2 border-acid-2 bg-acid-2/8 px-4 py-2">
+              <span className="text-acid-2">◆</span>
+              <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-2">
+                {t('eyebrow')}
+              </p>
+            </div>
+            <h2 className="mt-8 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-5xl">
               {t('title')}
             </h2>
           </div>
-          <p className="text-pretty leading-relaxed text-mist-2">{t('desc')}</p>
+
+          <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3 font-mono text-[0.6rem] uppercase tracking-[0.32em] text-mist-1 lg:self-end">
+            <span>
+              <span className="text-mist-2">{locale === 'es' ? 'EDICIÓN' : 'EDITION'}</span> · 12
+            </span>
+            <span>
+              <span className="text-mist-2">{locale === 'es' ? 'REVISIÓN' : 'REV'}</span> · 05/26
+            </span>
+            <span className="inline-flex items-center gap-2 text-acid-2">
+              <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-acid-2" />
+              {locale === 'es' ? 'Auditoría activa' : 'Audit active'}
+            </span>
+          </div>
         </header>
 
+        {/* Editorial lede + ops fact-list */}
+        <div className="mb-14 grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
+          <p className="font-serif text-xl font-light leading-snug text-mist-3 first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-display first-letter:text-5xl first-letter:font-medium first-letter:not-italic first-letter:leading-[0.8] first-letter:text-acid-2 sm:text-2xl">
+            {t('desc')}
+          </p>
+
+          <dl className="grid grid-cols-1 gap-px self-start bg-ink-4">
+            {ops.map((op, i) => (
+              <div
+                key={op.k}
+                className="group grid grid-cols-[28px_1fr] items-baseline gap-4 bg-ink-1 px-5 py-4 transition-colors hover:bg-ink-3"
+              >
+                <span className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-mist-1 transition-colors group-hover:text-acid-2">
+                  /{String(i + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <dt className="font-mono text-[0.6rem] uppercase tracking-[0.22em] text-mist-1">
+                    {op.k}
+                  </dt>
+                  <dd className="mt-1 font-serif text-base font-light leading-snug text-mist-4">
+                    {op.v}
+                  </dd>
+                </div>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        {/* Gallery — keeps original layout */}
         <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-5">
           {gallery.map((g, i) => (
             <figure key={i} className="group relative overflow-hidden border border-ink-4 bg-ink-3">
@@ -265,6 +328,9 @@ async function Plant() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
+                {/* Corner ticks */}
+                <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-acid-2/60" />
+                <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-acid-2/60" />
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 p-3 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-white text-shadow-deep-dark">
                 <span className="text-acid-3 font-medium">/{String(i + 1).padStart(2, '0')}</span> · {g.caption}
@@ -272,6 +338,20 @@ async function Plant() {
             </figure>
           ))}
         </div>
+
+        {/* Editorial signature */}
+        <footer className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-ink-4 pt-6 sm:flex-row sm:items-center">
+          <p className="font-serif text-base italic text-mist-2">
+            «{locale === 'es'
+              ? 'Lo que sale del molde, sale con su etiqueta.'
+              : 'Whatever leaves the mold, leaves with its label.'}»
+          </p>
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.28em] text-mist-1">
+            {locale === 'es'
+              ? '◆ TÜV Rheinland · ID MIC-ASR2411725'
+              : '◆ TÜV Rheinland · ID MIC-ASR2411725'}
+          </p>
+        </footer>
       </div>
     </section>
   );

@@ -32,9 +32,8 @@
       "spec3": "Cobertura en 100+ países"
     },
     "ticker": [
-      "MERCEDES-BENZ", "BMW", "AUDI", "PORSCHE", "LAND ROVER",
-      "JAGUAR", "VOLKSWAGEN", "VOLVO", "MINI", "SMART",
-      "ALFA ROMEO", "BENTLEY"
+      "MERCEDES-BENZ", "BMW", "PORSCHE", "LAND ROVER",
+      "MINI", "SMART", "BENTLEY"
     ],
     "trust": {
       "title": "Estándar industrial verificado",
@@ -115,7 +114,7 @@
       },
       "quote": {
         "label": "Distribuidor LATAM",
-        "desc": "Stock local en México. Compra directamente en la tienda online de EMBLER, distribuidor master en Cd. Satélite.",
+        "desc": "Stock local en México. Compra directamente en la tienda online de EMBLER, distribuidor master en CDMX.",
         "cta": "Ir a tienda Embler"
       }
     },
@@ -154,10 +153,10 @@
       "embler": {
         "name": "EMBLER Autopartes · Master Distributor LATAM",
         "tagline": "Stock local · Soporte bilingüe",
-        "address": "Perif. Blvd. Manuel Ávila Camacho 1834\nint. 1830, Cd. Satélite\n53100 Naucalpan, Estado de México",
+        "address": "Perif. Blvd. Manuel Ávila Camacho 1834\nint. 1830\n53100 Naucalpan, Estado de México",
         "phone": "+52 55 0000 0000",
-        "email": "activos@emblerautopartes.mx",
-        "hours": "Lun–Sáb 09:00–19:00 · Same-day zona metro"
+        "email": "",
+        "hours": "Lun–Vie 09:00–18:00 · Sáb 09:00–14:00"
       }
     },
     "tagline": "Engineered in Germany. Manufactured for Europe."
@@ -330,8 +329,8 @@
     "stats": [
       { "value": "22", "unit": "Años", "label": "Enfocados exclusivamente en vehículos europeos premium." },
       { "value": "15,000+", "unit": "SKU", "label": "Referencias para Mercedes-Benz, BMW y Land Rover." },
-      { "value": "100+", "unit": "Países", "label": "Red de distribución global bajo norma alemana." },
-      { "value": "ISO 9001", "unit": "TÜV", "label": "Calidad alemana auditada cada año." }
+      { "value": "100+", "unit": "Países", "label": "Red B2B global en 6 continentes." },
+      { "value": "ISO 9001", "unit": "TÜV", "label": "Auditoría externa cada doce meses." }
     ],
     "timeline": {
       "eyebrow": "Historia",
@@ -372,7 +371,7 @@
       ]
     },
     "plant": {
-      "eyebrow": "Operaciones · Estándar alemán",
+      "eyebrow": "Operaciones · QC lote por lote",
       "title": "Manufactura y QC bajo norma europea.",
       "desc": "Producción con control de calidad alineado a tolerancias OEM alemanas, picking dirigido por radiofrecuencia, validación RF caja por caja antes de despacho. Tres turnos con QC y trazabilidad lote por lote para auditoría en cualquier mercado europeo.",
       "captions": {
@@ -395,9 +394,9 @@
     "alliance": {
       "eyebrow": "Alianza estratégica",
       "title": "FREY × EMBLER · Master Distributor LATAM",
-      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local en Ciudad Satélite, soporte técnico bilingüe y entrega same-day en zona metropolitana del Valle de México. Trabajamos juntos desde 2017 acercando la calidad alemana al mercado regional.",
+      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local en CDMX, soporte técnico bilingüe y entrega same-day en zona metropolitana del Valle de México. Trabajamos juntos desde 2017 acercando la calidad alemana al mercado regional.",
       "facts": [
-        { "k": "HQ Embler", "v": "Cd. Satélite · Naucalpan" },
+        { "k": "HQ Embler", "v": "CDMX" },
         { "k": "Cobertura", "v": "LATAM + sur de EE.UU." },
         { "k": "Marcas", "v": "MB · BMW · Land Rover" },
         { "k": "Soporte", "v": "Bilingüe ES/EN" },

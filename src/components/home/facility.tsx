@@ -33,7 +33,7 @@ export async function Facility() {
         <div className="mt-16 grid grid-cols-2 gap-px bg-ink-4/70 backdrop-blur-sm sm:grid-cols-4">
           {[
             ['12,800', 'm² · area'],
-            ['24 / 6', 'operation'],
+            ['24/7', 'operation'],
             ['1,400+', 'orders / day'],
             ['98.6%', 'OTIF'],
           ].map(([v, l]) => (

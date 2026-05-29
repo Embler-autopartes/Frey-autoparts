@@ -58,12 +58,9 @@ export async function VideoSection() {
           </div>
 
           {/* Bottom signature strip */}
-          <div className="mt-6 flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
+          <div className="mt-6">
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-mist-1">
               FREY Auto Parts · Corporate film
-            </p>
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.28em] text-mist-1">
-              Source: freychina.com
             </p>
           </div>
         </div>

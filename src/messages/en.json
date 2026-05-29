@@ -34,15 +34,10 @@
     "ticker": [
       "MERCEDES-BENZ",
       "BMW",
-      "AUDI",
       "PORSCHE",
       "LAND ROVER",
-      "JAGUAR",
-      "VOLKSWAGEN",
-      "VOLVO",
       "MINI",
       "SMART",
-      "ALFA ROMEO",
       "BENTLEY"
     ],
     "trust": {
@@ -164,7 +159,7 @@
       },
       "quote": {
         "label": "LATAM Distributor",
-        "desc": "Local stock in Mexico. Shop directly at EMBLER's online store, master distributor in Cd. Satelite.",
+        "desc": "Local stock in Mexico. Shop directly at EMBLER's online store, master distributor in CDMX.",
         "cta": "Go to Embler shop"
       }
     },
@@ -203,10 +198,10 @@
       "embler": {
         "name": "EMBLER Autopartes · Master Distributor LATAM",
         "tagline": "Local stock · Bilingual support",
-        "address": "Perif. Blvd. Manuel Ávila Camacho 1834\nint. 1830, Cd. Satélite\n53100 Naucalpan, Estado de México",
+        "address": "Perif. Blvd. Manuel Ávila Camacho 1834\nint. 1830\n53100 Naucalpan, Estado de México",
         "phone": "+52 55 0000 0000",
-        "email": "activos@emblerautopartes.mx",
-        "hours": "Mon–Sat 09:00–19:00 · Same-day metro zone"
+        "email": "",
+        "hours": "Mon–Fri 09:00–18:00 · Sat 09:00–14:00"
       }
     },
     "tagline": "Engineered in Germany. Manufactured for Europe."
@@ -305,12 +300,12 @@
       {
         "value": "100+",
         "unit": "Countries",
-        "label": "Global distribution network under German standard."
+        "label": "Global B2B network across 6 continents."
       },
       {
         "value": "ISO 9001",
         "unit": "TÜV",
-        "label": "German quality audited every year."
+        "label": "Third-party audit every twelve months."
       }
     ],
     "timeline": {
@@ -376,7 +371,7 @@
       ]
     },
     "plant": {
-      "eyebrow": "Operations · German standard",
+      "eyebrow": "Operations · Lot-by-lot QC",
       "title": "Manufacturing & QC under European norm.",
       "desc": "Production with quality control aligned to German OEM tolerances, RF-guided picking, box-by-box validation before dispatch. Three shifts with QC on every one and lot-by-lot traceability for field audit in any European market.",
       "captions": {
@@ -419,11 +414,11 @@
     "alliance": {
       "eyebrow": "Strategic alliance",
       "title": "FREY × EMBLER · Master Distributor LATAM",
-      "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock in Ciudad Satélite, bilingual technical support and same-day delivery in the Mexico City metro area. Together since 2017, bringing German quality to the regional market.",
+      "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock in CDMX, bilingual technical support and same-day delivery in the Mexico City metro area. Together since 2017, bringing German quality to the regional market.",
       "facts": [
         {
           "k": "HQ Embler",
-          "v": "Cd. Satélite · Naucalpan"
+          "v": "CDMX"
         },
         {
           "k": "Coverage",
