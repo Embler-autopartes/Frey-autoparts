@@ -60,21 +60,26 @@ export function VideoPlayer({ src, posterTime, fallbackMessage }: Props) {
       </video>
 
       {!started && (
-        <button
-          type="button"
-          onClick={handleStart}
-          aria-label="Play video"
-          className="group absolute inset-0 flex items-center justify-center bg-ink-0/25 transition-colors duration-500 hover:bg-ink-0/40"
-        >
-          <span className="relative flex h-20 w-20 items-center justify-center bg-acid-2 text-white shadow-[0_12px_40px_-8px_rgba(0,0,0,0.5)] transition-all duration-500 group-hover:scale-110 group-hover:bg-acid-3 sm:h-24 sm:w-24">
-            {/* Corner ticks */}
-            <span className="pointer-events-none absolute -left-2 -top-2 h-3 w-3 border-l border-t border-white/70" />
-            <span className="pointer-events-none absolute -right-2 -top-2 h-3 w-3 border-r border-t border-white/70" />
-            <span className="pointer-events-none absolute -left-2 -bottom-2 h-3 w-3 border-b border-l border-white/70" />
-            <span className="pointer-events-none absolute -right-2 -bottom-2 h-3 w-3 border-b border-r border-white/70" />
-            <Play className="h-7 w-7 translate-x-0.5 fill-current sm:h-8 sm:w-8" strokeWidth={0} />
-          </span>
-        </button>
+        <>
+          {/* Bottom mask — hides burned-in subtitles only on the thumbnail */}
+          <span className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-t from-black from-55% via-black/80 to-transparent" />
+
+          <button
+            type="button"
+            onClick={handleStart}
+            aria-label="Play video"
+            className="group absolute inset-0 flex items-center justify-center bg-ink-0/25 transition-colors duration-500 hover:bg-ink-0/40"
+          >
+            <span className="relative flex h-20 w-20 items-center justify-center bg-acid-2 text-white shadow-[0_12px_40px_-8px_rgba(0,0,0,0.5)] transition-all duration-500 group-hover:scale-110 group-hover:bg-acid-3 sm:h-24 sm:w-24">
+              {/* Corner ticks */}
+              <span className="pointer-events-none absolute -left-2 -top-2 h-3 w-3 border-l border-t border-white/70" />
+              <span className="pointer-events-none absolute -right-2 -top-2 h-3 w-3 border-r border-t border-white/70" />
+              <span className="pointer-events-none absolute -left-2 -bottom-2 h-3 w-3 border-b border-l border-white/70" />
+              <span className="pointer-events-none absolute -right-2 -bottom-2 h-3 w-3 border-b border-r border-white/70" />
+              <Play className="h-7 w-7 translate-x-0.5 fill-current sm:h-8 sm:w-8" strokeWidth={0} />
+            </span>
+          </button>
+        </>
       )}
     </div>
   );
