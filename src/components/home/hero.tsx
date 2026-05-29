@@ -27,7 +27,7 @@ export async function Hero() {
       {/* Vertical side label */}
       <div className="absolute left-6 top-1/2 hidden -translate-y-1/2 lg:block">
         <p className="origin-left -rotate-90 font-mono text-[0.6rem] uppercase tracking-[0.5em] text-mist-2 whitespace-nowrap">
-          Frey Auto Parts · Est. 2004 · German engineering
+          Frey Auto Parts · Est. 2004 · Stuttgart, DE
         </p>
       </div>
 
