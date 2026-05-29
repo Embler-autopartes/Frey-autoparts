@@ -36,11 +36,14 @@ export async function Stats() {
         </div>
 
         {/* Editorial 2x2 grid with breathing room — alterna acento verde */}
-        <div className="grid grid-cols-1 gap-x-16 gap-y-20 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-2 lg:gap-y-20">
           {items.map((stat, i) => {
             const isGreen = i % 2 === 1; // 2da y 4ta con número verde
             return (
-              <div key={i} className="relative grid grid-cols-[auto_1fr] items-start gap-8">
+              <div
+                key={i}
+                className="relative grid grid-cols-1 items-start gap-5 sm:grid-cols-[auto_1fr] sm:gap-8"
+              >
                 {/* Big number column */}
                 <div className="flex flex-col">
                   <span className="font-mono text-[0.55rem] uppercase tracking-[0.3em] text-acid-2">
@@ -48,7 +51,7 @@ export async function Stats() {
                   </span>
                   <div className="mt-2 flex items-baseline gap-2">
                     <span
-                      className={`font-display text-[5.5rem] font-medium leading-[0.85] tracking-tight sm:text-[7rem] ${
+                      className={`font-display text-[3.75rem] font-medium leading-[0.85] tracking-tight sm:text-[5.5rem] lg:text-[7rem] ${
                         isGreen ? 'text-acid-2' : 'text-mist-4'
                       }`}
                     >
@@ -66,9 +69,13 @@ export async function Stats() {
 
                 {/* Editorial description */}
                 <div
-                  className={`pl-6 pt-2 ${isGreen ? 'border-l-2 border-acid-2' : 'border-l border-ink-4'}`}
+                  className={`pt-4 sm:pl-6 sm:pt-2 ${
+                    isGreen
+                      ? 'border-t-2 border-acid-2 sm:border-t-0 sm:border-l-2'
+                      : 'border-t border-ink-4 sm:border-t-0 sm:border-l'
+                  }`}
                 >
-                  <p className="font-serif text-xl font-light leading-snug text-mist-3 sm:text-2xl">
+                  <p className="font-serif text-lg font-light leading-snug text-mist-3 sm:text-xl lg:text-2xl">
                     {stat.label}
                   </p>
                 </div>
