@@ -78,6 +78,15 @@ export async function Footer() {
         </div>
       </div>
 
+      {/* Manufacturing fine print */}
+      <div className="border-t border-white/15">
+        <div className="mx-auto max-w-[1440px] px-6 py-5 lg:px-10">
+          <p className="max-w-4xl font-mono text-[0.55rem] uppercase leading-relaxed tracking-[0.18em] text-white/55">
+            {t('manufacturing')}
+          </p>
+        </div>
+      </div>
+
       {/* Bottom signature — thin & subtle */}
       <div className="border-t border-white/15 bg-acid-3">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-6 py-7 sm:flex-row sm:items-center sm:justify-between lg:px-10">

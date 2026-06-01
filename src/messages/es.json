@@ -114,7 +114,7 @@
       },
       "quote": {
         "label": "Distribuidor LATAM",
-        "desc": "Stock local en México. Compra directamente en la tienda online de EMBLER, distribuidor master en CDMX.",
+        "desc": "Stock local en México. Compra directamente en la tienda online de EMBLER, distribuidor master en México.",
         "cta": "Ir a tienda Embler"
       }
     },
@@ -293,7 +293,7 @@
         },
         {
           "q": "¿Dan soporte técnico para instalación o diagnóstico?",
-          "a": "Sí, el equipo Embler en CDMX brinda soporte técnico bilingüe ES/EN para distribuidores autorizados. Para fitment específico, comparte VIN + síntoma y recibes recomendación documentada."
+          "a": "Sí, el equipo Embler en México brinda soporte técnico bilingüe ES/EN para distribuidores autorizados. Para fitment específico, comparte VIN + síntoma y recibes recomendación documentada."
         },
         {
           "q": "¿Cubren todas las generaciones de cada modelo?",
@@ -394,9 +394,9 @@
     "alliance": {
       "eyebrow": "Alianza estratégica",
       "title": "FREY × EMBLER · Master Distributor LATAM",
-      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local en CDMX, soporte técnico bilingüe y entrega same-day en zona metropolitana del Valle de México. Trabajamos juntos desde 2017 acercando la calidad alemana al mercado regional.",
+      "desc": "EMBLER opera como distribuidor master de FREY en México y LATAM, con stock local en México, soporte técnico bilingüe y entrega same-day en zona metropolitana del Valle de México. Trabajamos juntos desde 2017 acercando la calidad alemana al mercado regional.",
       "facts": [
-        { "k": "HQ Embler", "v": "CDMX" },
+        { "k": "HQ Embler", "v": "México" },
         { "k": "Cobertura", "v": "LATAM + sur de EE.UU." },
         { "k": "Marcas", "v": "MB · BMW · Land Rover" },
         { "k": "Soporte", "v": "Bilingüe ES/EN" },
@@ -424,6 +424,7 @@
     "address": "FREY Auto Parts Co., Ltd.\nEuropean OEM standards · Global ops",
     "contact": "+86 400 1080 878\nfreymarketing@cnfrey.com",
     "rights": "Todos los derechos reservados.",
-    "compliance": "ISO 9001 · IATF 16949 · SGS Verified"
+    "compliance": "ISO 9001 · IATF 16949 · SGS Verified",
+    "manufacturing": "Hecho en China bajo normas mundiales de seguridad y calidad: ISO 9001, IATF 16949, SGS Verified y todos los estándares de seguridad que maneja FREY."
   }
 }

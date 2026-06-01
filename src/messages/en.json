@@ -159,7 +159,7 @@
       },
       "quote": {
         "label": "LATAM Distributor",
-        "desc": "Local stock in Mexico. Shop directly at EMBLER's online store, master distributor in CDMX.",
+        "desc": "Local stock in Mexico. Shop directly at EMBLER's online store, master distributor in Mexico.",
         "cta": "Go to Embler shop"
       }
     },
@@ -414,11 +414,11 @@
     "alliance": {
       "eyebrow": "Strategic alliance",
       "title": "FREY × EMBLER · Master Distributor LATAM",
-      "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock in CDMX, bilingual technical support and same-day delivery in the Mexico City metro area. Together since 2017, bringing German quality to the regional market.",
+      "desc": "EMBLER operates as FREY's master distributor in Mexico and LATAM, with local stock in Mexico, bilingual technical support and same-day delivery in the Mexico City metro area. Together since 2017, bringing German quality to the regional market.",
       "facts": [
         {
           "k": "HQ Embler",
-          "v": "CDMX"
+          "v": "Mexico"
         },
         {
           "k": "Coverage",
@@ -479,7 +479,8 @@
     "address": "FREY Auto Parts Co., Ltd.\nEuropean OEM standards · Global ops",
     "contact": "+86 400 1080 878\nfreymarketing@cnfrey.com",
     "rights": "All rights reserved.",
-    "compliance": "ISO 9001 · IATF 16949 · SGS Verified"
+    "compliance": "ISO 9001 · IATF 16949 · SGS Verified",
+    "manufacturing": "Made in China under global safety and quality standards: ISO 9001, IATF 16949, SGS Verified and all safety standards upheld by FREY."
   },
   "policies": {
     "hero": {
@@ -601,7 +602,7 @@
         },
         {
           "q": "Do you provide tech support for install or diagnosis?",
-          "a": "Yes, the Embler team in CDMX provides bilingual ES/EN tech support for authorized distributors. For specific fitment, share VIN + symptom and you receive a documented recommendation."
+          "a": "Yes, the Embler team in Mexico provides bilingual ES/EN tech support for authorized distributors. For specific fitment, share VIN + symptom and you receive a documented recommendation."
         },
         {
           "q": "Do you cover all generations of each model?",

@@ -13,7 +13,7 @@ export async function Alliance() {
   const facts: { k: string; v: string }[] =
     locale === 'es'
       ? [
-          { k: 'HQ Embler', v: 'CDMX' },
+          { k: 'HQ Embler', v: 'México' },
           { k: 'Cobertura', v: 'LATAM + sur de EE.UU.' },
           { k: 'Marcas', v: 'MB · BMW · Land Rover' },
           { k: 'Soporte', v: 'Bilingüe ES/EN' },
@@ -21,7 +21,7 @@ export async function Alliance() {
           { k: 'Inicio', v: 'Alianza desde 2017' },
         ]
       : [
-          { k: 'HQ Embler', v: 'CDMX' },
+          { k: 'HQ Embler', v: 'Mexico' },
           { k: 'Coverage', v: 'LATAM + south US' },
           { k: 'Brands', v: 'MB · BMW · Land Rover' },
           { k: 'Support', v: 'Bilingual ES/EN' },

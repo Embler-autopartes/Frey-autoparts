@@ -258,7 +258,7 @@ function OfficeCard({
         <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
           {variant === 'frey'
             ? (locale === 'es' ? '◆ Frey · Ingeniería alemana' : '◆ Frey · German engineering')
-            : '◆ Embler · CDMX'}
+            : '◆ Embler · México'}
         </p>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-mist-4 sm:text-3xl">
           {name}
