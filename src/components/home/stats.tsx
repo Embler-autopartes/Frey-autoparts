@@ -1,4 +1,5 @@
 import { getTranslations, getLocale } from 'next-intl/server';
+import { Eyebrow } from '@/components/shared/eyebrow';
 
 type Stat = { value: string; unit: string; label: string };
 
@@ -14,12 +15,7 @@ export async function Stats() {
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
         {/* Editorial header */}
         <div className="mb-24 max-w-3xl">
-          <div className="inline-flex items-center gap-3 border-l-2 border-acid-2 bg-acid-2/8 px-4 py-2">
-            <span className="text-acid-2">◆</span>
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-2">
-              {t('eyebrow')}
-            </p>
-          </div>
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="mt-8 font-serif text-5xl font-light italic leading-[1] tracking-tight text-mist-4 sm:text-7xl">
             {locale === 'es' ? (
               <>

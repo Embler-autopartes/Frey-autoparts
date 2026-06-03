@@ -14,7 +14,7 @@
   --color-ink-4: #cdc8c5;   /* border / strong divider */
   --color-ink-5: #aea8a4;   /* divider on light */
 
-  --color-mist-1: #8a847f;   /* low-contrast text */
+  --color-mist-1: #6e6862;   /* low-contrast text (WCAG AA ~4.5:1 on ink-1) */
   --color-mist-2: #5a5450;   /* mid text */
   --color-mist-3: #2f2b28;   /* high text */
   --color-mist-4: #14110f;   /* near-black, primary headings */
@@ -280,3 +280,39 @@ body {
 .delay-500 { animation-delay: 0.5s; }
 .delay-600 { animation-delay: 0.6s; }
 .delay-700 { animation-delay: 0.7s; }
+
+/* ----- SCROLL REVEAL -----
+   Sections start hidden (CSS, so no flash on first paint) and are revealed
+   by RevealProvider via IntersectionObserver. The hero (first section) is
+   never hidden so above-the-fold content paints instantly. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal-root] section:not(:first-of-type) {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.9s var(--ease-out-expo),
+      transform 0.9s var(--ease-out-expo);
+    will-change: opacity, transform;
+  }
+  [data-reveal-root] section.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ----- REDUCED MOTION -----
+   Honor the user's OS setting: kill looping/auto motion, keep content visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-scroll-x,
+  .animate-pulse-dot {
+    animation: none !important;
+  }
+}

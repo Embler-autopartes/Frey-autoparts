@@ -4,6 +4,8 @@ import { setRequestLocale, getTranslations, getLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
+import { HqCarousel, type HqSlide } from '@/components/about/hq-carousel';
+import { Eyebrow } from '@/components/shared/eyebrow';
 
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -25,6 +27,7 @@ export default async function AcercaPage({
       <AboutHero />
       <Manifesto />
       <AboutStats />
+      <Headquarters />
       <Timeline />
       <Values />
       <Plant />
@@ -88,9 +91,7 @@ async function Manifesto() {
   return (
     <section className="bg-ink-1 py-28 lg:py-40">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
-        <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-          ◆ {t('eyebrow')}
-        </p>
+        <Eyebrow>{t('eyebrow')}</Eyebrow>
         <h2 className="mt-8 text-balance font-display text-4xl uppercase leading-[1] tracking-tight text-mist-4 sm:text-6xl">
           {t('title')}
         </h2>
@@ -145,6 +146,51 @@ async function AboutStats() {
   );
 }
 
+/* ---------------- HEADQUARTERS (carousel) ---------------- */
+async function Headquarters() {
+  const t = await getTranslations('about.headquarters');
+  const raw = t.raw('slides') as { title: string; caption: string; meta: string }[];
+  const sources = [
+    { src: '/images/frey-hq-facade.webp' },
+    { src: '/images/frey-hq-aerial.webp' },
+  ];
+  const slides: HqSlide[] = raw.map((s, i) => ({
+    src: sources[i]?.src ?? sources[0].src,
+    alt: s.title,
+    title: s.title,
+    caption: s.caption,
+    meta: s.meta,
+  }));
+
+  return (
+    <section className="relative isolate overflow-hidden bg-ink-1 py-28 lg:py-36">
+      <div className="absolute inset-0 tech-grid-fine opacity-25" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-acid-2/40 to-transparent" />
+
+      <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
+        <header className="mb-12 grid gap-8 border-b border-ink-4 pb-10 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div>
+            <Eyebrow>{t('eyebrow')}</Eyebrow>
+            <h2 className="mt-8 max-w-3xl font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-6xl">
+              {t('title')}
+            </h2>
+          </div>
+          <p className="max-w-md text-pretty leading-relaxed text-mist-2 lg:text-right">
+            {t('desc')}
+          </p>
+        </header>
+
+        <HqCarousel
+          slides={slides}
+          prevLabel={t('prev')}
+          nextLabel={t('next')}
+          counterLabel={t('counter')}
+        />
+      </div>
+    </section>
+  );
+}
+
 /* ---------------- TIMELINE ---------------- */
 async function Timeline() {
   const t = await getTranslations('about.timeline');
@@ -153,9 +199,7 @@ async function Timeline() {
     <section className="bg-ink-1 py-28 lg:py-36">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <header className="mb-16 max-w-3xl">
-          <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-            ◆ {t('eyebrow')}
-          </p>
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="mt-6 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-6xl">
             {t('title')}
           </h2>
@@ -198,9 +242,7 @@ async function Values() {
     <section className="border-y border-ink-4 bg-ink-3 py-28 lg:py-36">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <header className="mb-16 max-w-3xl">
-          <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-            ◆ {t('eyebrow')}
-          </p>
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="mt-6 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-6xl">
             {t('title')}
           </h2>
@@ -262,12 +304,7 @@ async function Plant() {
         {/* Editorial masthead */}
         <header className="mb-12 grid gap-10 border-b border-ink-4 pb-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <div className="inline-flex items-center gap-3 border-l-2 border-acid-2 bg-acid-2/8 px-4 py-2">
-              <span className="text-acid-2">◆</span>
-              <p className="font-mono text-[0.7rem] uppercase tracking-[0.35em] text-acid-2">
-                {t('eyebrow')}
-              </p>
-            </div>
+            <Eyebrow>{t('eyebrow')}</Eyebrow>
             <h2 className="mt-8 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-5xl">
               {t('title')}
             </h2>
@@ -370,9 +407,7 @@ async function Certs() {
     <section className="border-y border-ink-4 bg-ink-3 py-28 lg:py-36">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <header className="mb-16 max-w-3xl">
-          <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-            ◆ {t('eyebrow')}
-          </p>
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="mt-6 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-6xl">
             {t('title')}
           </h2>
@@ -430,9 +465,7 @@ async function AllianceDetail() {
 
           <div className="relative grid gap-12 p-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16 lg:p-16">
             <div>
-              <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-                ◆ {t('eyebrow')}
-              </p>
+              <Eyebrow>{t('eyebrow')}</Eyebrow>
               <h2 className="mt-8 font-display text-4xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-6xl">
                 {t('title')}
               </h2>

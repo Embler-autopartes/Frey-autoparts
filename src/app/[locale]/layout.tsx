@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
+import { RevealProvider } from '@/components/shared/reveal-provider';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -26,7 +27,8 @@ export default async function LocaleLayout({
       <body className="min-h-screen bg-ink-1 text-mist-4 antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
-          <main className="relative">{children}</main>
+          <main className="relative" data-reveal-root>{children}</main>
+          <RevealProvider />
           <Footer />
         </NextIntlClientProvider>
       </body>

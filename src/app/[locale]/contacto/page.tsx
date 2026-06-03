@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { MessageCircle, Mail, Phone, FileText, MapPin, Clock, ArrowUpRight } from 'lucide-react';
 import { Link } from '@/i18n/routing';
@@ -26,16 +27,43 @@ export default async function ContactoPage({
       {/* Hero */}
       <section className="relative isolate overflow-hidden border-b border-ink-4 bg-ink-2 pb-16 pt-40 lg:pt-48">
         <div className="absolute inset-0 -z-10 tech-grid opacity-50" />
-        <div className="mx-auto max-w-[1280px] px-6 lg:px-10">
-          <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-            ◆ {t('hero.eyebrow')}
-          </p>
-          <h1 className="mt-6 max-w-3xl font-display text-5xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-7xl">
-            {t('hero.title')}
-          </h1>
-          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-mist-2">
-            {t('hero.subtitle')}
-          </p>
+        <div className="mx-auto grid max-w-[1280px] items-center gap-12 px-6 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-10">
+          <div>
+            <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
+              ◆ {t('hero.eyebrow')}
+            </p>
+            <h1 className="mt-6 max-w-3xl font-display text-5xl uppercase leading-[0.95] tracking-tight text-mist-4 sm:text-7xl">
+              {t('hero.title')}
+            </h1>
+            <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-mist-2">
+              {t('hero.subtitle')}
+            </p>
+          </div>
+
+          {/* HQ image */}
+          <figure className="group relative overflow-hidden border border-ink-4 bg-ink-3">
+            <div className="relative aspect-[4/3] w-full lg:aspect-[5/4]">
+              <Image
+                src="/images/frey-hq-facade.webp"
+                alt={t('offices.hqCaption')}
+                fill
+                sizes="(max-width: 1024px) 100vw, 640px"
+                priority
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-1 via-ink-1/20 to-transparent" />
+              <span className="pointer-events-none absolute left-4 top-4 h-4 w-4 border-l border-t border-acid-2/60" />
+              <span className="pointer-events-none absolute right-4 top-4 h-4 w-4 border-r border-t border-acid-2/60" />
+            </div>
+            <figcaption className="absolute inset-x-0 bottom-0 p-6">
+              <p className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-acid-2">
+                {t('offices.hqLabel')}
+              </p>
+              <p className="mt-2 max-w-md text-pretty text-sm leading-relaxed text-mist-3">
+                {t('offices.hqCaption')}
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -105,42 +133,30 @@ export default async function ContactoPage({
             <aside className="space-y-4 self-start lg:sticky lg:top-28">
               <div className="border border-ink-4 bg-ink-1 p-6">
                 <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-                  Response time
+                  {t('aside.response.label')}
                 </p>
                 <p className="mt-3 font-display text-4xl uppercase tracking-tight text-mist-4">
-                  &lt; 24h
+                  {t('aside.response.value')}
                 </p>
-                <p className="mt-2 text-sm text-mist-2">
-                  {locale === 'es'
-                    ? 'Horario hábil. Cotizaciones formales con disponibilidad y lead time.'
-                    : 'Business hours. Formal quotes with availability and lead time.'}
-                </p>
+                <p className="mt-2 text-sm text-mist-2">{t('aside.response.desc')}</p>
               </div>
               <div className="border border-ink-4 bg-ink-1 p-6">
                 <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-                  Trace level
+                  {t('aside.trace.label')}
                 </p>
                 <p className="mt-3 font-display text-4xl uppercase tracking-tight text-mist-4">
-                  Lot
+                  {t('aside.trace.value')}
                 </p>
-                <p className="mt-2 text-sm text-mist-2">
-                  {locale === 'es'
-                    ? 'Cada caja con etiqueta serializada y auditoría hasta planta.'
-                    : 'Each box ships with serialized label and audit trail back to plant.'}
-                </p>
+                <p className="mt-2 text-sm text-mist-2">{t('aside.trace.desc')}</p>
               </div>
               <div className="border border-acid-2/40 bg-acid-2/5 p-6">
                 <p className="font-mono text-[0.6rem] uppercase tracking-[0.25em] text-acid-2">
-                  Coverage
+                  {t('aside.coverage.label')}
                 </p>
                 <p className="mt-3 font-display text-4xl uppercase tracking-tight text-mist-4">
-                  100+ countries
+                  {t('aside.coverage.value')}
                 </p>
-                <p className="mt-2 text-sm text-mist-2">
-                  {locale === 'es'
-                    ? 'LATAM, EU, Norteamérica vía distribuidores master autorizados.'
-                    : 'LATAM, EU, North America through authorized master distributors.'}
-                </p>
+                <p className="mt-2 text-sm text-mist-2">{t('aside.coverage.desc')}</p>
               </div>
             </aside>
           </div>

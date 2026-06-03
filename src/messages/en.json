@@ -185,8 +185,27 @@
       "errorRequired": "Complete name, email and message.",
       "sent": "We opened your email client with the message pre-loaded."
     },
+    "aside": {
+      "response": {
+        "label": "Response time",
+        "value": "< 24h",
+        "desc": "Business hours. Formal quotes with availability and lead time."
+      },
+      "trace": {
+        "label": "Trace level",
+        "value": "Lot",
+        "desc": "Each box ships with a serialized label and audit trail back to plant."
+      },
+      "coverage": {
+        "label": "Coverage",
+        "value": "100+ countries",
+        "desc": "LATAM, EU and North America through authorized master distributors."
+      }
+    },
     "offices": {
       "title": "Offices & operations",
+      "hqLabel": "◆ New Frey corporate headquarters",
+      "hqCaption": "Frey's new corporate complex: engineering, commercial operations and global logistics under one roof.",
       "frey": {
         "name": "FREY Auto Parts · Global HQ",
         "tagline": "Premium manufacturing · German standard",
@@ -308,6 +327,26 @@
         "label": "Third-party audit every twelve months."
       }
     ],
+    "headquarters": {
+      "eyebrow": "New corporate headquarters",
+      "title": "A new home for the next decade.",
+      "desc": "Frey brings engineering, logistics and global support together in a new corporate complex built to scale the operation.",
+      "prev": "Previous view",
+      "next": "Next view",
+      "counter": "View",
+      "slides": [
+        {
+          "meta": "01 · Main facade",
+          "title": "Frey corporate building",
+          "caption": "Glass tower carrying the brand identity, home to engineering, commercial and global management teams."
+        },
+        {
+          "meta": "02 · Aerial campus view",
+          "title": "Integrated complex",
+          "caption": "Campus with offices, logistics center and green areas, connected to industrial and transport corridors."
+        }
+      ]
+    },
     "timeline": {
       "eyebrow": "History",
       "title": "Two decades perfecting the right part.",

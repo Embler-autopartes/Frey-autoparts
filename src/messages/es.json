@@ -140,8 +140,27 @@
       "errorRequired": "Completa nombre, correo y mensaje.",
       "sent": "Abrimos tu cliente de correo con el mensaje pre-cargado."
     },
+    "aside": {
+      "response": {
+        "label": "Tiempo de respuesta",
+        "value": "< 24h",
+        "desc": "Horario hábil. Cotizaciones formales con disponibilidad y lead time."
+      },
+      "trace": {
+        "label": "Nivel de trazabilidad",
+        "value": "Lote",
+        "desc": "Cada caja con etiqueta serializada y auditoría hasta planta."
+      },
+      "coverage": {
+        "label": "Cobertura",
+        "value": "100+ países",
+        "desc": "LATAM, EU y Norteamérica vía distribuidores master autorizados."
+      }
+    },
     "offices": {
       "title": "Oficinas y operaciones",
+      "hqLabel": "◆ Nueva sede corporativa Frey",
+      "hqCaption": "Nuevo complejo corporativo de Frey: ingeniería, operación comercial y logística global bajo un mismo techo.",
       "frey": {
         "name": "FREY Auto Parts · Sede global",
         "tagline": "Manufactura premium · Estándar alemán",
@@ -332,6 +351,18 @@
       { "value": "100+", "unit": "Países", "label": "Red B2B global en 6 continentes." },
       { "value": "ISO 9001", "unit": "TÜV", "label": "Auditoría externa cada doce meses." }
     ],
+    "headquarters": {
+      "eyebrow": "Nueva sede corporativa",
+      "title": "Una nueva casa para la próxima década.",
+      "desc": "Frey consolida ingeniería, logística y atención global en un nuevo complejo corporativo diseñado para escalar la operación.",
+      "prev": "Vista anterior",
+      "next": "Vista siguiente",
+      "counter": "Vista",
+      "slides": [
+        { "meta": "01 · Fachada principal", "title": "Edificio corporativo Frey", "caption": "Torre de cristal con identidad de marca, sede de las áreas de ingeniería, comercial y dirección global." },
+        { "meta": "02 · Vista aérea del campus", "title": "Complejo integral", "caption": "Campus con oficinas, centro logístico y áreas verdes, conectado a corredores industriales y de transporte." }
+      ]
+    },
     "timeline": {
       "eyebrow": "Historia",
       "title": "Dos décadas perfeccionando la pieza correcta.",
