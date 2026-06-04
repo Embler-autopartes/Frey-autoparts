@@ -76,7 +76,7 @@ async function AboutHero() {
       <div className="absolute inset-0 -z-10 tech-grid opacity-40" />
 
       <div className="mx-auto flex min-h-[88svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28">
-        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,400px)] lg:gap-16">
+        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,740px)] lg:gap-16">
           <div className="max-w-3xl">
             <div className="flex animate-fade-in-up items-center gap-3">
               <span className="h-px w-12 bg-acid-2" />
@@ -102,7 +102,7 @@ async function AboutHero() {
           </div>
 
           {/* Headquarters carousel — beside the hero text */}
-          <div className="h-[58svh] max-h-[560px] w-full animate-fade-in-up delay-300 lg:h-[clamp(380px,60svh,560px)]">
+          <div className="h-[84svh] max-h-[1000px] w-full animate-fade-in-up delay-300 lg:h-[clamp(700px,90svh,1000px)]">
             <HeroCarousel slides={carouselSlides} label={carouselLabel} />
           </div>
         </div>
