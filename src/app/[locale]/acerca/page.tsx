@@ -76,15 +76,15 @@ async function AboutHero() {
       <div className="absolute inset-0 -z-10 tech-grid opacity-40" />
 
       <div className="mx-auto flex min-h-[88svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28">
-        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,400px)] lg:gap-16">
-          <div className="max-w-3xl">
+        <div className="grid items-end gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-14">
+          <div className="max-w-xl">
             <div className="flex animate-fade-in-up items-center gap-3">
               <span className="h-px w-12 bg-acid-2" />
               <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
                 ◆ {t('eyebrow')}
               </p>
             </div>
-            <h1 className="mt-8 animate-fade-in-up font-display text-[clamp(3rem,8vw,7.5rem)] font-medium uppercase leading-[0.88] tracking-tight text-mist-4 delay-100">
+            <h1 className="mt-8 animate-fade-in-up font-display text-[clamp(2.75rem,5vw,5.25rem)] font-medium uppercase leading-[0.88] tracking-tight text-mist-4 delay-100">
               <span className="block">{t('titleA')}</span>
               <span className="block text-chrome-2">{t('titleB')}</span>
               <span className="block text-acid-2">{t('titleC')}</span>
@@ -101,8 +101,8 @@ async function AboutHero() {
             </Link>
           </div>
 
-          {/* Headquarters carousel — beside the hero text */}
-          <div className="h-[58svh] max-h-[560px] w-full animate-fade-in-up delay-300 lg:h-[clamp(380px,60svh,560px)]">
+          {/* Headquarters carousel — the hero's protagonist */}
+          <div className="h-[82svh] max-h-[1100px] w-full animate-fade-in-up delay-300 lg:h-[clamp(720px,92svh,1100px)]">
             <HeroCarousel slides={carouselSlides} label={carouselLabel} />
           </div>
         </div>

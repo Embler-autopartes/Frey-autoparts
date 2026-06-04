@@ -70,7 +70,7 @@ export function HeroCarousel({ slides, label }: Props) {
               alt={s.alt}
               fill
               priority={i === 0}
-              sizes="(max-width: 1024px) 90vw, 420px"
+              sizes="(max-width: 1024px) 90vw, 900px"
               className={`object-cover transition-transform duration-[7000ms] ease-out ${
                 i === index ? 'scale-105' : 'scale-100'
               }`}
@@ -79,12 +79,12 @@ export function HeroCarousel({ slides, label }: Props) {
             <div className="absolute inset-0 bg-gradient-to-t from-ink-1 via-ink-1/15 to-transparent" />
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-ink-1/85 to-transparent" />
 
-            <figcaption className="absolute inset-x-0 bottom-0 p-5 pb-7">
-              <span className="mb-2.5 block h-px w-8 bg-acid-2" />
-              <p className="font-mono text-[0.58rem] uppercase tracking-[0.32em] text-acid-2">
+            <figcaption className="absolute inset-x-0 bottom-0 p-6 pb-9 lg:p-8 lg:pb-11">
+              <span className="mb-3 block h-px w-10 bg-acid-2 lg:w-12" />
+              <p className="font-mono text-[0.62rem] uppercase tracking-[0.32em] text-acid-2 lg:text-[0.7rem]">
                 {label}
               </p>
-              <p className="mt-2 max-w-xs text-pretty text-sm font-medium leading-snug text-mist-3">
+              <p className="mt-2.5 max-w-md text-pretty text-base font-medium leading-snug text-mist-3 lg:text-lg">
                 {s.caption}
               </p>
             </figcaption>
