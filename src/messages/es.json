@@ -338,7 +338,16 @@
       "titleB": "calidad alemana,",
       "titleC": "alcance global.",
       "subtitle": "Más de dos décadas suministrando autopartes OEM y aftermarket para Mercedes-Benz, BMW y MB Sprinter. Manufactura en Asia, distribución en LATAM, Norteamérica y Europa.",
-      "cta": "Hablar con el equipo"
+      "cta": "Hablar con el equipo",
+      "carousel": {
+        "label": "Sede Frey",
+        "slides": [
+          "Centro de distribución y oficinas centrales Frey.",
+          "Vista aérea del complejo logístico Frey.",
+          "Instalaciones de almacenamiento y control de calidad.",
+          "Operación y manufactura con estándar alemán."
+        ]
+      }
     },
     "intro": {
       "eyebrow": "Manifiesto",

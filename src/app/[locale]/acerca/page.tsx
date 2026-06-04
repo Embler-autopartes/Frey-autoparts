@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import { ArrowUpRight } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
 import { HqCarousel, type HqSlide } from '@/components/about/hq-carousel';
+import { HeroCarousel, type HeroSlide } from '@/components/about/hero-carousel';
 import { Eyebrow } from '@/components/shared/eyebrow';
 
 
@@ -41,6 +42,25 @@ export default async function AcercaPage({
 /* ---------------- HERO ---------------- */
 async function AboutHero() {
   const t = await getTranslations('about.hero');
+
+  const carouselCaptions = t.raw('carousel.slides') as string[];
+  const carouselLabel = t('carousel.label');
+  // Each photo keeps its own caption (cap = index into carousel.slides).
+  // Lead with the facility shots that aren't reused in the Headquarters
+  // section below (cede-01 / cede-02 are the facade & aerial shown there),
+  // so the hero doesn't echo imagery the visitor sees moments later.
+  const carouselOrder = [
+    { src: '/cede/cede-03.webp', cap: 2 },
+    { src: '/cede/cede-04.webp', cap: 3 },
+    { src: '/cede/cede-01.webp', cap: 0 },
+    { src: '/cede/cede-02.webp', cap: 1 },
+  ];
+  const carouselSlides: HeroSlide[] = carouselOrder.map(({ src, cap }) => ({
+    src,
+    alt: carouselCaptions[cap] ?? carouselLabel,
+    caption: carouselCaptions[cap] ?? '',
+  }));
+
   return (
     <section className="relative isolate min-h-[88svh] overflow-hidden bg-ink-1">
       <Image
@@ -56,28 +76,35 @@ async function AboutHero() {
       <div className="absolute inset-0 -z-10 tech-grid opacity-40" />
 
       <div className="mx-auto flex min-h-[88svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28">
-        <div className="max-w-3xl">
-          <div className="flex items-center gap-3">
-            <span className="h-px w-12 bg-acid-2" />
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
-              ◆ {t('eyebrow')}
+        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,400px)] lg:gap-16">
+          <div className="max-w-3xl">
+            <div className="flex animate-fade-in-up items-center gap-3">
+              <span className="h-px w-12 bg-acid-2" />
+              <p className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-acid-2">
+                ◆ {t('eyebrow')}
+              </p>
+            </div>
+            <h1 className="mt-8 animate-fade-in-up font-display text-[clamp(3rem,8vw,7.5rem)] font-medium uppercase leading-[0.88] tracking-tight text-mist-4 delay-100">
+              <span className="block">{t('titleA')}</span>
+              <span className="block text-chrome-2">{t('titleB')}</span>
+              <span className="block text-acid-2">{t('titleC')}</span>
+            </h1>
+            <p className="mt-8 max-w-xl animate-fade-in-up text-pretty text-lg leading-relaxed text-mist-2 delay-300">
+              {t('subtitle')}
             </p>
+            <Link
+              href="/contacto"
+              className="mt-10 inline-flex animate-fade-in-up items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-white transition-all delay-500 hover:bg-acid-3"
+            >
+              {t('cta')}
+              <ArrowUpRight className="h-4 w-4" strokeWidth={2.4} />
+            </Link>
           </div>
-          <h1 className="mt-8 font-display text-[clamp(3rem,8vw,7.5rem)] font-medium uppercase leading-[0.88] tracking-tight text-mist-4">
-            <span className="block">{t('titleA')}</span>
-            <span className="block text-chrome-2">{t('titleB')}</span>
-            <span className="block text-acid-2">{t('titleC')}</span>
-          </h1>
-          <p className="mt-8 max-w-xl text-pretty text-lg leading-relaxed text-mist-2">
-            {t('subtitle')}
-          </p>
-          <Link
-            href="/contacto"
-            className="mt-10 inline-flex items-center gap-3 border border-acid-2 bg-acid-2 px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-white transition-all hover:bg-acid-3"
-          >
-            {t('cta')}
-            <ArrowUpRight className="h-4 w-4" strokeWidth={2.4} />
-          </Link>
+
+          {/* Headquarters carousel — beside the hero text */}
+          <div className="h-[58svh] max-h-[560px] w-full animate-fade-in-up delay-300 lg:h-[clamp(380px,60svh,560px)]">
+            <HeroCarousel slides={carouselSlides} label={carouselLabel} />
+          </div>
         </div>
       </div>
     </section>
