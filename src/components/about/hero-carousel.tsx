@@ -56,7 +56,7 @@ export function HeroCarousel({ slides, label }: Props) {
       />
 
       {/* Framed media box */}
-      <div className="relative h-full overflow-hidden border border-ink-4 bg-ink-2 shadow-[0_28px_64px_-28px_rgba(20,17,15,0.55)]">
+      <div className="relative h-full overflow-hidden bg-ink-2 shadow-[0_28px_64px_-28px_rgba(20,17,15,0.55)]">
         {slides.map((s, i) => (
           <figure
             key={s.src}

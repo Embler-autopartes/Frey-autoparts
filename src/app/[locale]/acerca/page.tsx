@@ -75,8 +75,8 @@ async function AboutHero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-1 via-ink-1/55 to-transparent" />
       <div className="absolute inset-0 -z-10 tech-grid opacity-40" />
 
-      <div className="mx-auto flex min-h-[88svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28">
-        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,740px)] lg:gap-16">
+      <div className="mx-auto flex min-h-[88svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28 2xl:max-w-[1680px] min-[1920px]:max-w-[1880px]">
+        <div className="grid items-end gap-12 lg:grid-cols-[1fr_minmax(0,700px)] lg:gap-16 2xl:grid-cols-[1fr_minmax(0,810px)] min-[1920px]:grid-cols-[1fr_minmax(0,920px)]">
           <div className="max-w-3xl">
             <div className="flex animate-fade-in-up items-center gap-3">
               <span className="h-px w-12 bg-acid-2" />
@@ -102,7 +102,7 @@ async function AboutHero() {
           </div>
 
           {/* Headquarters carousel — beside the hero text */}
-          <div className="h-[84svh] max-h-[1000px] w-full animate-fade-in-up delay-300 lg:h-[clamp(700px,90svh,1000px)]">
+          <div className="h-[84svh] max-h-[940px] w-full animate-fade-in-up delay-300 lg:h-[clamp(660px,88svh,940px)] 2xl:max-h-[1090px] 2xl:h-[clamp(770px,88svh,1090px)] min-[1920px]:max-h-[1240px] min-[1920px]:h-[clamp(880px,88svh,1240px)]">
             <HeroCarousel slides={carouselSlides} label={carouselLabel} />
           </div>
         </div>
